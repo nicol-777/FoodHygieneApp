@@ -212,7 +212,7 @@ function showConsumerForm(issueType) {
     // Set the form title based on the selected issue
     const formTitleMap = {
         'food-safety': 'Report a Food Safety Issue',
-        'product-labeling': 'Report a Product Labeling Issue',
+        'product-labelling': 'Report a Product Labelling Issue',
         'unregistered-business': 'Report an Unregistered Food Business',
         'rating-problem': 'Report a Problem with a Food Hygiene Rating',
         'whistleblowing': 'Whistleblowing'
@@ -248,7 +248,7 @@ function showConsumerForm(issueType) {
     // Set the form title based on the selected issue
     const formTitleMap = {
         'food-safety': 'Report a Food Safety Issue',
-        'product-labeling': 'Report a Product Labeling Issue',
+        'product-labelling': 'Report a Product Labelling Issue',
         'unregistered-business': 'Report an Unregistered Food Business',
         'rating-problem': 'Report a Problem with a Food Hygiene Rating',
         'whistleblowing': 'Whistleblowing'
@@ -273,3 +273,315 @@ function goBackToConsumerOptions() {
 }
 
 
+
+
+
+
+
+
+
+
+
+function displayMarkers(data) {
+    // Remove existing markers
+    if (geojsonLayer) {
+        map.removeLayer(geojsonLayer);
+    }
+
+    // Display markers or suggest nearby businesses if no results found
+    if (data.features.length === 0) {
+        displayNearbyBusinesses();
+    } else {
+        geojsonLayer = L.geoJSON(data, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, {
+                    radius: 5,
+                    fillColor: "#007bff",
+                    color: "#007bff",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                });
+            },
+            onEachFeature: function (feature, layer) {
+                const popupContent = `<b>Business Name:</b> ${feature.properties.BUSINESS_NAME}<br>
+                                      <b>Address:</b> ${feature.properties.ADDRESS}<br>
+                                      <b>Rating:</b> ${feature.properties.RATING || 'No Rating'}<br>
+                                      <b>Rating Date:</b> ${feature.properties.RATING_DATE || 'N/A'}<br>
+                                      <img src="${feature.properties.RATING_GRAPHIC_URL}" alt="Rating Badge">`;
+                layer.bindPopup(popupContent);
+            }
+        }).addTo(map);
+    }
+}
+
+function displayNearbyBusinesses() {
+    // Example radius for nearby suggestions (e.g., 500 meters)
+    const nearbyRadius = 500;
+    const userLocation = map.getCenter(); // Use current map center or user location
+
+    // Filter original data for businesses within nearbyRadius
+    const nearbyBusinesses = {
+        type: "FeatureCollection",
+        features: originalData.features.filter(feature => {
+            const featureLocation = L.latLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]);
+            return userLocation.distanceTo(featureLocation) <= nearbyRadius;
+        })
+    };
+
+    // Notify user and display nearby businesses
+    alert("No exact matches found. Here are some nearby businesses:");
+    displayMarkers(nearbyBusinesses);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function loadGeoJSONData() {
+    fetch('Food_Hygiene_Ratings.geojson')
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(data => {
+            originalData = data;
+            displayMarkers(data);
+    
+
+
+        })
+        .catch(error => {
+            console.error('Error loading GeoJSON:', error);
+            alert("Data could not be loaded. Please try again later.");
+
+
+            // Optionally, load backup data source or display alternative message
+            loadBackupData();
+        });
+}
+
+function loadBackupData() {
+    fetch('Backup_Food_Hygiene_Ratings.geojson')
+        .then(response => response.json())
+        .then(data => {
+            displayMarkers(data);
+            alert("Displaying data from an alternative source.");
+        })
+        .catch(error => {
+            console.error('Error loading backup data:', error);
+            alert("Sorry, no data available at this time.");
+        });
+}
+
+
+
+function performSearch() {
+    const startTime = performance.now();
+
+    // Insert search functionality here (e.g., filtering data)
+    const filteredData = {
+        type: "FeatureCollection",
+        features: originalData.features.filter(/* filter logic */)
+    };
+
+    displayMarkers(filteredData);
+
+    const endTime = performance.now();
+    const timeTaken = endTime - startTime;
+
+    // Check if the operation is within 2 seconds
+    if (timeTaken > 2000) {
+        console.warn("Search operation took too long:", timeTaken.toFixed(2), "ms");
+    } else {
+        console.log("Search completed in:", timeTaken.toFixed(2), "ms");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const correctionForm = document.getElementById('correction-form');
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    correctionForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent actual form submission
+
+        // Display the confirmation message
+        confirmationMessage.style.display = 'block';
+
+        // Clear form fields after submission
+        correctionForm.reset();
+
+        // Optionally, hide confirmation message after 3 seconds
+        setTimeout(() => {
+            confirmationMessage.style.display = 'none';
+        }, 3000); // Display for 3 seconds
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function to show the form and scroll to it
+function showForm(issueType, isConsumer) {
+    // Set the form title based on the selected issue and user type
+    const formTitleMap = {
+        'food-safety': isConsumer ? 'Report a Food Safety Issue' : 'Report a Food Safety Incident',
+        'product-labelling': 'Report a Product Labelling Issue',
+        'unregistered-business': 'Report an Unregistered Food Business',
+        'rating-problem': 'Report a Problem with a Food Hygiene Rating',
+        'whistleblowing': 'Whistleblowing and reporting a food crime'
+    };
+    
+    // Update the form title based on the issueType and user type
+    document.getElementById('consumer-form-title').textContent = formTitleMap[issueType];
+    
+    // Show the form
+    const formContainer = document.getElementById('consumer-form-container');
+    formContainer.style.display = 'block';
+    
+    // Smoothly scroll to the form
+    window.scrollTo({
+        top: formContainer.offsetTop,
+        behavior: 'smooth'
+    });
+}
