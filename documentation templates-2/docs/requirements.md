@@ -16,6 +16,21 @@ TODO: Describe each use case (at least one per team member).
 
 |  USE-CASE ID  | UC1| 
 | -------------------------------------- | ------------------- |
+| **Description** |Users can search for food hygiene ratings and find restaurants with good ratings and report a food safety issue. |
+| **Actors** |Users |
+| **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
+| **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
+| **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
+| **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
+| **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+
+
+
+
+
+
+|  USE-CASE ID  | UC2| 
+| -------------------------------------- | ------------------- |
 | **Description** | TODO: Goal to be achieved by use case and sources for requirement |
 | **Actors** | TODO: List of actors involved in use case |
 | **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
@@ -23,6 +38,33 @@ TODO: Describe each use case (at least one per team member).
 | **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+
+
+
+
+
+
+
+
+
+
+
+|  USE-CASE ID  | UC3| 
+| -------------------------------------- | ------------------- |
+| **Description** | TODO: Goal to be achieved by use case and sources for requirement |
+| **Actors** | TODO: List of actors involved in use case |
+| **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
+| **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
+| **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
+| **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
+| **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+
+
+
+
+
+
+
 
 
 TODO: Your Use-Case diagram should include all use-cases.
