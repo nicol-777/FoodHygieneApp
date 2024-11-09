@@ -18,7 +18,7 @@ TODO: Describe each use case (at least one per team member).
 | -------------------------------------- | ------------------- |
 | **Description** |Users can search for food hygiene ratings and find restaurants with good ratings and report a food safety issue. |
 | **Actors** |Users |
-|**Assumptions** | .</td></tr>
+|**Assumptions** | </td></tr>
 | **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
 | **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
