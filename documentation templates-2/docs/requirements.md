@@ -54,7 +54,7 @@ TODO: Describe each use case (at least one per team member).
 | **Description** | Developers can access the Bristol Open Data API system for implementing food hygiene rating data.  |
 | **Actors** |Web app developer |
 | **Assumptions** | <ul><li> The developer has access to the Bristol Open Data API and necessary API credentials.</li><li> The API is easy to follow.</li><li>The API functions properly and returns data into the correct format. </li><li>The developer can integrate the APIs into the web app to make sure it functions correctly.
-| **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
+| **Steps** |1.Developer registers for API access.<br>2. Developer obtains login details and instructions.<br>3. Developer integrates the API into the food hygiene web app.<br>4. Developer tests to ensure the data displays correctly.<br>|
 | **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
