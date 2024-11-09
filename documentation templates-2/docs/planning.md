@@ -2,8 +2,7 @@
 
 ## Business Case
 
-###Problem statement  
-
+### Business benefits
 
 
 The problem addressed by this project is that people find it challenging to quickly check the hygiene standards of food businesses and the lack reliable, up-to-date information on food hygiene ratings for local businesses, This makes it difficult to decide where to eat or shop. While food hygiene ratings are available online, the information is scattered across different websites and isn't easily accessible. This makes it difficult for people to quickly check how clean a food business is before they visit. 
