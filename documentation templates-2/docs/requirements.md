@@ -26,8 +26,8 @@ TODO: Describe each use case (at least one per team member).
 
 
 TODO: Your Use-Case diagram should include all use-cases.
+![Case diagram official drawio (12)](https://github.com/user-attachments/assets/683a52c8-0202-48e4-9f4e-9290c9d6b2d1)
 
-![Insert your Use-Case Diagram Here](images/use-case.png)
 
 ## Software Requirements Specification
 ### Functional requirements
