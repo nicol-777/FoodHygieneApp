@@ -14,7 +14,7 @@ TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
 
-| TODO: USE-CASE ID e.g. UC1, UC2, ... | TODO: USE-CASE NAME | 
+|  USE-CASE ID  | UC1| 
 | -------------------------------------- | ------------------- |
 | **Description** | TODO: Goal to be achieved by use case and sources for requirement |
 | **Actors** | TODO: List of actors involved in use case |
