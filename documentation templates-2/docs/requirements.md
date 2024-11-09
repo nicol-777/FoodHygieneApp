@@ -19,8 +19,11 @@ TODO: Describe each use case (at least one per team member).
 | **Description** |Users can search for food hygiene ratings and find restaurants with good ratings and report a food safety issue. |
 | **Actors** |Users |
 |**Assumptions** | <ul><li>The user knows the name, location, or rating of the restaurant.</li><li>The user is familiar with using web apps and entering search terms.</li><li>The user has access to an internet device.</li><li>The food business being searched has a hygiene rating available on the platform.</li></ul> |</td></tr>
-| **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
-| **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
+| **Steps** | 1. User opens the web app.  
+            | 2. User enters a search term, such as the restaurant name, location, or selects a rating filter.  
+            | 3. The system sends a request to the API.  
+            | 4. The web app displays the food hygiene ratings.  
+            | 5. If no results are found, the app displays a message saying, “No results found,” and suggests alternative actions. || **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
 
