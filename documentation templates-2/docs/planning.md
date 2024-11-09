@@ -1,53 +1,48 @@
-Project Proposal 
+# Project Proposal
 
-Business Case 
-
-Planning 
+## Business Case
 
 Problem statement 
+The problem addressed by this project is that people find it challenging to quickly check the hygiene standards of food businesses and the lack reliable, 
+up-to-date information on food hygiene ratings for local businesses, This makes it difficult to decide where to eat or shop. While food hygiene ratings are available online, the information is scattered across different websites and isn't easily accessible. This makes it difficult for people to quickly check how clean a food business is before they visit. 
 
-The problem addressed by this project is people find it challenging to quickly check the hygiene standards of food and the lack of reliable up-to-date information on food hygiene ratings for local businesses, making it difficult to decide where to eat or shop. While Food hygiene ratings are available online, the information is scattered across different websites and isn't easily accessible. This makes it difficult for people to quickly check how clean a food business is before they visit. 
 
 
-Business benefits 
+### Business benefits
+● Customers will be able to easily access information about how clean food businesses are, helping them choose safer places to eat. 
 
-● Customers will easily be able to access information about how clean food businesses are, helping them choose safer places to eat. 
+● It will encourage businesses to maintain higher hygiene standards since their ratings will be publicly accessible.  
 
-● It will encourage businesses to maintain higher hygiene standards since their ratings will be public to everyone.  
+● It will provide easier access to and understanding hygiene ratings, without the need to search through different websites.  
 
-● It will be easier to access and understand hygiene ratings, without the need to search through different websites.  
-
-● It will increase customer engagement and will make people want to use the app regularly.  
-
- 
-
-Options Considered 
-
-● Manually searching Bristol open data council websites, however it will be difficult because the information is scattered and not easily accessible. 
-
-● Third-party apps may show food hygiene ratings but often lack full information for Bristol and are not regularly updated.  
-
-● The Food Standard Agency (FSA) has a website that provides food hygiene ratings; however, it may not be easy to use or offer the additional features that this project aims to provide easier search options and better layout and design.  
+● It will increase customer engagement and make people want to use the app regularly.  
 
  
- Expected Risks 
 
-● We need to ensure that the data is updated regularly to reflect real-time hygiene ratings. 
+### Options Considered
+● Manually searching Bristol open data council websites; however, this is difficult because the information is scattered and not easily accessible. 
 
-● There will be challenges in convincing users to switch to this platform from other established services. 
+● Third-party apps may show food hygiene ratings but often lack complete information for Bristol and are not regularly updated.  
 
-● Dealing with technical difficulties when connecting various data sources or API failures could disrupt the availability of hygiene data. 
+● The Food Standard Agency (FSA) has a website that provides food hygiene ratings; however, it may not be user-friendly or offer the additional features that this project aims to provide, such as easier search options and a better layout and design.  
 
-● Managing limited time might affect how many features we can add to our web app. 
+ 
+  
+### Expected Risks
+● Ensuring that the data is updated regularly to reflect real-time hygiene ratings. 
 
-● Making sure the platform is easy to navigate, use and understand.  
+● Convincing users to switch to this platform from other established services. 
 
-● The platform deals with public data, so we need to ensure that the system has strong security and is protected from unauthorised access or data tampering. 
+● Handling technical difficulties when connecting various data sources or managing API failures, which could disrupt the availability of hygiene data. 
+
+● Ensuring that the platform is easy to navigate, use, and understand.  
+
+● Since the platform deals with public data, it must have strong security to protect it from unauthorised access or data tampering.
 
 
-Project Scope  
 
-● A map showing food hygiene ratings for Bristol based businesses. 
+## Project Scope
+● A map showing food hygiene ratings for Bristol-based businesses. 
 
 ● Users can search to find businesses by name and location. 
 
@@ -57,6 +52,25 @@ Project Scope
 
  
 <img width="1190" alt="Screenshot 2024-10-24 at 22 08 43" src="https://github.com/user-attachments/assets/f1d87695-6e43-45db-8769-faeac20d3e8c">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
