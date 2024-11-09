@@ -35,12 +35,7 @@ TODO: Describe each use case (at least one per team member).
 | **Actors** |Business owner |
 | **Assumptions** | <ul><li>The business owner has access to the food hygiene web app.</li><li>Their food business has already been inspected and rated.</li><li>The business owner can navigate through the chatbot to request a correction. </li><li>The chatbot is available for handling correction requests.
 </td></tr>
-| **Steps** | 1. User opens the web app.<br>2. User enters a search term, such as the restaurant name, location, or selects a rating filter.<br>3. The system sends a request to the API.<br>4. The web app displays the food hygiene ratings.<br>|
-
-
-
-
-
+| **Steps** |
 | **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
