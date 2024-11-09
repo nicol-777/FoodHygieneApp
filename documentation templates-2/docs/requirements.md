@@ -34,7 +34,7 @@ TODO: Describe each use case (at least one per team member).
 | **Description** |The business owner can verify their food hygiene rating for accuracy and request a correction if necessary.  |
 | **Actors** |Business owner |
 | **Assumptions** | <ul><li>The business owner has access to the food hygiene web app.</li><li>Their food business has already been inspected and rated.</li><li>The business owner can navigate through the chatbot to request a correction. </li><li>The chatbot is available for handling correction requests.
-| **Steps** | 1. Business owner opens web app.<br>2.Business owner searches for their food business by name or location.<br>3 The system displays their food hygiene rating and other details.<br>4 If the information is incorrect, the business owner uses the chatbot to navigate to the correction form. <br>
+| **Steps** | 1. Business owner opens web app.<br>2.Business owner searches for their food business by name or location.<br>3The system displays their food hygiene rating and other details.<br>4If the information is incorrect, the business owner uses the chatbot to navigate to the correction form.<br>|
 |*Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
