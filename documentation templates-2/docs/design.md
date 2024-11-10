@@ -50,12 +50,15 @@ af52d9f8e0e1">
 
 
 
-<img width="647" alt="Screenshot 2024-11-10 at 15 55 46" src="https://github.com/user-attachments/assets/f4cc4923-843c-4baa-81be-c39c42dd37eb">
 
 
 
 
 
-<img width="648" alt="Screenshot 2024-11-10 at 15 56 30" src="https://github.com/user-attachments/assets/2c473a65-4b81-4300-b297-d1d2385a3ea7">
+
+
+
+
+
 
 
