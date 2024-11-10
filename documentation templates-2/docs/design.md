@@ -11,3 +11,9 @@ TODO: Specify and develop a user interface mockup using a wireframe.
 
 
 ![Untitled Diagram drawio (5)](https://github.com/user-attachments/assets/2f2f3c3c-114d-46dd-ad20-10a1573c2e73)
+
+
+
+![Untitled Diagram drawio (6)](https://github.com/user-attachments/assets/bfa3104e-8873-4348-b48b-31b05b143e22)
+
+
