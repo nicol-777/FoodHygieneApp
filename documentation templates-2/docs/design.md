@@ -33,7 +33,7 @@ TODO: Specify and develop a user interface mockup using a wireframe.
 
 
 
-[Web app food hygiene (33).pdf](https://github.com/user-attachments/files/17691816/Web.app.food.hygiene.33.pdf)
 
+<img width="957" alt="Screenshot 2024-11-10 at 14 50 53" src="https://github.com/user-attachments/assets/03863b56-2b5d-427c-bd94-060d25d8ad70">
 
 
