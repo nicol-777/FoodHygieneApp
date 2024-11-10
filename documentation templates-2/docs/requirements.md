@@ -73,14 +73,29 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 ## Software Requirements Specification
 ### Functional requirements
-TODO: create a list of functional requirements. 
-    e.g. "The system shall ..."
-    Give each functional requirement a unique ID. e.g. FR1, FR2, ...
-    Indicate which UC the requirement comes from.
+● FR1 The system shall allow users to search for food hygiene rating using business names, location or rating filters (From UC1)  
 
+● FR2 The system shall retrieve and display food hygiene ratings from the Bristol Open Data API. (From UC1) 
+
+● FR3 The system shall allow food business owners to search for their food hygiene rating by name or location. (From UC2) 
+
+● FR4 The system shall guide business owners to request correction or report issues to their food hygiene data through a chatbot that directs them to the correction or reporting issue form. (From UC2) 
+
+● FR5 The system shall guide users to report issues to their food hygiene data through a chatbot that directs them to the reporting issue form. (From UC1) 
+
+● FR6 The system shall allow web app developers to integrate and test the Bristol Open Data API to ensure the correct data is retrieved and displayed. (From UC3)  
 
 ### Non-Functional Requirements
-TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
-Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
+● NFR1 The system shall respond to user searches within 2 seconds. (From UC1, UC3) 
 
-Indicate which UC the requirement comes from.
+● NFR2 The system shall be available 24/7, allowing business owners to access it anytime. (From UC2)  
+
+● NFR3 The system shall ensure data security through HTTPS and encryption and GDPR regulations. (From UC3)  
+
+● NFR4 The system shall handle API issues by providing user-friendly messages
+or suggesting alternatives when the API is down.  (From UC1, UC3) 
+
+
+
+
+
