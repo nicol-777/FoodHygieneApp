@@ -41,7 +41,7 @@ TODO: Describe each use case (at least one per team member).
 
 |  USE-CASE ID  | UC1| 
 | -------------------------------------- | ------------------- |
-| **Description** |Users can search for food hygiene ratings and find restaurants with good ratings and report a food safety issue. |
+| **Description** |Users can search for food hygiene ratings and find restaurants with good ratings or report a food safety issue. |
 | **Actors** |Users (general public, consumers) |
 |**Assumptions** | <ul><li>The user knows the name, location, or rating of the restaurant.</li><li>The user is familiar with using web apps and entering search terms.</li><li>The user has access to an internet device.</li><li>The food business being searched has a hygiene rating available on the platform. </li><li>The user is able to interact with the chatbot to report issues.|
 | **Steps** | 1. User opens the web app and navigates to the search section.<br>2. User enters a search term, such as the business name, location, or selects a rating filter.<br>3. The system sends a request to the Bristol Open Data API.<br>4. System displays the search results on the map with markers for each matching business.<br>5. System provides a fallback option with nearby businesses if no exact matches are found.<br>6. User clicks on a business marker to view details, including hygiene rating and address.<br>7. User interacts with the HelpBot chatbot if they wish to report an issue with the hygiene rating or other food safety concerns. |
@@ -56,9 +56,9 @@ TODO: Describe each use case (at least one per team member).
 
 |  USE-CASE ID  | UC2| 
 | -------------------------------------- | ------------------- |
-| **Description** |The business owner can verify their food hygiene rating for accuracy and request a correction if necessary.  |
+| **Description** |The business owner can verify their food hygiene rating for accuracy and request a correction if necessary through the chatbot.  |
 | **Actors** |Business owner |
-| **Assumptions** | <ul><li>The business owner has access to the food hygiene web app.</li><li>Their food business has already been inspected and rated.</li><li>The business owner can navigate through the chatbot to request a correction. </li><li>The chatbot is available for handling correction requests.
+| **Assumptions** | <ul><li>The business owner can access the food hygiene web app and navigate the chatbot.</li><li>Their food business has already been inspected and rated.</li><li>The business owner can navigate through the chatbot to request a correction. </li><li>The chatbot is available for handling correction requests.
 | **Steps** | 1. Business owner opens web app.<br>2. Business owner searches for their food business by name or location.<br>3. The system displays their food hygiene rating and other details.<br>4. If the information is incorrect, the business owner uses the chatbot to navigate to the correction form.<br>|
 |*Variations** | <ul><li>If the information on the platform is incorrect, the business owner can report it through the chatbot. The chatbot provides options to guide the user to the correction request form.</li><li>Appeal for hygiene rating change after new inspection: If the business has a recent inspection, The owner can request an update through the chatbot.|
 | **Non-functional** |The web app should be available 24/7, allowing business owners to check their ratings anytime.|
