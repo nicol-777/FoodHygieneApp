@@ -46,8 +46,8 @@ TODO: Describe each use case (at least one per team member).
 |**Assumptions** | <ul><li>The user knows the name, location, or rating of the restaurant.</li><li>The user is familiar with using web apps and entering search terms.</li><li>The user has access to an internet device.</li><li>The food business being searched has a hygiene rating available on the platform.</li></ul> |</td></tr>
 | **Steps** | 1. User opens the web app.<br>2. User enters a search term, such as the restaurant name, location, or selects a rating filter.<br>3. The system sends a request to the API.<br>4. The web app displays the food hygiene ratings.<br>|
 |**Variations** |<ul><li>If no results are found, the app displays a message saying, “No results found,” and suggests nearby options.</li><li> Search by current location (Geolocation): User allows location access to find nearby businesses. App displays businesses around the user's current location.</li><li>Partial name search: User enters a partial name of the business. The system provides possible matches based on the partial input.
-| **Non-functional** |The search should return the result within 2 seconds on the screen.  |
-| **Issues** |  The system should handle situations where the API is unavailable to prevent user disruptions.|
+| **Non-functional** |<ul><li>The search should return the result within 2 seconds on the screen.</li><li>The map should automatically update with nearby suggestions if no results match exactly. |
+| **Issues** |  The system should handle API outages gracefully by loading backup data from a secondary GeoJSON file and informing users. |
 
 
 
@@ -60,7 +60,7 @@ TODO: Describe each use case (at least one per team member).
 | **Actors** |Business owner |
 | **Assumptions** | <ul><li>The business owner has access to the food hygiene web app.</li><li>Their food business has already been inspected and rated.</li><li>The business owner can navigate through the chatbot to request a correction. </li><li>The chatbot is available for handling correction requests.
 | **Steps** | 1. Business owner opens web app.<br>2. Business owner searches for their food business by name or location.<br>3. The system displays their food hygiene rating and other details.<br>4. If the information is incorrect, the business owner uses the chatbot to navigate to the correction form.<br>|
-|*Variations** |If the information on the platform is incorrect, the business owner can report it through the chatbot. The chatbot provides options to guide the user to the correction request form. |
+|*Variations** | <ul><li>If the information on the platform is incorrect, the business owner can report it through the chatbot. The chatbot provides options to guide the user to the correction request form.</li><li>Appeal for hygiene rating change after new inspection: If the business has a recent inspection, The owner can request an update through the chatbot.|
 | **Non-functional** |The web app should be available 24/7, allowing business owners to check their ratings anytime.|
 | **Issues** |The web app must be capable of handling cases where a food business data is missing or outdated.  |
 
