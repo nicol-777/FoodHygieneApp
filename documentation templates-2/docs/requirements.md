@@ -5,6 +5,7 @@
 ### User stories
 TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
     Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
+
 ● As user, I want to search for food hygiene ratings by business name, location or rating so i can make informed choices about where to eat or shop.  
 
 ● As a web app developer, I want to be able to have access to the Bristol Open Data API and implement it into the app to retrieve accurate food hygiene data.  
