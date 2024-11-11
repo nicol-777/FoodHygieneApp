@@ -26,6 +26,7 @@ TODO: Write brief user stories to explain how various actors would interact with
  
 ### Actors
 TODO: List and describe the actors/users for this product.
+
 ● Users: individuals who want to view and search for food hygiene ratings for local food businesses in Bristol to make informed decisions on where to eat and report issues or submit appeals.  
 
 ● Business owners: Food business owners in Bristol who want to access information about their food hygiene rating to maintain accurate and UpToDate information and who need to report corrections, appeal rating, or report incidents.  
