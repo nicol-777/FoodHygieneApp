@@ -76,14 +76,13 @@ TODO: Describe each use case (at least one per team member).
 
 |  USE-CASE ID  | UC3| 
 | -------------------------------------- | ------------------- |
-| **Description** | Developers can access the Bristol Open Data API system for implementing food hygiene rating data.  |
+| **Description** | Developers can access the Bristol Open Data API system to implementing food hygiene rating data with fallback and error handling.  |
 | **Actors** |Web app developer |
-| **Assumptions** | <ul><li> The developer has access to the Bristol Open Data API and necessary API credentials.</li><li> The API is easy to follow.</li><li>The API functions properly and returns data into the correct format. </li><li>The developer can integrate the APIs into the web app to make sure it functions correctly.
-| **Steps** |1. Developer registers for API access.<br>2. Developer obtains login details and instructions.<br>3. Developer integrates the API into the food hygiene web app.<br>4. Developer tests to ensure the data displays correctly.<br>|
-| **Variations** |If the API fails, the developer should troubleshoot and report the issue to Bristol Open data.|
-| **Non-functional** |The API should be secure, and it should send data quickly within 2 seconds.  |
-| **Issues** |If the API is slow or shuts down, the app should display a message or provide an alternative solution to the user.  |
-
+| **Assumptions** | <ul><li> The developer has access to the Bristol Open Data API and necessary API credentials.</li><li> The API functions correctly and returns data in the correct format for integration into the web app.</li><li>The developer is able to implement backup methods in case the API fails.
+| **Steps** |1. Developer registers for API access and obtains login credentials.<br>2. Developer integrates the API into the web app, allowing for real-time data display.<br>3. System automatically displays hygiene ratings and location markers on the map upon each user query.<br>4. If the API fails, System switches to loading backup data from a local GeoJSON file and displays a message alerting users to the fallback data source. |
+| **Variations** |<ul><li> If the API fails, the system displays an alert about using a backup data source and loads the backup GeoJSON file.</li><li> If the API response time exceeds 2 seconds, the system logs a warning to help enhance future performance.  |
+| **Non-functional** |<ul><li> The API should be secure, capable of retrieving data within 2 seconds.</li><li> Fallback data should be available without noticeable delay to the user if the primary API fails.|
+| **Issues** |If both the API and backup data fail, the app should display and error message, asking the user to try again later. 
 
 
 
