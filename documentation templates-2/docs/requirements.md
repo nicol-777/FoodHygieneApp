@@ -44,7 +44,8 @@ TODO: Describe each use case (at least one per team member).
 | **Actors** |Users |
 |**Assumptions** | <ul><li>The user knows the name, location, or rating of the restaurant.</li><li>The user is familiar with using web apps and entering search terms.</li><li>The user has access to an internet device.</li><li>The food business being searched has a hygiene rating available on the platform.</li></ul> |</td></tr>
 | **Steps** | 1. User opens the web app.<br>2. User enters a search term, such as the restaurant name, location, or selects a rating filter.<br>3. The system sends a request to the API.<br>4. The web app displays the food hygiene ratings.<br>|
-|**Variations** |<ul><li>If no results are found, the app displays a message saying, “No results found,” and suggests nearby options.</li><li> Search by current location (Geolocation): User allows location access to find nearby businesses. App displays businesses around the user's current location.</li></ul>| **Non-functional** |The search should return the result within 2 seconds on the screen.  |
+|**Variations** |<ul><li>If no results are found, the app displays a message saying, “No results found,” and suggests nearby options.</li><li> Search by current location (Geolocation): User allows location access to find nearby businesses. App displays businesses around the user's current location.
+| **Non-functional** |The search should return the result within 2 seconds on the screen.  |
 | **Issues** |  The system should handle situations where the API is unavailable to prevent user disruptions.|
 
 
