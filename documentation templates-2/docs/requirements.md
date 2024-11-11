@@ -58,11 +58,11 @@ TODO: Describe each use case (at least one per team member).
 | -------------------------------------- | ------------------- |
 | **Description** |The business owner can verify their food hygiene rating for accuracy and request a correction if necessary through the chatbot.  |
 | **Actors** |Business owner |
-| **Assumptions** | <ul><li>The business owner can access the food hygiene web app and navigate the chatbot.</li><li>Their food business has already been inspected and rated.</li><li>The business owner can navigate through the chatbot to request a correction. </li><li>The chatbot is available for handling correction requests.
-| **Steps** | 1. Business owner opens web app.<br>2. Business owner searches for their food business by name or location.<br>3. The system displays their food hygiene rating and other details.<br>4. If the information is incorrect, the business owner uses the chatbot to navigate to the correction form.<br>|
-|*Variations** | <ul><li>If the information on the platform is incorrect, the business owner can report it through the chatbot. The chatbot provides options to guide the user to the correction request form.</li><li>Appeal for hygiene rating change after new inspection: If the business has a recent inspection, The owner can request an update through the chatbot.|
-| **Non-functional** |The web app should be available 24/7, allowing business owners to check their ratings anytime.|
-| **Issues** |The web app must be capable of handling cases where a food business data is missing or outdated.  |
+| **Assumptions** | <ul><li>The business owner can access the food hygiene web app and navigate the chatbot.</li><li>The business owner's establishment has an existing hygiene rating in the database.</li><li>The chatbot is capable of handling correction requests for incorrect ratings.
+| **Steps** | 1. Business owner opens web app and searches for their food business by name or location.<br>2. System displays their food hygiene rating along with other relevant details.<br>3. If the information is incorrect, the Business Owner uses the HelpBot chatbot to navigate to the correction request form.<br>4. System presents the correction form, allowing the Business Owner to provide details and submit a request for updating their rating information. <br>|
+|*Variations** | <ul><li>If the business is not found, HelpBot suggests nearby businesses or provides an option to contact support.</li><li> If the data is missing, HelpBot can prompt the business owner to report the issue through the chatbot.|
+| **Non-functional** |The web app should be available 24/7, allowing business owners to check and report issues at any time.|
+| **Issues** |The system must handle scenarios where business data is missing or outdated, directing the business owner to contact support or report the issue through the chatbot.  |
 
 
 
