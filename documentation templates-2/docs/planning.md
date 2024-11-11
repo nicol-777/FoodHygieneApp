@@ -33,7 +33,8 @@ The problem addressed by this project is that people find it challenging to quic
 
 ● Convincing users to switch to this platform from other established services. 
 
-● Handling technical difficulties when connecting various data sources or managing API failures, which could disrupt the availability of hygiene data. 
+● Handling technical difficulties when connecting various data sources or managing API failures, which could disrupt the availability of 
+  hygiene data. 
 
 ● Ensuring that the platform is easy to navigate, use, and understand.  
 
