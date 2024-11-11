@@ -119,7 +119,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 ● NFR3 The system shall ensure data security through HTTPS, encryption and GDPR compliance. (From UC3)  
 
 ● NFR4 The system shall handle API issues by providing user-friendly messages
-or suggesting alternatives when the API is down.  (From UC1, UC3) 
+  or suggesting alternatives when the API is down.  (From UC1, UC3) 
 
 
 
