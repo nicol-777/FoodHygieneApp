@@ -15,9 +15,6 @@ TODO: Specify and develop a user interface mockup using a wireframe.
 
 
 
-<img width="1439" alt="Screenshot 2024-11-13 at 23 10 32" src="https://github.com/user-attachments/assets/73728d0b-ac2f-42ed-93a6-7a7aedafbe1d">
-
-
 
 
 
