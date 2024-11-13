@@ -2,12 +2,9 @@
 
 ## User Interface design
 TODO: Specify and develop a user interface mockup using a wireframe.
-<img width="1440" alt="Screenshot 2024-11-13 at 14 00 09" src="https://github.com/user-attachments/assets/0124aa18-b388-4df7-b41e-1ce66fc5cf15">
 
 
-
-<img width="1411" alt="Screenshot 2024-11-13 at 14 06 22" src="https://github.com/user-attachments/assets/4b95e5bf-44bd-4b89-9a55-23ad111d8648">
-
+<img width="1437" alt="Screenshot 2024-11-13 at 14 08 47" src="https://github.com/user-attachments/assets/fbcccc73-3672-40f4-9109-9344c4382b08">
 
 
 
