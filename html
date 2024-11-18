@@ -368,43 +368,64 @@
 
     <div id="map"></div> 
 
-    <div id="request-correction" style="display: none;"> 
-        <h3>Request Correction for a Business</h3> 
-        <form id="correction-form"> 
-            <div class="form-field-container"> 
-                <div class="form-field"> 
-                    <label for="owner-name">Your Name:</label> 
-                    <input type="text" id="owner-name" placeholder="Enter your name"> 
-                </div> 
-                <div class="form-field"> 
-                    <label for="owner-email">Your Email:</label> 
-                    <input type="email" id="owner-email" placeholder="Enter your email"> 
-                </div> 
-            </div> 
-            <div class="form-field"> 
-                <label for="correction-message">Describe the issue:</label> 
-                <textarea id="correction-message" rows="5" placeholder="Describe the incorrect information"></textarea> 
-            </div> 
-            <button type="submit" class="submit-btn">Submit</button> 
-        </form> 
-    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-        <!-- Confirmation message that appears after submission -->
-        <div id="confirmation-message" style="display: none; color: green; margin-top: 10px;">
-            Thank you for submitting your request. We will review it shortly!
-        </div>
-    </div>
     
     
+    
+       
+   
 
 
 
 
-<!-- Confirmation message that appears after submission -->
-<div id="confirmation-message" style="display: none; color: green; margin-top: 10px;">
-    Thank you for submitting your request. We will review it shortly!
-</div>
-</div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -472,21 +493,21 @@
 
 
                 <div id="consumer-options" style="display: none;">
-                    <h4>Consumer Options:</h4>
+                    <h4>Consumer options:</h4>
                     <button onclick="showForm('food-safety', true)">Report a Food Safety Issue</button>
                     <button onclick="showForm('product-labelling', true)">Report a Product Labelling Issue</button>
                     <button onclick="showForm('unregistered-business', true)">Report an Unregistered Food Business</button>
                     <button onclick="showForm('rating-problem', true)">Report a Problem with a Food Hygiene Rating</button>
-                    <button onclick="showForm('whistleblowing', true)">Whistleblowing and reporting a food crime </button>
+                    <button onclick="showForm('whistleblowing', true)">Whistleblowing and Reporting a Food Crime </button>
                     <div style="margin-top: 10px;"> <!-- Add margin for spacing -->
                         <button class="back-btn" onclick="goBackToHelpOptions()">Back</button> <!-- Back button for consumer options -->
                     </div> <!-- Closing div for consumer options -->
                 </div>
                 
                 <div id="business-options" style="display: none;">
-                    <h4>Business Options:</h4>
+                    <h4>Business options:</h4>
                     <button onclick="showForm('food-safety', false)">Report a Food Safety Incident</button>
-                    <button onclick="showForm('whistleblowing', false)">Whistleblowing and reporting a food crime</button>
+                    <button onclick="showForm('whistleblowing', false)">Whistleblowing and Reporting a Food Crime</button>
                     <button onclick="showForm('rating-problem', false)">Report a Problem with a Food Hygiene Rating</button>
                     <div style="margin-top: 10px;">
                         <button class="back-btn" onclick="goBackToHelpOptions()">Back</button>
@@ -500,26 +521,6 @@
 
 
                 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -575,6 +576,32 @@
         </div> 
     </div> 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Leaflet JS --> 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> 
     <script src="script.js"></script> <!-- External JS file --> 
@@ -606,8 +633,11 @@
             toggleChat(); // Close the chatbot
             document.getElementById('request-correction').style.display = 'block'; // Show the form
             window.scrollTo({ top: document.querySelector('#request-correction').offsetTop, behavior: 'smooth' });
+    
+    
         }
 
+         
         // Provide search help
         function searchHelp() {
             const chatbotBody = document.getElementById('chatbot-body');
@@ -1096,7 +1126,6 @@
 
 
 
-
 <script>
     // Function to show the form and scroll to it only when activated by the chatbot
     function showForm(issueType, isConsumer) {
@@ -1138,6 +1167,188 @@
         }
     }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
