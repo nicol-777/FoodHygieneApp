@@ -16,7 +16,7 @@ TODO: Write brief user stories to explain how various actors would interact with
 
 ● As a user, I want to filter search results by rating, so i can identify businesses with a high standard of food hygiene.  
 
-● As a user, I want to report food safety issues through the web app, i can alert authorities to potential risks.  
+● As a user, I want to report food safety issues through the web app, so i can alert authorities to potential risks.  
 
 ● As a business owner, I want to appeal my hygiene rating, so i can address any issues.  
 
