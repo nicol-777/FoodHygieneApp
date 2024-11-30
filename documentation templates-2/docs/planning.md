@@ -52,9 +52,9 @@ The problem addressed by this project is that people find it challenging to quic
 ● Users can view real-time from the Bristol Open Data API. 
 
  
-<img width="1190" alt="Screenshot 2024-10-24 at 22 08 43" src="https://github.com/user-attachments/assets/f1d87695-6e43-45db-8769-faeac20d3e8c">
 
 
+![context diagram  drawio (4)](https://github.com/user-attachments/assets/b0eaf799-d097-4a6b-916b-2bd86df6ec8a)
 
 
 
