@@ -113,7 +113,6 @@ TODO: Specify and develop a user interface mockup using a wireframe.
 
 
 
-![untitled (2)](https://github.com/user-attachments/assets/ed6142e9-3972-453a-bb67-08878ee630c9)
 
 
 
@@ -121,16 +120,7 @@ TODO: Specify and develop a user interface mockup using a wireframe.
 
 
 
-
-
-
-
-
-
-
-
-
-
+![untitled (3)](https://github.com/user-attachments/assets/c9ef64c7-eea2-4c40-978f-702e4df3f1c8)
 
 
 
