@@ -25,6 +25,15 @@ Customisation options are available in the app’s settings menu, where users ca
 TODO: Provide an outline of the project folder structure and the role of each file within it.
 provide a table listing the number of jslint warnings/reports for each module.
 
+
+
+<img width="761" alt="Screenshot 2024-12-07 at 17 06 23" src="https://github.com/user-attachments/assets/0d593ee8-db07-478f-94fe-ddc780f9196d">
+
+
+<img width="658" alt="Screenshot 2024-12-07 at 17 10 22" src="https://github.com/user-attachments/assets/6be54283-22d2-4e19-8705-cf08387ff4cd">
+
+
+
 ## Software Architecture
 TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
 
