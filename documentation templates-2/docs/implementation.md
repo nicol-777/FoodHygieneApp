@@ -10,8 +10,7 @@ The web application uses a GeoJSON dataset (Food_Hygiene_Ratings.geojson) that c
 ## Known issues  
 
 ● The dataset may not always display the most up-to-date information if inspections are not logged promptly. 
-
-• Some businesses might be missing from the dataset or have incomplete information.  
+● Some businesses might be missing from the dataset or have incomplete information.  
 
 
 ## Configuration data  
