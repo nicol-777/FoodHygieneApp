@@ -8,8 +8,8 @@ The web application uses a GeoJSON dataset (Food_Hygiene_Ratings.geojson) that c
 
 Known issues  
 ● The dataset may not always display the most up-to-date information if inspections are not logged promptly. 
-● Some businesses might be missing from the dataset or have incomplete information.  
 
+● Some businesses might be missing from the dataset or have incomplete information.  
 Configuration data  
 The web application uses geolocation to centre the map on your current location, helping you easily find businesses nearby.  It also allows you to search and filter results by business name, location, or hygiene rating.  
 
