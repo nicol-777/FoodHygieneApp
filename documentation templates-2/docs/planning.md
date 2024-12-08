@@ -1,6 +1,6 @@
-# Planning section written by: Hafsa Robleh
+# Project Proposal
 
-## Project Proposal
+## Planning section written by: Hafsa Robleh
 
 ### Business Case
 
