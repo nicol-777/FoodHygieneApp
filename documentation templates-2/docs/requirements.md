@@ -99,7 +99,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 ## Software Requirements Specification
 ### This section was written by Hafsa Robleh
-#### Functional requirements
+### Functional requirements
 ● FR1 The system shall allow users to search for food hygiene rating using business names, location or rating filters (From UC1)  
 
 ● FR2 The system shall retrieve and display food hygiene ratings from the Bristol Open Data API. (From UC1) 
