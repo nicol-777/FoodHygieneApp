@@ -1,8 +1,9 @@
 # Requirements
 
 ## User Needs
+### Requirements Section written by: Hafsa Robleh
 
-### User stories
+#### User stories
 TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
     Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
 
