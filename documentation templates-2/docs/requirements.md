@@ -4,9 +4,6 @@
 ### Requirements Section written by: Hafsa Robleh
 
 #### User stories
-TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
-    Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
-
 ● As a user, I want to search for food hygiene ratings by business name, location, or rating, so i can make informed choices about where to eat or shop.  
 
 ● As a web app developer, I want to have access to the Bristol Open Data API and implement it into the app to retrieve accurate food hygiene data.  
@@ -42,7 +39,7 @@ TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
 
-|  USE-CASE ID  | UC1| 
+|  USE-CASE ID  | UC1 (Written by Hafsa Robleh) | 
 | -------------------------------------- | ------------------- |
 | **Description** |Users can search for food hygiene ratings and find restaurants with good ratings or report a food safety issue. |
 | **Actors** |Users (general public, consumers) |
@@ -57,7 +54,7 @@ TODO: Describe each use case (at least one per team member).
 
 
 
-|  USE-CASE ID  | UC2| 
+|  USE-CASE ID  | UC2 (Written by Hafsa Robleh) | 
 | -------------------------------------- | ------------------- |
 | **Description** |The business owner can verify their food hygiene rating for accuracy and request a correction if necessary through the chatbot.  |
 | **Actors** |Business owner |
@@ -77,7 +74,7 @@ TODO: Describe each use case (at least one per team member).
 
 
 
-|  USE-CASE ID  | UC3| 
+|  USE-CASE ID  | UC3 (Written by Hafsa Robleh) | 
 | -------------------------------------- | ------------------- |
 | **Description** | Developers can access the Bristol Open Data API system to implementing food hygiene rating data with fallback and error handling.  |
 | **Actors** |Web app developer |
@@ -95,11 +92,14 @@ TODO: Describe each use case (at least one per team member).
 
 
 TODO: Your Use-Case diagram should include all use-cases.
-![Case diagram official drawio (12)](https://github.com/user-attachments/assets/683a52c8-0202-48e4-9f4e-9290c9d6b2d1)
+
+![Case diagram official drawio (13)](https://github.com/user-attachments/assets/e7ad6bc0-fb5f-46fb-92d5-10ca1d298648)
+
 
 
 ## Software Requirements Specification
-### Functional requirements
+### This section was written by Hafsa Robleh
+#### Functional requirements
 ● FR1 The system shall allow users to search for food hygiene rating using business names, location or rating filters (From UC1)  
 
 ● FR2 The system shall retrieve and display food hygiene ratings from the Bristol Open Data API. (From UC1) 
