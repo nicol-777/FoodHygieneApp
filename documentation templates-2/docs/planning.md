@@ -1,8 +1,7 @@
 # Project Proposal
 
-## Planning section written by: Hafsa Robleh
-
-### Business Case
+## Business Case
+### Planning section written by: Hafsa Robleh
 
 #### Problem statement
 
