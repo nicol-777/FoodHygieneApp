@@ -54,11 +54,8 @@ The problem addressed by this project is that people find it challenging to quic
  
 
 
-![context diagram  drawio (5)](https://github.com/user-attachments/assets/e17d4557-70cf-4ccb-89ac-8a2f3106df0e)
 
-
-
-
+![context diagram  drawio (6)](https://github.com/user-attachments/assets/d1c56184-f9e9-476c-a916-45765569f59c)
 
 
 
