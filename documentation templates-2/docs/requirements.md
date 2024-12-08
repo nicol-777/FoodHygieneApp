@@ -25,7 +25,6 @@ i can use it anywhere.
 
  
 #### Actors
-TODO: List and describe the actors/users for this product.
 
 ● Users: individuals who want to view and search for food hygiene ratings for local food businesses in Bristol, to make informed decisions on where to eat, and to report issues or submit appeals.  
 
@@ -35,9 +34,6 @@ TODO: List and describe the actors/users for this product.
 
 
 #### Use Cases
-TODO: Describe each use case (at least one per team member).
-    Give each use case a unique ID, e.g. UC1, UC2, ...
-    Summarise these using the use-case template below.
 
 |  USE-CASE ID  | UC1 (Written by Hafsa Robleh) | 
 | -------------------------------------- | ------------------- |
@@ -91,7 +87,6 @@ TODO: Describe each use case (at least one per team member).
 
 
 
-TODO: Your Use-Case diagram should include all use-cases.
 
 
 ![Case diagram official drawio (14)](https://github.com/user-attachments/assets/4aa1a7b5-6db7-4d90-bbf3-1dc5fc35c4ce)
