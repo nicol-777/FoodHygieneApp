@@ -1,6 +1,7 @@
 # Design
 
 ## User Interface design
+### Design Section written by: Hafsa Robleh
 TODO: Specify and develop a user interface mockup using a wireframe.
 
 ![front 4 ](https://github.com/user-attachments/assets/ff9b1974-27f9-4b93-88b5-580ade48c86b)
