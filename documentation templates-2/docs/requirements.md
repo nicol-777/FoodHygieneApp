@@ -1,6 +1,6 @@
 # Requirements
 
-### User Needs
+## User Needs
 ### Requirements Section written by: Hafsa Robleh
 
 #### User stories
@@ -24,7 +24,7 @@ i can use it anywhere.
 ● As a user, I want to receive confirmation after submitting a report, so I know my submission was successful.  
 
  
-### Actors
+#### Actors
 TODO: List and describe the actors/users for this product.
 
 ● Users: individuals who want to view and search for food hygiene ratings for local food businesses in Bristol, to make informed decisions on where to eat, and to report issues or submit appeals.  
@@ -34,7 +34,7 @@ TODO: List and describe the actors/users for this product.
 ● Web app developer: Responsible for creating and maintaining the database, managing corrections, handling appeals and ensuring that the app is works properly with APIs to retrieve data from Bristol Open Data. 
 
 
-### Use Cases
+#### Use Cases
 TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
@@ -99,7 +99,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 ## Software Requirements Specification
 ### This section was written by Hafsa Robleh
-### Functional requirements
+#### Functional requirements
 ● FR1 The system shall allow users to search for food hygiene rating using business names, location or rating filters (From UC1)  
 
 ● FR2 The system shall retrieve and display food hygiene ratings from the Bristol Open Data API. (From UC1) 
@@ -112,7 +112,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 ● FR6 The system shall allow web app developers to integrate and test the Bristol Open Data API to ensure the correct data is retrieved and displayed. (From UC3)  
 
-### Non-Functional Requirements
+#### Non-Functional Requirements
 ● NFR1 The system shall respond to user searches within 2 seconds. (From UC1, UC3) 
 
 ● NFR2 The system shall be available 24/7, allowing business owners to access it anytime. (From UC2)  
