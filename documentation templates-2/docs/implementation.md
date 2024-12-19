@@ -99,10 +99,8 @@ In this system each layer only interacts with the one directly above or below it
 
 
 
+![component drawio (2)](https://github.com/user-attachments/assets/b0ede399-f35a-47f6-bf49-e76155deacd9)
 
-
-
-![Insert your component Diagram here](images/component.png)
 
 ## Bristol Open Data API
 TODO: Document each query to Bristol Open Data
