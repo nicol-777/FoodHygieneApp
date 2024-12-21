@@ -123,10 +123,11 @@ To ensure uninterrupted access to data, the app includes a backup data-loading f
 
 
 
+![class diagram drawio](https://github.com/user-attachments/assets/8a4657e5-9fb5-4580-925c-b459f54e2b71)
 
 
 
-![UML Class diagrams representing JSON query results](images/class1.png)
+
 TODO: Repeat as necessary
 
 # User guide
