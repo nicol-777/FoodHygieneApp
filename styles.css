@@ -153,7 +153,7 @@ input, select {
 
 .chatbot {
     width: 300px; /* Adjust width */
-    height: 300px;
+    height: 350px;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -283,12 +283,11 @@ button:hover {
 
 
 
-
-
-
-
-
-
+#map {
+    height: 600px;
+    width: 100%;
+    position: relative;  /* Ensures toolbar stays inside */
+}
 
 
 
@@ -297,6 +296,7 @@ button:hover {
 .chatbot-body {
     max-height: 400px; /* Adjust this value as needed */
     overflow-y: auto; /* Enable vertical scrolling */
+   
 }
 
 
@@ -365,6 +365,745 @@ button {
     font-size: 1rem;
     z-index: 1000;
 }
+
+
+
+
+
+
+
+
+
+
+
+#chat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #35a142;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+#chat-icon img {
+    width: 45px;
+    height: 45px;
+}
+
+#chat-icon:hover {
+    transform: scale(1.1);
+    background-color: #35b261;
+}
+
+
+
+
+
+
+
+
+
+#chat-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  /* Makes the image fully circular */
+    object-fit: cover;   /* Ensures the image scales well */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chatbot-icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.speech-bubble {
+    background-color: #4CAF50;  /* Keep your color */
+    color: #f7f3f3;
+    padding: 15px 20px;  /* Increase padding for a bigger bubble */
+    border-radius: 12px;  /* Slightly rounder edges */
+    white-space: nowrap;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Larger shadow for depth */
+    font-size: 16px;  /* Bigger text */
+    z-index: 1000;
+    border: 1px solid #4CAF50;
+    position: fixed;
+    bottom: 95px;  /* Maintain position */
+    right: 20px;
+}
+
+
+
+
+
+
+.chatbot-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;  /* Ensure chat panel is hidden by default */
+}
+
+
+
+/* Show speech bubble when hovering over the icon */
+.chatbot-icon-container:hover .speech-bubble {
+    display: block;
+}
+
+
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #4CAF50 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;  /* Keeps the icon on top */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hr {
+    display: none;  /* Hides any horizontal lines */
+}
+
+#chat-icon::before,
+#chat-icon::after {
+    display: none;  /* Remove any pseudo-elements that may cause lines */
+}
+
+.chatbot-container, .speech-bubble {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
