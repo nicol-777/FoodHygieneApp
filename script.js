@@ -747,154 +747,170 @@ document.getElementById('issue-form').addEventListener('submit', function (event
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function handleFormSubmission(event) {
     event.preventDefault(); // Stop form from submitting
 
-    // Get form and confirmation message
+    // Get form and create confirmation message
     const form = event.target;
     const confirmationMessage = document.createElement('div');
 
-    // Create confirmation message dynamically
-    confirmationMessage.textContent = "Thank you! Your report has been received. Our team will review it soon.";
-    confirmationMessage.style.color = "green";
-    confirmationMessage.style.marginTop = "250px";  // Increase margin even more
-    confirmationMessage.style.fontWeight = "bold";
-    confirmationMessage.style.textAlign = "center";
-    confirmationMessage.style.fontSize = "1.3em";
+    // Style the confirmation message with a modern card-like appearance
+    confirmationMessage.innerHTML = `
+        <div style="
+            max-width: 600px;
+            margin: 200px auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            background: white;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        ">
+            <h2 style="color: #4CAF50; margin-bottom: 20px;">Submission Successful</h2>
+            <p style="font-size: 1.1em; color: #555;">
+                Thank you! Your report has been received. Our team will review it soon.
+            </p>
+        </div>
+    `;
 
     // Append the message below the map
     const mapContainer = document.getElementById('map');
     mapContainer.parentNode.insertBefore(confirmationMessage, mapContainer.nextSibling);
 
-    // Add extra empty space to allow scrolling
+    // Add extra space for scrolling
     const spacer = document.createElement('div');
-    spacer.style.height = "700px";  // More scroll room
+    spacer.style.height = "1000px";  // Large space below the message for more scroll room
     mapContainer.parentNode.insertBefore(spacer, confirmationMessage.nextSibling);
 
-    // Hide form but keep chatbot container visible
+    // Hide the form but retain visibility of chatbot or other elements
     form.style.display = 'none';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
