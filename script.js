@@ -881,10 +881,10 @@ function handleFormSubmission(event) {
     // Create confirmation message dynamically
     confirmationMessage.textContent = "Thank you! Your report has been received. Our team will review it soon.";
     confirmationMessage.style.color = "green";
-    confirmationMessage.style.marginTop = "100px";  // Increase margin for spacing
+    confirmationMessage.style.marginTop = "250px";  // Increase margin even more
     confirmationMessage.style.fontWeight = "bold";
     confirmationMessage.style.textAlign = "center";
-    confirmationMessage.style.fontSize = "1.2em";
+    confirmationMessage.style.fontSize = "1.3em";
 
     // Append the message below the map
     const mapContainer = document.getElementById('map');
@@ -892,7 +892,7 @@ function handleFormSubmission(event) {
 
     // Add extra empty space to allow scrolling
     const spacer = document.createElement('div');
-    spacer.style.height = "400px";  // Increase height for more scroll room
+    spacer.style.height = "700px";  // More scroll room
     mapContainer.parentNode.insertBefore(spacer, confirmationMessage.nextSibling);
 
     // Hide form but keep chatbot container visible
