@@ -1,4 +1,4 @@
- // Initialize the map and set its view to Bristol's coordinates
+// Initialize the map and set its view to Bristol's coordinates
 var map = L.map('map').setView([51.4545, -2.5879], 12);
 
 // Add a tile layer to the map
@@ -164,7 +164,7 @@ function populateDropdown() {
         <option value="3">3 (Generally Satisfactory)</option>
         <option value="2">2 (Improvement Necessary)</option>
         <option value="1">1 (Major Improvement Necessary)</option>
-        <option value="0"> 0 (Urgent Improvement Necessary) </option>
+        <option value="0"> 0 (Urgent Improvement Necessary)  </option>
     `;
 }
 populateDropdown();
@@ -291,3 +291,610 @@ setInterval(() => {
         speechBubble.style.display = "none";
     }
 }, 30);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const issueForm = document.getElementById('issue-form');
+    const confirmation = document.getElementById('confirmation-message');
+    const chatbotContainer = document.getElementById('chatbot-forms-container');
+
+    if (issueForm) {
+        issueForm.addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form refresh
+
+            console.log("Form submitted!");  // Debugging check
+
+            // Force chatbot container and confirmation message to show
+            chatbotContainer.style.display = 'block';
+            confirmation.style.display = 'block';
+
+            // Optionally hide the form after submission
+            issueForm.style.display = 'none';
+
+            // Smooth scroll to chatbot container
+            window.scrollTo({
+                top: chatbotContainer.offsetTop,
+                behavior: 'smooth'
+            });
+
+            // Reset form fields for future submissions
+            issueForm.reset();
+        });
+    } else {
+        console.error("Form not found!");
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('issue-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Get form values
+    const name = document.getElementById('consumer-name').value.trim();
+    const email = document.getElementById('consumer-email').value.trim();
+    const details = document.getElementById('consumer-issue-details').value.trim();
+
+    const confirmationMessage = document.getElementById('confirmation-message');
+    const form = document.getElementById('issue-form');
+
+    // Check if all fields are filled
+    if (name && email && details) {
+        form.style.display = 'none';
+        confirmationMessage.style.display = 'block';
+        
+        // Reset the form after 5 seconds
+        setTimeout(() => {
+            confirmationMessage.style.display = 'none';
+            form.style.display = 'block';
+            form.reset();
+        }, 5000);
+    } else {
+        alert("Please complete all fields before submitting.");
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function handleFormSubmission(event) {
+    event.preventDefault(); // Stop form from submitting
+
+    // Get form and confirmation message
+    const form = event.target;
+    const confirmationMessage = document.createElement('div');
+
+    // Create confirmation message dynamically
+    confirmationMessage.textContent = "Thank you! Your report has been received. Our team will review it soon.";
+    confirmationMessage.style.color = "green";
+    confirmationMessage.style.marginTop = "100px";  // Increase margin for spacing
+    confirmationMessage.style.fontWeight = "bold";
+    confirmationMessage.style.textAlign = "center";
+    confirmationMessage.style.fontSize = "1.2em";
+
+    // Append the message below the map
+    const mapContainer = document.getElementById('map');
+    mapContainer.parentNode.insertBefore(confirmationMessage, mapContainer.nextSibling);
+
+    // Add extra empty space to allow scrolling
+    const spacer = document.createElement('div');
+    spacer.style.height = "400px";  // Increase height for more scroll room
+    mapContainer.parentNode.insertBefore(spacer, confirmationMessage.nextSibling);
+
+    // Hide form but keep chatbot container visible
+    form.style.display = 'none';
+}
