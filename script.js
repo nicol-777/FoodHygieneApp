@@ -747,6 +747,69 @@ document.getElementById('issue-form').addEventListener('submit', function (event
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function handleFormSubmission(event) {
     event.preventDefault(); // Stop form from submitting
 
@@ -770,6 +833,7 @@ function handleFormSubmission(event) {
             <p style="font-size: 1.1em; color: #555;">
                 Thank you! Your report has been received. Our team will review it soon.
             </p>
+            <p style="font-size: 0.9em; color: #777;">
         </div>
     `;
 
@@ -777,14 +841,22 @@ function handleFormSubmission(event) {
     const mapContainer = document.getElementById('map');
     mapContainer.parentNode.insertBefore(confirmationMessage, mapContainer.nextSibling);
 
-    // Add extra space for scrolling
-    const spacer = document.createElement('div');
-    spacer.style.height = "1000px";  // Large space below the message for more scroll room
-    mapContainer.parentNode.insertBefore(spacer, confirmationMessage.nextSibling);
-
-    // Hide the form but retain visibility of chatbot or other elements
+    // Hide the form immediately
     form.style.display = 'none';
+
+    // Trigger scroll to top before reload
+    window.onbeforeunload = () => {
+        window.scrollTo(0, 0);  // Force scroll to top before reload
+    };
+
+    // Simulate page restart after 3 seconds
+    setTimeout(() => {
+        window.location.reload();  // Full page reload
+    }, 3000);  // Delay for 3 seconds
 }
+
+
+
 
 
 
