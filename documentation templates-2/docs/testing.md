@@ -1,11 +1,11 @@
 # Testing
 
 ## Test Plan
-TODO: Describe any manual and automated (unit) tests. Uniquely identify each test case. Include prerequisites and test data.
 
-Test Runs
-TODO: For each test described above, indicate the current status. 
-Create a requirements traceability matrix to validate the completeness of the product.
+
+
+
+TODO: Add rows for each test, current status is eg. pass/fail
 
 | Use-Case ID | Requirement ID | Test Case | Status |
 | ----------- | -------------- | --------- | ------ |
@@ -28,13 +28,13 @@ Create a requirements traceability matrix to validate the completeness of the pr
    UC1        |  NFR1, NFR2    | Mobile responsiveness for dropdown.| Pass |
    UC3        |  FR6, NFR1, NFR4 | API fallback activates if API fails. | Pass |
    UC3        |  FR6, NFR1       | System switches to GeoJSON backup data. | Pass |
-   UC3        |  NFR3            | API integration follows secure protocols. | Pass |
-   
-     
+   UC3        |  NFR3            | API integration follows secure protocols. | Pass | 
+   **Written By**    | Hafsa Robleh                                                                       |     
 
      
 
 ## Test Descriptions 
+TODO: Describe any manual and automated (unit) tests. Uniquely identify each test case. Include prerequisites and test data.
 
 ---
 
@@ -45,7 +45,7 @@ Create a requirements traceability matrix to validate the completeness of the pr
 | **Prerequisites** | Data loaded from GeoJSON file.                                                                       |
 | **Test Data**     | Search by business name e.g., "Waterstones Cafe W".                                                   |
 | **Expected Result**| Matching business appears on map.                                                                    |
-| **Written By**    | Hafsa Robleh                                                                                         |
+| **Written By**    | Hafsa Robleh                                                                            |
 
 ---
 
@@ -173,8 +173,10 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
 
 
-
 ### Requirements Traceability Matrix
+Test Runs
+TODO: For each test described above, indicate the current status. 
+Create a requirements traceability matrix to validate the completeness of the product.
 
 | **Requirement ID** | **Description**                                     | **Use-Case ID** |
 | ------------------ | --------------------------------------------------- | --------------- |
@@ -191,4 +193,3 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
   
      
-     TODO: Add rows for each test, current status is eg. pass/fail
