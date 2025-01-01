@@ -38,8 +38,8 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
 ---
 
-### US1: Search by Business
-| **Field**         | **Details**                                                                                          |
+
+| **US1**         |**Search by Business**  |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**   | Enter business name and verify matching results are displayed on the map.                            |
 | **Prerequisites** | Data loaded from GeoJSON file.                                                                       |
@@ -49,8 +49,8 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
 ---
 
-### USC1: Search by Location
-| **Field**         | **Details**                                                                                          |
+
+| **UC1**         | **Search by Location**                         |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**   | Enter street, town, or postcode and verify matching results.                                          |
 | **Prerequisites** | Data loaded and filtered by address.                                                                 |
@@ -60,8 +60,8 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
 ---
 
-### UC1: Filter by Rating
-| **Field**         | **Details**                                                                                          |
+
+| **UC1**         | **Filter by Rating**                                                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**   | Select rating filter and verify correct businesses appear.                                            |
 | **Prerequisites** | Dropdown list with rating options.                                                                   |
@@ -71,8 +71,8 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
 ---
 
-### UC1: Marker Colours
-| **Field**         | **Details**                                                                                          |
+
+| **UC1**         | **Marker Colours**                                                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**   | Verify 0-rated businesses display red markers and 1-5 rated businesses display blue markers.          |
 | **Prerequisites** | GeoJSON data includes rating information.                                                            |
@@ -82,87 +82,97 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
 
 
-## Test Descriptions
-
 ---
 
-### UC1: Business Details Popup
-| **Field**           | **Details**                                                                                          |
+
+| **UC1**           | **Business Details Popup**                                                                                          |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Click marker to display business details.                                                            |
 | **Prerequisites**   | GeoJSON data with address and rating fields.                                                         |
 | **Test Data**       | <ul><li>Business Name: Waterstones Cafe W</li><li>Address: 11a Union Gallery, Broadmead, City Centre, Bristol BS1 3XD</li><li>Rating: 5</li><li>Rating Date: 2024-06-06</li></ul> |
 | **Expected Result** | Popup shows business name, address, and rating.                                                      |
+| **Written By**    | Hafsa Robleh                                                                                         |
 
 ---
 
-### UC1, UC2: Chatbot Interaction
-| **Field**           | **Details**                                                                                          |
+
+| **UC1, UC2**           | **Chatbot Interaction**                                                                           |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Click chatbot icon to open chat and view options for both consumers and businesses.                   |
 | **Prerequisites**   | Chatbot script is running.                                                                           |
 | **Test Data**       | <ul><li>Step 1: Click chatbot icon.</li><li>Step 2: Select "Yes" when prompted for help.</li><li>Step 3: View assistance options:</li><li><b>For Consumers:</b></li><li>Report a Food Safety Issue</li><li>Report a Product Labelling Issue</li><li>Report an Unregistered Food Business</li><li>Report a Problem with a Food Hygiene Rating</li><li>Whistleblowing and Reporting a Food Crime</li><li><b>For Businesses:</b></li><li>Report a Food Safety Incident</li><li>Report a Problem with a Food Hygiene Rating</li><li>Whistleblowing and Reporting a Food Crime</li></ul> |
 | **Expected Result** | Chatbot displays assistance options for consumers and businesses.                                     |
+| **Written By**    | Hafsa Robleh                                                                                         |
 
 ---
 
-### UC2: Report Issue Form
-| **Field**           | **Details**                                                                                          |
+
+| **UC2**           | **Report Issue Form**                                                                                          |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Submit issue form under map.                                                                         |
 | **Prerequisites**   | Form inputs for name, email, and issue details.                                                      |
 | **Test Data**       | <ul><li>Name: Jane Doe</li><li>Email: JaneDoe@outlook.com</li><li>Issue Description: "Human finger found in food".</li></ul> |
 | **Expected Result** | Confirmation message appears after submission, and form resets automatically.                        |
+| **Written By**    | Hafsa Robleh                                                                                         |
 
 ---
 
-### UC2: Chatbot Icon Visibility
-| **Field**           | **Details**                                                                                          |
+
+| **UC2**           | **Chatbot Icon Visibility**                                             |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Verify chatbot icon is visible and interactive.                                                      |
 | **Prerequisites**   | Chatbot script integrated.                                                                           |
 | **Test Data**       | <ul><li>Step 1: Verify chatbot greeting bubble appears on page load.</li><li>Step 2: Click chatbot icon.</li></ul> |
 | **Expected Result** | Chatbot greeting bubble displays on page load, and clicking the icon opens the chat interface.        |
+| **Written By**    | Hafsa Robleh                                                           |
 
 ---
 
-### UC1: Reset Form
-| **Field**           | **Details**                                                                                          |
+
+
+| **UC1**           | **Reset Form**                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Click reset button to clear inputs.                                                                  |
 | **Prerequisites**   | Search form displayed.                                                                               |
 | **Test Data**       | Fill form and click reset.                                                                           |
 | **Expected Result** | All input fields are cleared.                                                                        |
+| **Written By**    | Hafsa Robleh                                                                                         |
 
 ---
 
-### UC1: Mobile Dropdown
-| **Field**           | **Details**                                                                                          |
+
+| **UC1**           | **Mobile Dropdown**                                                   |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Verify dropdown functions on mobile.                                                                 |
 | **Prerequisites**   | Responsive design.                                                                                   |
 | **Test Data**       | Open site on mobile view.                                                                            |
 | **Expected Result** | Dropdown is fully functional.                                                                        |
+| **Written By**    | Hafsa Robleh                                                                                         |
 
 ---
 
-### UC3: API Fallback Test
-| **Field**           | **Details**                                                                                          |
+
+| **UC3**           | **API Fallback Test**                                                 |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Turn off the API to check if the website automatically uses backup data from the GeoJSON file.       |
 | **Prerequisites**   | Disable API temporarily.                                                                             |
 | **Test Data**       | API failure event.                                                                                   |
 | **Expected Result** | Backup data from the GeoJSON file loads, and the map still shows business information.                |
+| **Written By**    | Hafsa Robleh                                                                                         |
 
 ---
 
-### UC3: Secure API Integration
-| **Field**           | **Details**                                                                                          |
+
+| **UC3**           | **Secure API Integration**                                            |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Verify API data transfer uses HTTPS and follows GDPR.                                                |
 | **Prerequisites**   | API integrated into web app.                                                                         |
 | **Test Data**       | API endpoint.                                                                                        |
 | **Expected Result** | Secure data transfer and encryption.                                                                 |
+| **Written By**    | Hafsa Robleh                                                                         |
+
+
+
 
 
 
