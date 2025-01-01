@@ -174,7 +174,19 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
 
 
+### Requirements Traceability Matrix
 
+| **Requirement ID** | **Description**                                     | **Use-Case ID** |
+| ------------------ | --------------------------------------------------- | --------------- |
+| FR1                | Search by business name or location.                | UC1             |
+| FR2                | Display hygiene ratings from Bristol Open Data API. | UC1             |
+| FR4                | Business owners request correction via chatbot.     | UC2             |
+| FR5                | Users report issues via chatbot.                    | UC1             |
+| FR6                | API integration and fallback process.               | UC3             |
+| NFR1               | System responds within 2 seconds.                   | UC1, UC3        |
+| NFR2               | System available 24/7.                              | UC2             |
+| NFR3               | Data security (HTTPS and GDPR).                     | UC3             |
+| NFR4               | API fallback during outage.                         | UC3             |
 
 
   
