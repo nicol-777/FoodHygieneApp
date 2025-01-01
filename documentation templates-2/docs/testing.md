@@ -61,7 +61,7 @@ Create a requirements traceability matrix to validate the completeness of the pr
 ---
 
 
-| **UC1**         | **Filter by Rating**                                                                                          |
+| **UC1**         | **Filter by Rating**                                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**   | Select rating filter and verify correct businesses appear.                                            |
 | **Prerequisites** | Dropdown list with rating options.                                                                   |
@@ -72,7 +72,7 @@ Create a requirements traceability matrix to validate the completeness of the pr
 ---
 
 
-| **UC1**         | **Marker Colours**                                                                                          |
+| **UC1**         | **Marker Colours**                                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**   | Verify 0-rated businesses display red markers and 1-5 rated businesses display blue markers.          |
 | **Prerequisites** | GeoJSON data includes rating information.                                                            |
@@ -85,7 +85,7 @@ Create a requirements traceability matrix to validate the completeness of the pr
 ---
 
 
-| **UC1**           | **Business Details Popup**                                                                                          |
+| **UC1**           | **Business Details Popup**                                                              |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Click marker to display business details.                                                            |
 | **Prerequisites**   | GeoJSON data with address and rating fields.                                                         |
@@ -102,7 +102,7 @@ Create a requirements traceability matrix to validate the completeness of the pr
 | **Prerequisites**   | Chatbot script is running.                                                                           |
 | **Test Data**       | <ul><li>Step 1: Click chatbot icon.</li><li>Step 2: Select "Yes" when prompted for help.</li><li>Step 3: View assistance options:</li><li><b>For Consumers:</b></li><li>Report a Food Safety Issue</li><li>Report a Product Labelling Issue</li><li>Report an Unregistered Food Business</li><li>Report a Problem with a Food Hygiene Rating</li><li>Whistleblowing and Reporting a Food Crime</li><li><b>For Businesses:</b></li><li>Report a Food Safety Incident</li><li>Report a Problem with a Food Hygiene Rating</li><li>Whistleblowing and Reporting a Food Crime</li></ul> |
 | **Expected Result** | Chatbot displays assistance options for consumers and businesses.                                     |
-| **Written By**    | Hafsa Robleh                                                                                         |
+| **Written By**    | Hafsa Robleh                                                                            |
 
 ---
 
@@ -113,13 +113,13 @@ Create a requirements traceability matrix to validate the completeness of the pr
 | **Prerequisites**   | Form inputs for name, email, and issue details.                                                      |
 | **Test Data**       | <ul><li>Name: Jane Doe</li><li>Email: JaneDoe@outlook.com</li><li>Issue Description: "Human finger found in food".</li></ul> |
 | **Expected Result** | Confirmation message appears after submission, and form resets automatically.                        |
-| **Written By**    | Hafsa Robleh                                                                                         |
+| **Written By**    | Hafsa Robleh                                                                           |
 
 ---
 
 
 | **UC2**           | **Chatbot Icon Visibility**                                             |
-|---------------------|-----------------------------------------------------------------------------------------------------|
+|---------------------|---------------------------------------------------------------------------------------|
 | **Description**     | Verify chatbot icon is visible and interactive.                                                      |
 | **Prerequisites**   | Chatbot script integrated.                                                                           |
 | **Test Data**       | <ul><li>Step 1: Verify chatbot greeting bubble appears on page load.</li><li>Step 2: Click chatbot icon.</li></ul> |
