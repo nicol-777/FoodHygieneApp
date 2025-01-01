@@ -29,7 +29,7 @@ TODO: Add rows for each test, current status is eg. pass/fail
    UC3        |  FR6, NFR1, NFR4 | API fallback activates if API fails. | Pass |
    UC3        |  FR6, NFR1       | System switches to GeoJSON backup data. | Pass |
    UC3        |  NFR3            | API integration follows secure protocols. | Pass | 
-   **Written By**    | Hafsa Robleh                                                                       |     
+ |  **Written By**    | Hafsa Robleh                                                                       |     
 
      
 
@@ -189,7 +189,6 @@ Create a requirements traceability matrix to validate the completeness of the pr
 | NFR2               | System available 24/7.                              | UC2             |
 | NFR3               | Data security (HTTPS and GDPR).                     | UC3             |
 | NFR4               | API fallback during outage.                         | UC3             |
-
-
+|  **Written By**    | Hafsa Robleh                                                                       |     
   
      
