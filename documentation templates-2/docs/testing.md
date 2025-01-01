@@ -96,7 +96,7 @@ Create a requirements traceability matrix to validate the completeness of the pr
 ---
 
 
-| **UC1, UC2**           | **Chatbot Interaction**                                                                           |
+| **UC1, UC2**     | **Chatbot Interaction**                                                                  |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Click chatbot icon to open chat and view options for both consumers and businesses.                   |
 | **Prerequisites**   | Chatbot script is running.                                                                           |
@@ -107,7 +107,7 @@ Create a requirements traceability matrix to validate the completeness of the pr
 ---
 
 
-| **UC2**           | **Report Issue Form**                                                                                          |
+| **UC2**           | **Report Issue Form**                                                                   |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**     | Submit issue form under map.                                                                         |
 | **Prerequisites**   | Form inputs for name, email, and issue details.                                                      |
