@@ -92,6 +92,13 @@ i can use it anywhere.
 ![Case diagram official drawio (14)](https://github.com/user-attachments/assets/4aa1a7b5-6db7-4d90-bbf3-1dc5fc35c4ce)
 
 
+
+<img width="760" alt="Screenshot 2025-01-02 at 17 21 24" src="https://github.com/user-attachments/assets/99282282-5f9a-440b-b34a-8727e7740a1b" />
+
+
+
+
+
 ## Software Requirements Specification
 ### This section was written by Hafsa Robleh
 #### Functional requirements
