@@ -93,7 +93,8 @@ i can use it anywhere.
 
 
 
-<img width="760" alt="Screenshot 2025-01-02 at 17 21 24" src="https://github.com/user-attachments/assets/99282282-5f9a-440b-b34a-8727e7740a1b" />
+<img width="750" alt="Robust diagram 1 " src="https://github.com/user-attachments/assets/27cac3e5-1f1d-430b-9db2-a3f7e28d83e0" />
+
 
 
 
