@@ -810,6 +810,323 @@ document.getElementById('issue-form').addEventListener('submit', function (event
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function handleFormSubmission(event) {
     event.preventDefault(); // Stop form from submitting
 
@@ -967,6 +1284,487 @@ function handleFormSubmission(event) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function displayNearbyBusinesses() {
+    const fallbackData = {
+        type: "FeatureCollection",
+        features: [
+            {
+                type: "Feature",
+                geometry: {
+                    type: "Point",
+                    coordinates: [-2.5890, 51.4550]
+                },
+                properties: {
+                    BUSINESS_NAME: "Nearby Deli",
+                    ADDRESS: "78 Market Road",
+                    RATING: 3
+                }
+            },
+            {
+                type: "Feature",
+                geometry: {
+                    type: "Point",
+                    coordinates: [-2.5905, 51.4565]  // Slightly offset coordinates for variety
+                },
+                properties: {
+                    BUSINESS_NAME: "Local Café",
+                    ADDRESS: "23 High Street",
+                    RATING: 4
+                }
+            },
+            {
+                type: "Feature",
+                geometry: {
+                    type: "Point",
+                    coordinates: [-2.5875, 51.4540]  // Another nearby location
+                },
+                properties: {
+                    BUSINESS_NAME: "Bristol Bakery",
+                    ADDRESS: "56 King Road",
+                    RATING: 5
+                }
+            }
+        ]
+    };
+
+    console.log("Displaying nearby businesses...");
+    displayMarkers(fallbackData);
+    alert("No exact matches found. Displaying nearby businesses.");
+}
+
+document.getElementById('search-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    console.log("Form submitted. Triggering nearby suggestions...");
+    displayNearbyBusinesses();  // Force nearby business suggestion for testing
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let alertTriggered = false;  // Global flag to track if alert is shown
+
+function displayMarkers(data) {
+    // Remove existing markers
+    if (geojsonLayer) {
+        map.removeLayer(geojsonLayer);
+    }
+
+    // Display markers or suggest nearby businesses if no results found
+    if (data.features.length === 0) {
+        displayNearbyBusinesses();
+    } else {
+        geojsonLayer = L.geoJSON(data, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, {
+                    radius: 5,
+                    fillColor: "#007bff",
+                    color: "#007bff",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                });
+            },
+            onEachFeature: function (feature, layer) {
+                const popupContent = `<b>Business Name:</b> ${feature.properties.BUSINESS_NAME}<br>
+                                      <b>Address:</b> ${feature.properties.ADDRESS}<br>
+                                      <b>Rating:</b> ${feature.properties.RATING || 'No Rating'}<br>
+                                      <b>Rating Date:</b> ${feature.properties.RATING_DATE || 'N/A'}<br>
+                                      <img src="${feature.properties.RATING_GRAPHIC_URL}" alt="Rating Badge">`;
+                layer.bindPopup(popupContent);
+            }
+        }).addTo(map);
+    }
+}
+
+function displayNearbyBusinesses() {
+    // Example radius for nearby suggestions (e.g., 500 meters)
+    const nearbyRadius = 500;
+    const userLocation = map.getCenter();  // Use current map center or user location
+
+    // Filter original data for businesses within nearbyRadius
+    const nearbyBusinesses = {
+        type: "FeatureCollection",
+        features: originalData.features.filter(feature => {
+            const featureLocation = L.latLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]);
+            return userLocation.distanceTo(featureLocation) <= nearbyRadius;
+        })
+    };
+
+    // Trigger alert only once
+    if (!alertTriggered) {
+        alert("No exact matches found. Here are some nearby businesses:");
+        alertTriggered = true;
+    }
+
+    // Display markers for nearby businesses
+    displayMarkers(nearbyBusinesses);
+    
+    // Reset the flag after showing markers
+    setTimeout(() => {
+        alertTriggered = false;  // Allow future alerts on subsequent searches
+    }, 1000);
+}
 
 
 
