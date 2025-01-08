@@ -1585,59 +1585,12 @@ function handleFormSubmission(event) {
 
 
 
-function displayNearbyBusinesses() {
-    const fallbackData = {
-        type: "FeatureCollection",
-        features: [
-            {
-                type: "Feature",
-                geometry: {
-                    type: "Point",
-                    coordinates: [-2.5890, 51.4550]
-                },
-                properties: {
-                    BUSINESS_NAME: "Nearby Deli",
-                    ADDRESS: "78 Market Road",
-                    RATING: 3
-                }
-            },
-            {
-                type: "Feature",
-                geometry: {
-                    type: "Point",
-                    coordinates: [-2.5905, 51.4565]  // Slightly offset coordinates for variety
-                },
-                properties: {
-                    BUSINESS_NAME: "Local Café",
-                    ADDRESS: "23 High Street",
-                    RATING: 4
-                }
-            },
-            {
-                type: "Feature",
-                geometry: {
-                    type: "Point",
-                    coordinates: [-2.5875, 51.4540]  // Another nearby location
-                },
-                properties: {
-                    BUSINESS_NAME: "Bristol Bakery",
-                    ADDRESS: "56 King Road",
-                    RATING: 5
-                }
-            }
-        ]
-    };
 
-    console.log("Displaying nearby businesses...");
-    displayMarkers(fallbackData);
-    alert("No exact matches found. Displaying nearby businesses.");
-}
 
-document.getElementById('search-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    console.log("Form submitted. Triggering nearby suggestions...");
-    displayNearbyBusinesses();  // Force nearby business suggestion for testing
-});
+
+
+
+
 
 
 
@@ -1765,18 +1718,6 @@ function displayNearbyBusinesses() {
         alertTriggered = false;  // Allow future alerts on subsequent searches
     }, 1000);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
