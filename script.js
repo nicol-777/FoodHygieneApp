@@ -99,6 +99,7 @@ if (navigator.geolocation) {
             .openPopup();
     }, () => {
         console.error('Geolocation permission denied or not available.');
+
     });
 } else {
     console.error('Geolocation is not supported by this browser.');
@@ -124,7 +125,7 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
             // Handle filtering for 0-rated businesses
             if (ratingFilter === '0') {
-                return feature.properties.RATING === 0 && nameMatches && locationMatches;
+                return Number(feature.properties.RATING) === 0 && nameMatches && locationMatches;
             }
 
             const rating = feature.properties.RATING !== undefined ? String(feature.properties.RATING) : '';
@@ -1655,7 +1656,42 @@ function handleFormSubmission(event) {
 
 
 
-let alertTriggered = false;  // Global flag to track if alert is shown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let alertTriggered = false;  // Persistent flag to track if alert has been shown
 
 function displayMarkers(data) {
     // Remove existing markers
@@ -1663,10 +1699,31 @@ function displayMarkers(data) {
         map.removeLayer(geojsonLayer);
     }
 
-    // Display markers or suggest nearby businesses if no results found
+    // Clear previous messages
+    document.getElementById('searchMessage').innerHTML = '';
+
+    // Check if no exact results were found
     if (data.features.length === 0) {
+        const selectedRating = parseFloat(document.getElementById('rating-filter').value);
+
+        if (selectedRating === 0) {
+            return;
+        }
+
+        // Show message for no matches
+        document.getElementById('searchMessage').innerHTML = 
+            "No exact matches found. Here are some nearby businesses.";
+
+        // Trigger alert only if not previously triggered
+        if (!alertTriggered) {
+            alert("No exact matches found. Suggesting nearby businesses.");
+            alertTriggered = true;  // Set flag to avoid further alerts
+        }
+
+        // Display nearby businesses (no alerts inside)
         displayNearbyBusinesses();
     } else {
+        // Display exact match markers
         geojsonLayer = L.geoJSON(data, {
             pointToLayer: function (feature, latlng) {
                 return L.circleMarker(latlng, {
@@ -1691,11 +1748,10 @@ function displayMarkers(data) {
 }
 
 function displayNearbyBusinesses() {
-    // Example radius for nearby suggestions (e.g., 500 meters)
     const nearbyRadius = 500;
-    const userLocation = map.getCenter();  // Use current map center or user location
+    const userLocation = map.getCenter();
 
-    // Filter original data for businesses within nearbyRadius
+    // Filter businesses within the nearby radius
     const nearbyBusinesses = {
         type: "FeatureCollection",
         features: originalData.features.filter(feature => {
@@ -1704,17 +1760,11 @@ function displayNearbyBusinesses() {
         })
     };
 
-    // Trigger alert only once
-    if (!alertTriggered) {
-        alert("No exact matches found. Here are some nearby businesses:");
-        alertTriggered = true;
+    // Display nearby business markers
+    if (nearbyBusinesses.features.length > 0) {
+        displayMarkers(nearbyBusinesses);
+    } else {
+        document.getElementById('searchMessage').innerHTML = 
+            "No nearby businesses found.";
     }
-
-    // Display markers for nearby businesses
-    displayMarkers(nearbyBusinesses);
-    
-    // Reset the flag after showing markers
-    setTimeout(() => {
-        alertTriggered = false;  // Allow future alerts on subsequent searches
-    }, 1000);
 }
