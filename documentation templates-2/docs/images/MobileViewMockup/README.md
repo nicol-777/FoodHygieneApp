@@ -1,4 +1,4 @@
-# Mobile View Mockup - Created by Hafsa
+# Mobile View Mockup - Created by Hafsa Robleh
 
 
 <img width="552" alt="Screenshot 2025-01-13 at 18 27 28" src="https://github.com/user-attachments/assets/64ff00b8-db14-42b4-99d7-aeb61bb7e672" />
