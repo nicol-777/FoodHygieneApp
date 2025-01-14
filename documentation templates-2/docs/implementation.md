@@ -149,3 +149,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 3: Searching by Location - Created by Hafsa Robleh
+
+
+![Your paragraph text (5)](https://github.com/user-attachments/assets/c96ca3b0-0060-48db-8626-9fd137e370e0)
+
+
