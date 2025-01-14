@@ -132,3 +132,12 @@ TODO: Repeat as necessary
 
 # User guide
 TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
+
+
+
+# Use Case 1: Enabling Location Access
+
+
+![Screenshot 1 ](https://github.com/user-attachments/assets/312100c1-984a-440f-9332-b7a218fb4966)
+
+
