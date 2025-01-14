@@ -135,9 +135,14 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use Case 1: Enabling Location Access
+# Use Case 1: Enabling Location Access - Created by Hafsa Robleh
+
+![Use Case 1 Enabling Location Access](https://github.com/user-attachments/assets/476e5bab-a24a-4d87-829e-9e9d04713986)
 
 
-![Screenshot 1 ](https://github.com/user-attachments/assets/312100c1-984a-440f-9332-b7a218fb4966)
 
-# Use Case 2: Searching by Business Name
+# Use Case 2: Searching by Business Name  - Created by Hafsa Robleh
+
+![Your paragraph text (1)](https://github.com/user-attachments/assets/e311d051-9e3a-4ef1-9df8-b76114bce364)
+
+
