@@ -140,4 +140,4 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 ![Screenshot 1 ](https://github.com/user-attachments/assets/312100c1-984a-440f-9332-b7a218fb4966)
 
-
+# Use Case 2: Searching by Business Name
