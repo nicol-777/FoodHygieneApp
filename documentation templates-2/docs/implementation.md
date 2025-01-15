@@ -161,13 +161,11 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 5: Rating 1 (Major Improvement Necessary)
-
+# Use case 5: Rating 1 (Major Improvement Necessary) - Created by Hafsa Robleh
 ![Your paragraph text (11)](https://github.com/user-attachments/assets/72716e12-a4a9-42d9-b87a-797f5763770a)
 
 
-# Use case 6: Rating 2 (Improvement Necessary)
-
+# Use case 6: Rating 2 (Improvement Necessary) - Created by Hafsa Robleh
 
 
 
@@ -178,8 +176,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 7: Rating 3 (Generally Satisfactory)
-
+# Use case 7: Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
 
 ![Your paragraph text (18)](https://github.com/user-attachments/assets/1086fd09-3ea5-4314-91f1-8d76928e4f31)
 
@@ -187,8 +184,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 8: Rating 4 (Good)
-
+# Use case 8: Rating 4 (Good) - Created by Hafsa Robleh
 
 
 ![Your paragraph text (20)](https://github.com/user-attachments/assets/8f069082-c82b-4223-b260-975797d34f40)
@@ -197,8 +193,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 9: Rating 5 (Very Good)
-
+# Use case 9: Rating 5 (Very Good) - Created by Hafsa Robleh
 ![Your paragraph text (21)](https://github.com/user-attachments/assets/26959f82-f9d3-424f-9ace-55f83fbed5a6)
 
 
