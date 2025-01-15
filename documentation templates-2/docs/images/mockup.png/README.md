@@ -60,8 +60,8 @@
 
 
 
+![Mockup13](https://github.com/user-attachments/assets/3aacc637-10ae-473c-847f-c311680e4d31)
 
-![Mockup13](https://github.com/user-attachments/assets/83ef5c5e-ee4e-4146-adba-a88d49cb199c)
 
 
 
