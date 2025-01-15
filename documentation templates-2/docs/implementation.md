@@ -197,5 +197,5 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 ![Your paragraph text (21)](https://github.com/user-attachments/assets/26959f82-f9d3-424f-9ace-55f83fbed5a6)
 
 
-
+# Use case 10: Responding to HelpBot's Assistance Prompt
 
