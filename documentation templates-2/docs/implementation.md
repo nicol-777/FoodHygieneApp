@@ -214,8 +214,14 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use case 12: Consumers or Businesses - Created by Hafsa Robleh
 
-
-![Your paragraph text (29)](https://github.com/user-attachments/assets/040d5cdb-66a7-44a9-8663-f297b6cb7176)
-
+![Your paragraph text (30)](https://github.com/user-attachments/assets/11205c61-4bb3-4c77-903a-13cf446e4c79)
 
 
+
+# Use case 13: Consumer Options in HelpBot - Created by Hafsa Robleh
+
+
+![Your paragraph text (31)](https://github.com/user-attachments/assets/2f31d1f6-be1a-4798-8d74-9e611a2c4c9e)
+
+
+# Use case 14: 
