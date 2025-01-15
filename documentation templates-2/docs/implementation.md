@@ -197,5 +197,25 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 ![Your paragraph text (21)](https://github.com/user-attachments/assets/26959f82-f9d3-424f-9ace-55f83fbed5a6)
 
 
-# Use case 10: Responding to HelpBot's Assistance Prompt
+
+# Use case 10: Opening HelpBot - Created by Hafsa Robleh
+
+![Your paragraph text (25)](https://github.com/user-attachments/assets/bc7b1ac6-98d8-4949-ba1e-747fdf4b7bca)
+
+
+# Use case 11: Using HelpBot Assistance - Created by Hafsa Robleh
+
+
+
+![Your paragraph text (26)](https://github.com/user-attachments/assets/24f18406-c947-4ffd-afd9-77817feaa205)
+
+
+
+
+# Use case 12: Consumers or Businesses - Created by Hafsa Robleh
+
+
+![Your paragraph text (29)](https://github.com/user-attachments/assets/040d5cdb-66a7-44a9-8663-f297b6cb7176)
+
+
 
