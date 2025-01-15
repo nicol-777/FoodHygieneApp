@@ -224,4 +224,9 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 ![Your paragraph text (31)](https://github.com/user-attachments/assets/2f31d1f6-be1a-4798-8d74-9e611a2c4c9e)
 
 
-# Use case 14: 
+# Use case 14: Use Case: Reporting a Food Safety Issue
+
+
+
+
+
