@@ -1,4 +1,4 @@
-![Your paragraph text (14)](https://github.com/user-attachments/assets/9c71baa3-3339-401f-a087-b792779e44b3)# Implementation
+# Implementation
 
 ## Introduction
 
