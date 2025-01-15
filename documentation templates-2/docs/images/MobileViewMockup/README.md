@@ -121,6 +121,7 @@
 
 
 
+<img width="524" alt="Screenshot 2025-01-15 at 18 39 20" src="https://github.com/user-attachments/assets/44fea063-49e0-4015-bf1c-351815573085" />
 
 
 
@@ -131,8 +132,6 @@
 
 
 
-
-<img width="537" alt="Screenshot 2025-01-13 at 19 55 55" src="https://github.com/user-attachments/assets/220731ee-3571-433e-a055-010adfdad307" />
 
 
 
@@ -142,10 +141,11 @@
 
 
 
+<img width="528" alt="Screenshot 2025-01-15 at 18 30 26" src="https://github.com/user-attachments/assets/6fe261a3-3f08-43bd-bae1-d473c34c3af0" />
 
 
 
-<img width="526" alt="Screenshot 2025-01-13 at 20 31 08" src="https://github.com/user-attachments/assets/195ea0fd-9f6f-4dcd-a1c2-b753d22d9778" />
+
 
 
 <img width="526" alt="Screenshot 2025-01-13 at 20 14 17" src="https://github.com/user-attachments/assets/89a416f7-4b75-4e73-99f4-f2db3a1eaa03" />
