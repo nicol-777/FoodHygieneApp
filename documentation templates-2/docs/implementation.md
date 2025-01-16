@@ -231,55 +231,45 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 14: Reporting a Food Safety Issue (Consumers) 
-
+# Use case 14: Reporting a Food Safety Issue (Consumers) - Created by Hafsa Robleh
 ![Your paragraph text (34)](https://github.com/user-attachments/assets/c73eeb29-c181-422f-9ec2-9a6e938304e7)
 
 
 
-# Use case 15: Successful Submission of a Report
-
+# Use case 15: Successful Submission of a Report - Created by Hafsa Robleh
 
 ![Your paragraph text (36)](https://github.com/user-attachments/assets/e2334b0f-5d7e-424d-b41a-469ab11244fa)
 
 
 
-# Use case 16:  Returning to the Main Search Interface
-
+# Use case 16:  Returning to the Main Search Interface - Created by Hafsa Robleh
 
 ![Your paragraph text (37)](https://github.com/user-attachments/assets/326ddec8-93e4-4baa-86db-d1983f7f4122)
 
 
-# Use case 17: Business Options in HelpBot 
-
+# Use case 17: Business Options in HelpBot - Created by Hafsa Robleh
 ![Your paragraph text (38)](https://github.com/user-attachments/assets/a1dc52f3-6ea2-41be-a332-42ab3db98f02)
 
 
-# Use case 18: Reporting a Food Safety Incident (Business)
-
+# Use case 18: Reporting a Food Safety Incident (Business) - Created by Hafsa Robleh
 
 ![Your paragraph text (39)](https://github.com/user-attachments/assets/76b7f59d-9061-42b5-83cb-ffc7467d98ba)
 
-# Use case 19: Successful Submission of a Report
+# Use case 19: Successful Submission of a Report  - Created by Hafsa Robleh
 ![Your paragraph text (36)](https://github.com/user-attachments/assets/e2334b0f-5d7e-424d-b41a-469ab11244fa)
 
 
-# Use case 20: Returning to the Main Search Interface
-
+# Use case 20: Returning to the Main Search Interface - Created by Hafsa Robleh
 ![Your paragraph text (37)](https://github.com/user-attachments/assets/326ddec8-93e4-4baa-86db-d1983f7f4122)
 
 
-# Use case 21: Searching for a Business When No Match is Found
-
+# Use case 21: Searching for a Business When No Match is Found - Created by Hafsa Robleh
 
 ![Your paragraph text (43)](https://github.com/user-attachments/assets/57bdc6d4-16c9-4be0-948d-a42869c79893)
 
 
 
-
-
-# Use case 22: No Exact Matches Found
-
+# Use case 22: No Exact Matches Found - Created by Hafsa Robleh
 
 
 ![Your paragraph text (44)](https://github.com/user-attachments/assets/ed083b9d-cbe7-4de6-8eff-f1b3836404ee)
@@ -287,8 +277,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 23: Viewing Nearby Businesses
-
+# Use case 23: Viewing Nearby Businesses - Created by Hafsa Robleh
 
 ![Your paragraph text (46)](https://github.com/user-attachments/assets/ff18d2fc-8843-4bcf-8795-d5ea1eb6addd)
 
