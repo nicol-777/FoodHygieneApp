@@ -143,33 +143,35 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use Case 2: Searching by Business Name - Created by Hafsa Robleh
 
+![Your paragraph text (47)](https://github.com/user-attachments/assets/fbed0948-bbe0-4281-8b39-361dcad5a819)
 
-
-![Your paragraph text (8)](https://github.com/user-attachments/assets/61de9764-6c14-4f89-9ce6-4072b4d0601d)
 
 
 
 # Use case 3: Searching by Location - Created by Hafsa Robleh
 
 
-![Your paragraph text (5)](https://github.com/user-attachments/assets/c96ca3b0-0060-48db-8626-9fd137e370e0)
+![Your paragraph text (48)](https://github.com/user-attachments/assets/8d887831-4d0e-4330-9513-9ef61d246160)
+
+
 
 # Use case 4: Filtering by Hygiene Rating 0 (Urgent Improvement Necessary) - Created by Hafsa Robleh
 
 
-![Your paragraph text (10)](https://github.com/user-attachments/assets/6c95224b-5cec-43a5-b8f5-09f8deabb263)
+![Your paragraph text (55)](https://github.com/user-attachments/assets/b3c45302-ac7b-48e2-b397-63375a2e6495)
 
 
 
 # Use case 5: Rating 1 (Major Improvement Necessary) - Created by Hafsa Robleh
-![Your paragraph text (11)](https://github.com/user-attachments/assets/72716e12-a4a9-42d9-b87a-797f5763770a)
+
+![Your paragraph text (56)](https://github.com/user-attachments/assets/454d4c7e-114b-44dd-bbe5-7b9baea04425)
+
 
 
 # Use case 6: Rating 2 (Improvement Necessary) - Created by Hafsa Robleh
 
+![Your paragraph text (57)](https://github.com/user-attachments/assets/1556046e-5c7c-4f18-ab5d-bcd14952e9a7)
 
-
-![Your paragraph text (17)](https://github.com/user-attachments/assets/fb249af8-c342-4f58-a60e-d4c2418ee5e9)
 
 
 
@@ -178,7 +180,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use case 7: Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
 
-![Your paragraph text (18)](https://github.com/user-attachments/assets/1086fd09-3ea5-4314-91f1-8d76928e4f31)
+
+![Your paragraph text (58)](https://github.com/user-attachments/assets/55300051-2d8d-447b-9612-544a5be9514e)
 
 
 
@@ -187,14 +190,18 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 8: Rating 4 (Good) - Created by Hafsa Robleh
 
 
-![Your paragraph text (20)](https://github.com/user-attachments/assets/8f069082-c82b-4223-b260-975797d34f40)
+![Your paragraph text (59)](https://github.com/user-attachments/assets/1fa67c04-7b8e-4a22-92e5-d192d7940d22)
+
 
 
 
 
 
 # Use case 9: Rating 5 (Very Good) - Created by Hafsa Robleh
-![Your paragraph text (21)](https://github.com/user-attachments/assets/26959f82-f9d3-424f-9ace-55f83fbed5a6)
+
+
+![Your paragraph text (60)](https://github.com/user-attachments/assets/76eacf2f-1cd9-4578-8069-4c631c1c38e8)
+
 
 
 
@@ -262,6 +269,30 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 ![Your paragraph text (37)](https://github.com/user-attachments/assets/326ddec8-93e4-4baa-86db-d1983f7f4122)
 
 
-# Use Case 21: Searching with No Match Found
+# Use case 21: Searching for a Business When No Match is Found
+
+
+![Your paragraph text (43)](https://github.com/user-attachments/assets/57bdc6d4-16c9-4be0-948d-a42869c79893)
+
+
+
+
+
+# Use case 22: No Exact Matches Found
+
+
+
+![Your paragraph text (44)](https://github.com/user-attachments/assets/ed083b9d-cbe7-4de6-8eff-f1b3836404ee)
+
+
+
+
+# Use case 23: Viewing Nearby Businesses
+
+
+![Your paragraph text (46)](https://github.com/user-attachments/assets/ff18d2fc-8843-4bcf-8795-d5ea1eb6addd)
+
+
+
 
 
