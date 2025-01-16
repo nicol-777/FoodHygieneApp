@@ -220,13 +220,14 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use case 13: Consumer Options in HelpBot - Created by Hafsa Robleh
 
-
-![Your paragraph text (31)](https://github.com/user-attachments/assets/2f31d1f6-be1a-4798-8d74-9e611a2c4c9e)
-
-
-# Use case 14: Use Case: Reporting a Food Safety Issue
+![Your paragraph text (32)](https://github.com/user-attachments/assets/88e3274f-a1f2-4961-9fa6-7b4059ca5592)
 
 
 
+# Use case 14: Reporting a Food Safety Issue
+
+![Your paragraph text (33)](https://github.com/user-attachments/assets/8de44d72-c6a6-464d-a56a-8022f2cfdb6b)
 
 
+
+# Use case 15:  
