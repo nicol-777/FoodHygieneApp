@@ -224,10 +224,43 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 14: Reporting a Food Safety Issue
+# Use case 14: Reporting a Food Safety Issue (Consumers) 
 
-![Your paragraph text (33)](https://github.com/user-attachments/assets/8de44d72-c6a6-464d-a56a-8022f2cfdb6b)
+![Your paragraph text (34)](https://github.com/user-attachments/assets/c73eeb29-c181-422f-9ec2-9a6e938304e7)
 
 
 
-# Use case 15:  
+# Use case 15: Successful Submission of a Report
+
+
+![Your paragraph text (36)](https://github.com/user-attachments/assets/e2334b0f-5d7e-424d-b41a-469ab11244fa)
+
+
+
+# Use case 16:  Returning to the Main Search Interface
+
+
+![Your paragraph text (37)](https://github.com/user-attachments/assets/326ddec8-93e4-4baa-86db-d1983f7f4122)
+
+
+# Use case 17: Business Options in HelpBot 
+
+![Your paragraph text (38)](https://github.com/user-attachments/assets/a1dc52f3-6ea2-41be-a332-42ab3db98f02)
+
+
+# Use case 18: Reporting a Food Safety Incident (Business)
+
+
+![Your paragraph text (39)](https://github.com/user-attachments/assets/76b7f59d-9061-42b5-83cb-ffc7467d98ba)
+
+# Use case 19: Successful Submission of a Report
+![Your paragraph text (36)](https://github.com/user-attachments/assets/e2334b0f-5d7e-424d-b41a-469ab11244fa)
+
+
+# Use case 20: Returning to the Main Search Interface
+
+![Your paragraph text (37)](https://github.com/user-attachments/assets/326ddec8-93e4-4baa-86db-d1983f7f4122)
+
+
+
+
