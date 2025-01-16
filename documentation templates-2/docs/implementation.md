@@ -262,5 +262,6 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 ![Your paragraph text (37)](https://github.com/user-attachments/assets/326ddec8-93e4-4baa-86db-d1983f7f4122)
 
 
+# Use Case 21: Searching with No Match Found
 
 
