@@ -128,7 +128,7 @@ To ensure uninterrupted access to data, the app includes a backup data-loading f
 
 
 
-TODO: Repeat as necessary
+
 
 # User guide
 TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
