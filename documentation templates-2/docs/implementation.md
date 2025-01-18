@@ -137,7 +137,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use Case 1: Enabling Location Access - Created by Hafsa Robleh
 
-![Use Case 1 Enabling Location Access (5)](https://github.com/user-attachments/assets/1ac1eef6-c925-42b0-a02c-8717382bd3d8)
+![Use Case 1 Enabling Location Access (6)](https://github.com/user-attachments/assets/06287ea2-dad7-4c11-ba88-b05534303f0e)
 
 
 
