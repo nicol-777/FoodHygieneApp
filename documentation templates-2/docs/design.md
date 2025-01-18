@@ -6,12 +6,25 @@ TODO: Specify and develop a user interface mockup using a wireframe.
 
 
 
-![front 4  (5)](https://github.com/user-attachments/assets/860aa90a-aac7-4510-8f9d-38bc299d0671)
+![front 4  (7)](https://github.com/user-attachments/assets/004c597f-1faa-4a55-811f-5d398c2467ac)
 
 
 
 
-![last 5-9](https://github.com/user-attachments/assets/db8963c7-0249-4da2-a47e-77d37e78c357)
+
+![last 5-9 (2)](https://github.com/user-attachments/assets/f313100e-0cc0-46d1-94d7-b0c65f890222)
+
+
+
+
+
+![nearby business](https://github.com/user-attachments/assets/9840537f-f9a2-4865-858e-1b89d5578a1c)
+
+
+
+
+
+
 
 
 
