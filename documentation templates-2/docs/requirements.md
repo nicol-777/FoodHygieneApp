@@ -4,33 +4,33 @@
 ### Requirements Section written by: Hafsa Robleh
 
 #### User stories
-● As a user, I want to search for food hygiene ratings by business name, location, or rating, so i can make informed choices about where to eat or shop.  
+- As a user, I want to search for food hygiene ratings by business name, location, or rating, so i can make informed choices about where to eat or shop.  
 
-● As a web app developer, I want to have access to the Bristol Open Data API and implement it into the app to retrieve accurate food hygiene data.  
+- As a web app developer, I want to have access to the Bristol Open Data API and implement it into the app to retrieve accurate food hygiene data.  
 
-● As a business owner, I want to request corrections to my business’s food hygiene rating via the chatbot, so that I can ensure accurate information is displayed. 
+- As a business owner, I want to request corrections to my business’s food hygiene rating via the chatbot, so that I can ensure accurate information is displayed. 
 
-● As a user, I want the web app to suggest nearby businesses if my search returns no results, so I can find alternatives.  
+- As a user, I want the web app to suggest nearby businesses if my search returns no results, so I can find alternatives.  
 
-● As a user, I want to filter search results by rating, so i can identify businesses with a high standard of food hygiene.  
+- As a user, I want to filter search results by rating, so i can identify businesses with a high standard of food hygiene.  
 
-● As a user, I want to report food safety issues through the web app, so i can alert authorities to potential risks.  
+- As a user, I want to report food safety issues through the web app, so i can alert authorities to potential risks.  
 
-● As a business owner, I want to appeal my hygiene rating, so i can address any issues.  
+- As a business owner, I want to appeal my hygiene rating, so i can address any issues.  
 
-● As a user, I want the web app to be accessible on mobile devices, so 
+- As a user, I want the web app to be accessible on mobile devices, so 
 i can use it anywhere.  
 
-● As a user, I want to receive confirmation after submitting a report, so I know my submission was successful.  
+- As a user, I want to receive confirmation after submitting a report, so I know my submission was successful.  
 
  
 #### Actors
 
-● Users: individuals who want to view and search for food hygiene ratings for local food businesses in Bristol, to make informed decisions on where to eat, and to report issues or submit appeals.  
+- Users: individuals who want to view and search for food hygiene ratings for local food businesses in Bristol, to make informed decisions on where to eat, and to report issues or submit appeals.  
 
-● Business owners: Food business owners in Bristol who want to access information about their food hygiene rating, to maintain accurate and up-to-date information, and report corrections, appeal rating, or report incidents.  
+- Business owners: Food business owners in Bristol who want to access information about their food hygiene rating, to maintain accurate and up-to-date information, and report corrections, appeal rating, or report incidents.  
 
-● Web app developer: Responsible for creating and maintaining the database, managing corrections, handling appeals and ensuring that the app is works properly with APIs to retrieve data from Bristol Open Data. 
+- Web app developer: Responsible for creating and maintaining the database, managing corrections, handling appeals and ensuring that the app is works properly with APIs to retrieve data from Bristol Open Data. 
 
 
 #### Use Cases
@@ -103,26 +103,26 @@ i can use it anywhere.
 ## Software Requirements Specification
 ### This section was written by Hafsa Robleh
 #### Functional requirements
-● FR1 The system shall allow users to search for food hygiene rating using business names, location or rating filters (From UC1)  
+- FR1 The system shall allow users to search for food hygiene rating using business names, location or rating filters (From UC1)  
 
-● FR2 The system shall retrieve and display food hygiene ratings from the Bristol Open Data API. (From UC1) 
+- FR2 The system shall retrieve and display food hygiene ratings from the Bristol Open Data API. (From UC1) 
 
-● FR3 The system shall allow food business owners to search for their food hygiene rating by name or location. (From UC2) 
+- FR3 The system shall allow food business owners to search for their food hygiene rating by name or location. (From UC2) 
 
-● FR4 The system shall guide business owners to request correction or report issues to their food hygiene data through a chatbot that directs them to the correction or reporting issue form. (From UC2) 
+- FR4 The system shall guide business owners to request correction or report issues to their food hygiene data through a chatbot that directs them to the correction or reporting issue form. (From UC2) 
 
-● FR5 The system shall guide users to report issues through a chatbot that directs them to the reporting issue form. (From UC1) 
+- FR5 The system shall guide users to report issues through a chatbot that directs them to the reporting issue form. (From UC1) 
 
-● FR6 The system shall allow web app developers to integrate and test the Bristol Open Data API to ensure the correct data is retrieved and displayed. (From UC3)  
+- FR6 The system shall allow web app developers to integrate and test the Bristol Open Data API to ensure the correct data is retrieved and displayed. (From UC3)  
 
 #### Non-Functional Requirements
-● NFR1 The system shall respond to user searches within 2 seconds. (From UC1, UC3) 
+- NFR1 The system shall respond to user searches within 2 seconds. (From UC1, UC3) 
 
-● NFR2 The system shall be available 24/7, allowing business owners to access it anytime. (From UC2)  
+- NFR2 The system shall be available 24/7, allowing business owners to access it anytime. (From UC2)  
 
-● NFR3 The system shall ensure data security through HTTPS, encryption and GDPR compliance. (From UC3)  
+- NFR3 The system shall ensure data security through HTTPS, encryption and GDPR compliance. (From UC3)  
 
-● NFR4 The system shall handle API issues by providing user-friendly messages or suggesting alternatives when the API is down. (From UC1, 
+- NFR4 The system shall handle API issues by providing user-friendly messages or suggesting alternatives when the API is down. (From UC1, 
   UC3) 
 
 
