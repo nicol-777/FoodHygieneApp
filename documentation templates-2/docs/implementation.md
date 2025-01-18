@@ -279,8 +279,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use case 23: Viewing Nearby Businesses - Created by Hafsa Robleh
 
-![Your paragraph text (46)](https://github.com/user-attachments/assets/ff18d2fc-8843-4bcf-8795-d5ea1eb6addd)
 
+![Your paragraph text (61)](https://github.com/user-attachments/assets/4762a575-5c8a-4c1c-88d5-3b2887caac1b)
 
 
 
