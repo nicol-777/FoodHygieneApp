@@ -25,96 +25,80 @@ TODO: Specify and develop a user interface mockup using a wireframe.
 
 
 
-
-
-
-
-
- 
-
 # User Interface design 
 
-The user interface (UI) for the food hygiene rating web application is designed to be simple, user-friendly, and accessible on various devices. It provides users with an easy way to search for food hygiene ratings and view them on an interactive map. Key features include a chatbot for assistance and forms for business owners and consumers to report issues or request corrections.  
+The user interface (UI) for the food hygiene rating web application is designed to be simple, user-friendly, and accessible on various devices. The application allows users to search for food hygiene ratings and view them on an interactive map. Key features include a chatbot for assistance, and forms for business owners and consumers to report issues or request corrections.  
 
  
 
-# Design goals  
-● Users can search for food hygiene ratings by business name, location and hygiene rating. The search results are displayed on a map, with markers showing detailed business information.   
+# Design goals 
+
+- Users can search for food hygiene ratings by business name, location and hygiene rating. 
+
+- The search results are displayed on a map, with markers showing detailed business information.   
 
  
-● The app uses a clear layout with a modern colour scheme. The primary colour is greenish-blue #00796b, which pairs well with the white text for readability. All buttons and links use this colour to create a consistent experience.  
+- The app employs a modern, clean design using primary greenish-blue (#00796b), paired with white text for readability. 
 
  
-● The web app is designed to adjust seamlessly across different screen sizes, such as phones and computers, ensuring a good user experience on all devices. 
+- The interface adapts seamlessly across different screen sizes, ensuring accessibility on both mobile and desktop.
+ 
+  
+- Accessiblity features include clear labels, large clickable areas, keyboard navigation, and ARIA attributes for screen readers. 
 
  
-● The app is designed to be accessible to everyone, with clear labels, large clickable areas, and ARIA attributes for screen readers. All buttons and forms are keyboard- navigable, making the app easy for individuals with disabilities.  
-
- 
-
- 
-
- 
-
- 
-
- 
-
 # Key sections of the wireframe:  
 
 ## Header section 
-
-Title: “Food Hygiene Ratings” 
-
-Description: “Use our online service to find a food business’s hygiene rating.” 
-
-Image: An image representing food hygiene ratings is displayed in a circular frame for a modern look. The image complements the theme and enhances visual interest.  
-
+The header section contains the title "Food Hygiene Ratings" and a brief description: "Use our online service to find a food business’s hygiene rating."
+Additionally, an image is displayed in a circular frame, visually representing food hygiene ratings. This enhances the theme and improves the overall look of the application.
  
 
 ## Search section  
 
-Business name: Allows users to search for businesses by name. 
+- Business name: Allows users to search for businesses by name. 
 
-Location: Allows users to search by street, town, or postcode. 
+- Location: Allows users to search by street, town, or postcode. 
 
-Rating filter: Users can filter results based on the hygiene rating (e.g., 5 for very good, 0 for urgent improvement necessary).   
+- Rating filter: Users can filter results based on the hygiene rating (0-5 scale).
 
-Buttons: Search and reset buttons are included for easy user interaction. The buttons are styled with a rounded look for modern appeal and easy identification.  
+- Search & Reset Buttons: Styled with a rounded edges for a modern aesthetic and easy 
+  usability.  
 
- 
+- Dropdown Style: The filter dropdown has a modern UI with custom style, including a 
+  shadow effect and a hover transition.
 
-## Map section 
+## Search Results & Map section 
 
-The interactive map displays food hygiene ratings as clickable markers. Each marker includes details about the business, such as name, address and rating filter shown in a popup. If users enable geolocation (with permission), the map will zoom to their current location, displaying a “you are here” marker. This feature enhances user interaction by providing a personalised view of nearby businesses with hygiene ratings.  
+The interactive map displays food hygiene ratings as clickable markers, allowing users to explore businesses easily. Clicking a marker reveals a pop-up containing key details such as the business name, address, and hygiene rating. The map also includes geolocation support, enabling users to find nearby businesses based on their current location. If no exact match is found, the system provides a prompt suggesting similar businesses to help users refine their search. Additionally, zero-rated businesses are highlighted in red for quick identification, ensuring that users are aware of potential food safety concerns.
 
- 
 
 ## Chatbot (HelpBot)  
+The HelpBot is positioned in the bottom-right corner of the screen to assist users with navigation and common queries. Designed for accessibility, it supports keyboard navigation and screen reader compatibility, making it user-friendly for a diverse audience. Users can minimise or close the chatbot as needed to avoid distractions.
+The chatbot also offers structured conversation options, allowing users to choose between consumer and business-related queries for a more efficient support experience. To enhance engagement, it features an animated icon with a speech bubble, making it visually appealing and easy to locate on the interface.
 
-The HelpBot appears in the bottom-right corner of the screen to assist users with navigating the app and answering common questions. The chatbot can minimise or close as needed and supports accessibility, including keyboard navigation and screen reader compatibility. Each button in the chatbot is labelled for clarity, and ARIA attributes are used to ensure all features are accessible to users.  
-
- 
-
-## Consumer and business forms 
-
-The web app includes separate forms for consumers and business owners to report various issues. Consumers can report food safety issues, product labelling issues, unregistered businesses, problems with food hygiene ratings, or report food-related crimes and whistleblowing. Business owners can report similar issues or request corrections to their business’s hygiene rating.  
+  
+## Consumer and business forms  
+Consumers and business owners can report issues through dedicated forms accessible via the chatbot. Consumers can report food safety concerns, labelling issues, unregistered businesses, and food-related crimes, while business owners have the option to report similar concerns or request rating corrections. The forms are designed with clear labels, structured spacing, and input validation to ensure a seamless and error-free user experience.
 
 
- 
+
 ## Accessing forms 
+Both consumers and business owners can access the forms through the chatbot. When users select either “Consumer” or “Business,” only the relevant options are displayed, ensuring a clear and organised interface. This helps prevent confusion and streamlines the reporting process by displaying only the necessary fields for each user type.
 
-Both consumers and business owners can access the forms through the chatbot. When users select “Consumer” or “Business” in the chatbot, only the relevant options are displayed, keeping the choices clear and organised.  
+
+## Form structure  
+
+- Each form requests the user’s name, email, and a description of the issue.
+- Clear labels, accessible placeholders, and structured spacing ensure that the forms are easy to complete.
+- All form elements are labelled, and a back button is included in the chatbot to help users navigate smoothly.
 
  
-
-## Form layout  
-
-Each form requests the user’s name, email, and a description of the issue. Clear labels, accessible placeholders, and spacing ensure that the forms are easy to fill out. All form elements are labelled, and a back button is included in the chatbot to help users navigate smoothly.  
-
- 
-
 
 ## Confirmation message  
 
-Once the form is submitted, a confirmation message appears to let the users know their request was successful and is being reviewed. This message is displayed at the top of the screen to improve visibility and provide reassurance to users.  
+Once a form is successfully submitted, a confirmation message appears at the top of the screen, informing users that their request has been received and is being reviewed. This message improves visibility and reassures users that their concerns are being addressed, enhancing overall user confidence in the system.
+
+
+
+
