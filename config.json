@@ -1,0 +1,17 @@
+ {
+  "useBackup": true,
+  "geojsonFile": "Food_Hygiene_Ratings.geojson",
+  "backupGeojsonFile": "Backup_Food_Hygiene_Ratings.geojson",
+  "apiURL": "https://example.com/api", 
+  "defaultLocation": [51.4545, -2.5879], 
+  "enableGeolocation": true,
+  "mapZoomLevel": 12,
+  "mapTileLayer": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "chatbotEnabled": true,
+  "chatbotGreeting": "Hi there! How can I assist you?",
+  "defaultFilters": {
+    "rating": "",
+    "location": "",
+    "businessName": ""
+  }
+}
