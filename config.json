@@ -23,12 +23,12 @@
       "backgroundColor": "#4CAF50",
       "textColor": "#FFFFFF",
       "fontSize": "16px",
-      "borderRadius": "20px",
+      "borderRadius": "10px",
       "padding": "10px 15px",
       "marginRight": "15px"
     },
     "avatar": {
-      "size": "60px",
+      "size": "70px",
       "borderColor": "#4CAF50",
       "borderRadius": "50%",
       "marginBottom": "-10px"
@@ -107,6 +107,46 @@
         "isConsumer": false
       }
     ]
+  },
+
+  "chatbotStyle": {
+    "container": {
+      "position": "fixed",
+      "bottom": "20px",
+      "right": "20px",
+      "width": "350px",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid #ccc",
+      "borderRadius": "10px",
+      "boxShadow": "0 4px 10px rgba(0, 0, 0, 0.1)",
+      "zIndex": "1000"
+    },
+    "header": {
+      "backgroundColor": "#00796b",
+      "textColor": "#ffffff",
+      "fontSize": "16px",
+      "padding": "10px",
+      "textAlign": "center"
+    },
+    "body": {
+      "maxHeight": "400px",
+      "overflowY": "auto",
+      "padding": "10px"
+    },
+    "buttons": {
+      "width": "100%",
+      "padding": "12px",
+      "fontSize": "16px",
+      "backgroundColor": "#2F7D68",
+      "textColor": "#FFFFFF",
+      "borderRadius": "5px",
+      "hoverBackgroundColor": "#004d40"
+    },
+    "backButton": {
+      "backgroundColor": "#e0e0e0",
+      "textColor": "#000000",
+      "hoverBackgroundColor": "#d5d5d5"
+    }
   },
 
   "defaultFilters": {
