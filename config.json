@@ -2,16 +2,20 @@
   "useBackup": true,
   "geojsonFile": "Food_Hygiene_Ratings.geojson",
   "backupGeojsonFile": "Backup_Food_Hygiene_Ratings.geojson",
-  "apiURL": "https://example.com/api", 
+  "apiURL": "https://your-api-url.com/api", 
   "defaultLocation": [51.4545, -2.5879], 
   "enableGeolocation": true,
   "mapZoomLevel": 12,
   "mapTileLayer": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  
   "chatbotEnabled": true,
   "chatbotGreeting": "Hi there! How can I assist you?",
+  "chatbotIcon": "https://cdn-icons-png.flaticon.com/128/10817/10817417.png",
+  "enableChatbotMinimize": true,
+
   "defaultFilters": {
-    "rating": "",
-    "location": "",
-    "businessName": ""
+    "rating": null,
+    "location": null,
+    "businessName": null
   }
 }
