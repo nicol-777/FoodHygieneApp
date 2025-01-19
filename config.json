@@ -48,6 +48,67 @@
     "borderRadius": "5px"
   },
 
+  "chatbotBehavior": {
+    "autoShow": false,
+    "closeOnOutsideClick": true,
+    "keepSessionActive": true
+  },
+
+  "chatbotOptions": {
+    "consumerOptions": [
+      {
+        "text": "Report a Food Safety Issue",
+        "action": "showForm",
+        "id": "food-safety",
+        "isConsumer": true
+      },
+      {
+        "text": "Report a Product Labelling Issue",
+        "action": "showForm",
+        "id": "product-labelling",
+        "isConsumer": true
+      },
+      {
+        "text": "Report an Unregistered Food Business",
+        "action": "showForm",
+        "id": "unregistered-business",
+        "isConsumer": true
+      },
+      {
+        "text": "Report a Problem with a Food Hygiene Rating",
+        "action": "showForm",
+        "id": "rating-problem",
+        "isConsumer": true
+      },
+      {
+        "text": "Whistleblowing and Reporting a Food Crime",
+        "action": "showForm",
+        "id": "whistleblowing",
+        "isConsumer": true
+      }
+    ],
+    "businessOptions": [
+      {
+        "text": "Report a Food Safety Incident",
+        "action": "showForm",
+        "id": "food-safety",
+        "isConsumer": false
+      },
+      {
+        "text": "Whistleblowing and Reporting a Food Crime",
+        "action": "showForm",
+        "id": "whistleblowing",
+        "isConsumer": false
+      },
+      {
+        "text": "Report a Problem with a Food Hygiene Rating",
+        "action": "showForm",
+        "id": "rating-problem",
+        "isConsumer": false
+      }
+    ]
+  },
+
   "defaultFilters": {
     "rating": null,
     "location": null,
