@@ -14,24 +14,38 @@
   "chatbotAvatar": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
   "enableChatbotMinimize": true,
 
-  "chatbotUI": {
-    "position": {
-      "bottom": "20px",
-      "right": "20px"
-    },
-    "bubble": {
-      "backgroundColor": "#4CAF50",
-      "textColor": "#FFFFFF",
-      "fontSize": "16px",
-      "borderRadius": "10px",
-      "padding": "10px 15px",
-      "marginRight": "15px"
-    },
-    "avatar": {
-      "size": "70px",
-      "borderColor": "#4CAF50",
-      "borderRadius": "50%",
-      "marginBottom": "-10px"
+
+"chatbotUI": {
+  "container": {
+    "position": "fixed",
+    "bottom": "20px",
+    "right": "20px",
+    "display": "flex",
+    "alignItems": "center"
+  },
+  "avatar": {
+    "size": "60px",
+    "borderColor": "#4CAF50",
+    "borderRadius": "50%",
+    "marginRight": "10px"
+  },
+  "bubble": {
+    "backgroundColor": "#4CAF50",
+    "textColor": "#FFFFFF",
+    "fontSize": "16px",
+    "borderRadius": "10px",
+    "padding": "10px",
+    "position": "absolute",
+    "right": "80px",
+    "bottom": "30px",
+    "whiteSpace": "nowrap",
+    "zIndex": "1000"
+  }
+}
+
+
+
+  
     },
     "animation": {
       "fadeIn": true,
