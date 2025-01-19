@@ -1,4 +1,4 @@
- {
+{
   "useBackup": true,
   "geojsonFile": "Food_Hygiene_Ratings.geojson",
   "backupGeojsonFile": "Backup_Food_Hygiene_Ratings.geojson",
@@ -7,145 +7,42 @@
   "enableGeolocation": true,
   "mapZoomLevel": 12,
   "mapTileLayer": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-
-  "chatbotEnabled": true,
-  "chatbotGreeting": "Hi there, how can I help you?",
-  "chatbotIcon": "https://cdn-icons-png.flaticon.com/128/10817/10817417.png",
-  "chatbotAvatar": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
-  "enableChatbotMinimize": true,
-
-
-"chatbotUI": {
-  "container": {
-    "position": "fixed",
-    "bottom": "20px",
-    "right": "20px",
-    "display": "flex",
-    "alignItems": "center"
-  },
-  "avatar": {
-    "size": "60px",
-    "borderColor": "#4CAF50",
-    "borderRadius": "50%",
-    "marginRight": "10px"
-  },
-  "bubble": {
-    "backgroundColor": "#4CAF50",
-    "textColor": "#FFFFFF",
-    "fontSize": "16px",
-    "borderRadius": "10px",
-    "padding": "10px",
-    "position": "absolute",
-    "right": "80px",
-    "bottom": "30px",
-    "whiteSpace": "nowrap",
-    "zIndex": "1000"
-  }
-}
-
-
-
   
-    },
-    "animation": {
-      "fadeIn": true,
-      "delay": 500
-    }
-  },
-
-  "chatbotButtons": {
-    "width": "100%",
-    "padding": "12px",
-    "fontSize": "16px",
-    "backgroundColor": "#2F7D68",
-    "textColor": "#FFFFFF",
-    "borderRadius": "5px"
-  },
-
-  "chatbotBehavior": {
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi there, how can I help you?",
+    "icon": "https://cdn-icons-png.flaticon.com/128/10817/10817417.png",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
+    "enableMinimize": true,
     "autoShow": false,
     "closeOnOutsideClick": true,
-    "keepSessionActive": true
-  },
-
-  "chatbotOptions": {
-    "consumerOptions": [
-      {
-        "text": "Report a Food Safety Issue",
-        "action": "showForm",
-        "id": "food-safety",
-        "isConsumer": true
+    "keepSessionActive": true,
+    "ui": {
+      "container": {
+        "position": "fixed",
+        "bottom": "20px",
+        "right": "20px",
+        "display": "flex",
+        "alignItems": "center"
       },
-      {
-        "text": "Report a Product Labelling Issue",
-        "action": "showForm",
-        "id": "product-labelling",
-        "isConsumer": true
+      "avatar": {
+        "size": "60px",
+        "borderColor": "#4CAF50",
+        "borderRadius": "50%",
+        "marginRight": "10px"
       },
-      {
-        "text": "Report an Unregistered Food Business",
-        "action": "showForm",
-        "id": "unregistered-business",
-        "isConsumer": true
-      },
-      {
-        "text": "Report a Problem with a Food Hygiene Rating",
-        "action": "showForm",
-        "id": "rating-problem",
-        "isConsumer": true
-      },
-      {
-        "text": "Whistleblowing and Reporting a Food Crime",
-        "action": "showForm",
-        "id": "whistleblowing",
-        "isConsumer": true
+      "bubble": {
+        "backgroundColor": "#4CAF50",
+        "textColor": "#FFFFFF",
+        "fontSize": "16px",
+        "borderRadius": "10px",
+        "padding": "10px",
+        "position": "absolute",
+        "right": "80px",
+        "bottom": "30px",
+        "whiteSpace": "nowrap",
+        "zIndex": "1000"
       }
-    ],
-    "businessOptions": [
-      {
-        "text": "Report a Food Safety Incident",
-        "action": "showForm",
-        "id": "food-safety",
-        "isConsumer": false
-      },
-      {
-        "text": "Whistleblowing and Reporting a Food Crime",
-        "action": "showForm",
-        "id": "whistleblowing",
-        "isConsumer": false
-      },
-      {
-        "text": "Report a Problem with a Food Hygiene Rating",
-        "action": "showForm",
-        "id": "rating-problem",
-        "isConsumer": false
-      }
-    ]
-  },
-
-  "chatbotStyle": {
-    "container": {
-      "position": "fixed",
-      "bottom": "20px",
-      "right": "20px",
-      "width": "350px",
-      "backgroundColor": "#ffffff",
-      "border": "1px solid #ccc",
-      "borderRadius": "10px",
-      "boxShadow": "0 4px 10px rgba(0, 0, 0, 0.1)",
-      "zIndex": "1000"
-    },
-    "header": {
-      "backgroundColor": "#00796b",
-      "textColor": "#ffffff",
-      "fontSize": "16px",
-      "padding": "10px",
-      "textAlign": "center"
-    },
-    "body": {
-      "maxHeight": "400px",
-      "overflowY": "auto",
-      "padding": "10px"
     },
     "buttons": {
       "width": "100%",
@@ -153,13 +50,54 @@
       "fontSize": "16px",
       "backgroundColor": "#2F7D68",
       "textColor": "#FFFFFF",
-      "borderRadius": "5px",
-      "hoverBackgroundColor": "#004d40"
+      "borderRadius": "5px"
     },
-    "backButton": {
-      "backgroundColor": "#e0e0e0",
-      "textColor": "#000000",
-      "hoverBackgroundColor": "#d5d5d5"
+    "options": {
+      "consumer": [
+        { "text": "Report a Food Safety Issue", "action": "showForm", "id": "food-safety" },
+        { "text": "Report a Product Labelling Issue", "action": "showForm", "id": "product-labelling" },
+        { "text": "Report an Unregistered Food Business", "action": "showForm", "id": "unregistered-business" },
+        { "text": "Report a Problem with a Food Hygiene Rating", "action": "showForm", "id": "rating-problem" },
+        { "text": "Whistleblowing and Reporting a Food Crime", "action": "showForm", "id": "whistleblowing" }
+      ],
+      "business": [
+        { "text": "Report a Food Safety Incident", "action": "showForm", "id": "food-safety" },
+        { "text": "Whistleblowing and Reporting a Food Crime", "action": "showForm", "id": "whistleblowing" },
+        { "text": "Report a Problem with a Food Hygiene Rating", "action": "showForm", "id": "rating-problem" }
+      ]
+    },
+    "style": {
+      "container": {
+        "width": "350px",
+        "backgroundColor": "#ffffff",
+        "border": "1px solid #ccc",
+        "borderRadius": "10px",
+        "boxShadow": "0 4px 10px rgba(0, 0, 0, 0.1)",
+        "zIndex": "1000"
+      },
+      "header": {
+        "backgroundColor": "#00796b",
+        "textColor": "#ffffff",
+        "fontSize": "16px",
+        "padding": "10px",
+        "textAlign": "center"
+      },
+      "body": {
+        "maxHeight": "400px",
+        "overflowY": "auto",
+        "padding": "10px"
+      },
+      "buttons": {
+        "backgroundColor": "#2F7D68",
+        "textColor": "#FFFFFF",
+        "borderRadius": "5px",
+        "hoverBackgroundColor": "#004d40"
+      },
+      "backButton": {
+        "backgroundColor": "#e0e0e0",
+        "textColor": "#000000",
+        "hoverBackgroundColor": "#d5d5d5"
+      }
     }
   },
 
@@ -167,87 +105,5 @@
     "rating": null,
     "location": null,
     "businessName": null
-  }
-}
-
-
-
-
-{
-  "chatbot": {
-    "enabled": true,
-    "icon": {
-      "url": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
-      "size": "60px",
-      "borderRadius": "50%",
-      "backgroundColor": "#4CAF50",
-      "position": {
-        "bottom": "20px",
-        "right": "20px"
-      }
-    },
-    "speechBubble": {
-      "text": "Hi there, how can I help you?",
-      "backgroundColor": "#4CAF50",
-      "textColor": "#ffffff",
-      "fontSize": "14px",
-      "padding": "10px",
-      "borderRadius": "10px",
-      "position": {
-        "bottom": "90px",
-        "right": "20px"
-      }
-    },
-    "container": {
-      "width": "300px",
-      "height": "auto",
-      "backgroundColor": "#ffffff",
-      "border": "1px solid #ccc",
-      "borderRadius": "10px",
-      "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.2)",
-      "overflow": "hidden",
-      "position": {
-        "bottom": "100px",
-        "right": "20px"
-      }
-    },
-    "header": {
-      "backgroundColor": "#00796b",
-      "textColor": "white",
-      "fontSize": "16px",
-      "padding": "10px",
-      "textAlign": "center"
-    },
-    "body": {
-      "maxHeight": "400px",
-      "overflowY": "auto",
-      "padding": "10px"
-    },
-    "buttons": {
-      "backgroundColor": "#00796b",
-      "textColor": "white",
-      "padding": "10px",
-      "borderRadius": "5px",
-      "margin": "5px",
-      "fontSize": "14px",
-      "hoverBackgroundColor": "#004d40"
-    },
-    "backButton": {
-      "backgroundColor": "#e0e0e0",
-      "textColor": "black",
-      "hoverBackgroundColor": "#d5d5d5"
-    },
-    "confirmationPopup": {
-      "position": {
-        "top": "20px",
-        "right": "20px"
-      },
-      "padding": "15px",
-      "backgroundColor": "#00796b",
-      "textColor": "white",
-      "borderRadius": "5px",
-      "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.2)",
-      "fontSize": "1rem"
-    }
   }
 }
