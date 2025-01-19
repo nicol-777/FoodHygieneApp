@@ -1,7 +1,7 @@
 {
   "useBackup": true,
-  "geojsonFile": "data/Food_Hygiene_Ratings.geojson",
-  "backupGeojsonFile": "data/Backup_Food_Hygiene_Ratings.geojson",
+  "geojsonFile": "Food_Hygiene_Ratings.geojson",
+  "backupGeojsonFile": "Backup_Food_Hygiene_Ratings.geojson",
   "apiURL": "https://your-api-url.com/api",
   "defaultLocation": [51.4545, -2.5879],
   "enableGeolocation": true,
