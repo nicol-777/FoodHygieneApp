@@ -1,0 +1,16 @@
+{
+  "useBackup": true,
+  "apiURL": "https://example.com/api",
+  "defaultMapLocation": {
+    "latitude": 51.4545,
+    "longitude": -2.5879
+  },
+  "geolocation": {
+    "enabled": true
+  },
+  "searchFilters": {
+    "businessName": true,
+    "location": true,
+    "hygieneRating": true
+  }
+}
