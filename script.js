@@ -28,41 +28,6 @@ fetch("config.json")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Initialize the map and set its view to Bristol's coordinates
 var map = L.map('map').setView([51.4545, -2.5879], 12);
 
