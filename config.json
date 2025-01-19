@@ -1,22 +1,42 @@
- {
+{
   "useBackup": true,
   "geojsonFile": "Food_Hygiene_Ratings.geojson",
   "backupGeojsonFile": "Backup_Food_Hygiene_Ratings.geojson",
-  "apiURL": "https://your-api-url.com/api", 
-  "defaultLocation": [51.4545, -2.5879], 
+  "apiURL": "https://your-api-url.com/api",
+  "defaultLocation": [51.4545, -2.5879],
   "enableGeolocation": true,
   "mapZoomLevel": 12,
   "mapTileLayer": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-  
+
   "chatbotEnabled": true,
-  "chatbotGreeting": "Hi there, how can I help you?",
+  "chatbotGreeting": "Hi there! How can I assist you?",
   "chatbotIcon": "https://cdn-icons-png.flaticon.com/128/10817/10817417.png",
-  "chatbotAvatar": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png", 
+  "chatbotAvatar": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
   "enableChatbotMinimize": true,
 
+  "chatbotLayout": {
+    "position": {
+      "bottom": "20px",
+      "right": "20px"
+    },
+    "bubble": {
+      "backgroundColor": "#4CAF50",
+      "textColor": "#FFFFFF",
+      "fontSize": "14px"
+    },
+    "avatar": {
+      "size": "60px",
+      "borderColor": "#4CAF50"
+    },
+    "animation": {
+      "fadeIn": true,
+      "delay": 500
+    }
+  },
+
   "defaultFilters": {
-    "rating": null,
-    "location": null,
-    "businessName": null
+    "rating": "",
+    "location": "",
+    "businessName": ""
   }
 }
