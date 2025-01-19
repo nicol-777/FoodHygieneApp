@@ -15,28 +15,37 @@
   "enableChatbotMinimize": true,
 
   "chatbotUI": {
-    "headerText": "HelpBot",
-    "minimizeText": "Minimise",
-    "consumerOptions": [
-      "Report a Food Safety Issue",
-      "Report a Product Labelling Issue",
-      "Report an Unregistered Food Business",
-      "Report a Problem with a Food Hygiene Rating",
-      "Whistleblowing and Reporting a Food Crime"
-    ],
-    "businessOptions": [
-      "Report a Food Safety Incident",
-      "Whistleblowing and Reporting a Food Crime",
-      "Report a Problem with a Food Hygiene Rating"
-    ],
-    "buttonStyle": {
-      "backgroundColor": "#2F7D68",
-      "color": "white",
-      "borderRadius": "5px",
-      "width": "100%",
-      "padding": "10px",
-      "fontSize": "16px"
+    "position": {
+      "bottom": "20px",
+      "right": "20px"
+    },
+    "bubble": {
+      "backgroundColor": "#4CAF50",
+      "textColor": "#FFFFFF",
+      "fontSize": "16px",
+      "borderRadius": "20px",
+      "padding": "10px 15px",
+      "marginRight": "15px"
+    },
+    "avatar": {
+      "size": "60px",
+      "borderColor": "#4CAF50",
+      "borderRadius": "50%",
+      "marginBottom": "-10px"
+    },
+    "animation": {
+      "fadeIn": true,
+      "delay": 500
     }
+  },
+
+  "chatbotButtons": {
+    "width": "100%",
+    "padding": "12px",
+    "fontSize": "16px",
+    "backgroundColor": "#2F7D68",
+    "textColor": "#FFFFFF",
+    "borderRadius": "5px"
   },
 
   "defaultFilters": {
