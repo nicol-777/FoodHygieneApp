@@ -1,3 +1,108 @@
+let config = {}; // Store configuration data globally
+
+// Load config.json before anything else
+fetch("config.json")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Failed to load config.json");
+    }
+    return response.json();
+  })
+  .then(data => {
+    config = data; // Store config settings
+
+    // Initialize the map using settings from config.json
+    initMap(config.defaultLocation, config.mapZoomLevel, config.mapTileLayer);
+
+    // Load GeoJSON Data
+    loadGeoJSONData(config.geojsonFile, config.backupGeojsonFile);
+
+    // Ensure chatbot loads correctly
+    if (config.chatbotEnabled) {
+      document.getElementById("chatbot-body").innerHTML = `<p>${config.chatbotGreeting}</p>`;
+    }
+  })
+  .catch(error => {
+    console.error("Error loading config.json:", error);
+  });
+
+// Function to initialize the map
+function initMap(center, zoom, tileLayerURL) {
+    var map = L.map('map').setView(center, zoom);
+    L.tileLayer(tileLayerURL, { attribution: '© OpenStreetMap contributors' }).addTo(map);
+}
+
+// Load GeoJSON data function
+function loadGeoJSONData(mainFile, backupFile) {
+    fetch(mainFile)
+      .then(response => response.json())
+      .then(data => {
+          displayMarkers(data);
+          addZeroRatedMarkers(data);
+      })
+      .catch(error => {
+          console.error("Error loading main GeoJSON, trying backup:", error);
+          fetch(backupFile)
+            .then(response => response.json())
+            .then(data => {
+                displayMarkers(data);
+                addZeroRatedMarkers(data);
+            })
+            .catch(err => console.error("Error loading backup GeoJSON:", err));
+      });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Initialize the map and set its view to Bristol's coordinates
 var map = L.map('map').setView([51.4545, -2.5879], 12);
 
