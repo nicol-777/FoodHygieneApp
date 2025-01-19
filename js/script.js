@@ -1,33 +1,4 @@
 
-// Load configuration settings from config.json
-fetch("config.json")
-  .then(response => response.json()) // Convert response to JSON
-  .then(config => {
-    console.log("Loaded Config:", config);
-
-    // Use the config settings in your app
-
-    // Check if geolocation is enabled
-    if (config.geolocation.enabled) {
-      console.log("Geolocation is enabled");
-    }
-
-    // Check if backup dataset should be used
-    if (config.useBackup) {
-      console.log("Using backup dataset");
-    }
-
-    // Display API URL
-    console.log("API URL:", config.apiURL);
-  })
-  .catch(error => console.error("Error loading config.json:", error));
-
-
-
-
-
-
-
 
 // Initialize the map and set its view to Bristol's coordinates
 var map = L.map('map').setView([51.4545, -2.5879], 12);
