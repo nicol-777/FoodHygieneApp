@@ -1,4 +1,4 @@
- {
+{
   "useBackup": true,
   "geojsonFile": "Food_Hygiene_Ratings.geojson",
   "backupGeojsonFile": "Backup_Food_Hygiene_Ratings.geojson",
@@ -9,83 +9,39 @@
   "mapTileLayer": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 
   "chatbotEnabled": true,
-  "chatbotGreeting": "Hi there! How can I assist you?",
+  "chatbotGreeting": "Hi there, how can I help you?",
   "chatbotIcon": "https://cdn-icons-png.flaticon.com/128/10817/10817417.png",
   "chatbotAvatar": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
   "enableChatbotMinimize": true,
 
-  "chatbotLayout": {
-    "position": {
-      "bottom": "20px",
-      "right": "20px"
-    },
-    "bubble": {
-      "backgroundColor": "#4CAF50",
-      "textColor": "#FFFFFF",
-      "fontSize": "14px"
-    },
-    "avatar": {
-      "size": "60px",
-      "borderColor": "#4CAF50"
-    },
-    "animation": {
-      "fadeIn": true,
-      "delay": 500
+  "chatbotUI": {
+    "headerText": "HelpBot",
+    "minimizeText": "Minimise",
+    "consumerOptions": [
+      "Report a Food Safety Issue",
+      "Report a Product Labelling Issue",
+      "Report an Unregistered Food Business",
+      "Report a Problem with a Food Hygiene Rating",
+      "Whistleblowing and Reporting a Food Crime"
+    ],
+    "businessOptions": [
+      "Report a Food Safety Incident",
+      "Whistleblowing and Reporting a Food Crime",
+      "Report a Problem with a Food Hygiene Rating"
+    ],
+    "buttonStyle": {
+      "backgroundColor": "#2F7D68",
+      "color": "white",
+      "borderRadius": "5px",
+      "width": "100%",
+      "padding": "10px",
+      "fontSize": "16px"
     }
   },
 
-  "chatbotButtons": {
-    "width": "90%",
-    "padding": "15px",
-    "fontSize": "16px",
-    "backgroundColor": "#2f6d60",
-    "textColor": "#FFFFFF",
-    "borderRadius": "5px"
-  },
-
-  "mapSettings": {
-    "initialView": [51.4545, -2.5879],
-    "zoomLevel": 12,
-    "tileLayerURL": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-    "attribution": "© OpenStreetMap contributors"
-  },
-
-  "markerStyles": {
-    "default": {
-      "radius": 5,
-      "fillColor": "#007bff",
-      "color": "#007bff",
-      "weight": 1,
-      "opacity": 1,
-      "fillOpacity": 0.8
-    },
-    "zeroRated": {
-      "radius": 7,
-      "fillColor": "#ff0000",
-      "color": "#ff0000",
-      "weight": 2,
-      "opacity": 1,
-      "fillOpacity": 0.9
-    }
-  },
-
-  "popupSettings": {
-    "template": "<b>Business Name:</b> {BUSINESS_NAME}<br><b>Address:</b> {ADDRESS}<br><b>Rating:</b> {RATING}<br><b>Rating Date:</b> {RATING_DATE}<br><img src='{RATING_GRAPHIC_URL}' alt='Rating Badge'>"
-  },
-
-  "filters": {
-    "defaultFilters": {
-      "rating": "",
-      "location": "",
-      "businessName": ""
-    },
-    "ratingOptions": {
-      "5": "5 (Very Good)",
-      "4": "4 (Good)",
-      "3": "3 (Generally Satisfactory)",
-      "2": "2 (Improvement Necessary)",
-      "1": "1 (Major Improvement Necessary)",
-      "0": "0 (Urgent Improvement Necessary)"
-    }
+  "defaultFilters": {
+    "rating": null,
+    "location": null,
+    "businessName": null
   }
 }
