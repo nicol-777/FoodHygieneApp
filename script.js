@@ -1,29 +1,59 @@
+let config = {}; // Store config settings
 
-// Load configuration settings from config.json
+// Load configuration from config.json
 fetch("config.json")
-  .then(response => response.json()) // Convert response to JSON
-  .then(config => {
-    console.log("Loaded Config:", config);
-
-    // Use the config settings in your app
-
-    // Check if geolocation is enabled
-    if (config.geolocation.enabled) {
-      console.log("Geolocation is enabled");
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Failed to load config.json");
     }
-
-    // Check if backup dataset should be used
-    if (config.useBackup) {
-      console.log("Using backup dataset");
-    }
-
-    // Display API URL
-    console.log("API URL:", config.apiURL);
+    return response.json();
   })
-  .catch(error => console.error("Error loading config.json:", error));
+  .then(data => {
+    config = data; // Store the config
 
+    // Initialize map using config values
+    initMap(config.defaultLocation, config.mapZoomLevel, config.mapTileLayer);
 
+    // Load GeoJSON data based on config settings
+    loadGeoJSONData(config.geojsonFile, config.backupGeojsonFile);
 
+    // Enable chatbot if configured
+    if (config.chatbotEnabled) {
+      enableChatbot(config.chatbotGreeting);
+    }
+  })
+  .catch(error => {
+    console.error("Error loading configuration:", error);
+  });
+
+// Initialize map function
+function initMap(center, zoom, tileLayerURL) {
+  var map = L.map('map').setView(center, zoom);
+  L.tileLayer(tileLayerURL, { attribution: '© OpenStreetMap contributors' }).addTo(map);
+}
+
+// Load GeoJSON Data
+function loadGeoJSONData(mainFile, backupFile) {
+  fetch(mainFile)
+    .then(response => response.json())
+    .then(data => {
+      displayMarkers(data);
+    })
+    .catch(error => {
+      console.error("Error loading main GeoJSON, trying backup:", error);
+      fetch(backupFile)
+        .then(response => response.json())
+        .then(data => {
+          displayMarkers(data);
+        })
+        .catch(err => console.error("Error loading backup GeoJSON:", err));
+    });
+}
+
+// Enable Chatbot
+function enableChatbot(message) {
+  document.getElementById("chatbot-body").innerHTML = `<p>${message}</p>`;
+}
 
 
 
