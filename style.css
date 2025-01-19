@@ -642,18 +642,17 @@ button {
 .speech-bubble {
     background-color: #4CAF50;  /* Keep your color */
     color: #f7f3f3;
-    padding: 15px 20px;  /* Increase padding for a bigger bubble */
-    border-radius: 12px;  /* Slightly rounder edges */
+    padding: 10px;
+    border-radius: 10px;
     white-space: nowrap;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Larger shadow for depth */
-    font-size: 16px;  /* Bigger text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
     z-index: 1000;
     border: 1px solid #4CAF50;
     position: fixed;
-    bottom: 95px;  /* Maintain position */
+    bottom: 95px;  /* Slightly closer to the icon */
     right: 20px;
 }
-
 
 
 
