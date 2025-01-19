@@ -1,6 +1,6 @@
 {
   "useBackup": true,
-  "apiURL": "https://example.com/api",
+  "apiURL":"https://hafsa157.github.io/food-hygiene/data/Food_Hygiene_Ratings.geojson",
   "defaultMapLocation": {
     "latitude": 51.4545,
     "longitude": -2.5879
