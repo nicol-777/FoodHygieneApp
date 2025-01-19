@@ -34,32 +34,18 @@
     }
   },
 
+  "chatbotButtons": {
+    "width": "90%",
+    "padding": "15px",
+    "fontSize": "16px",
+    "backgroundColor": "#2f6d60",
+    "textColor": "#FFFFFF",
+    "borderRadius": "5px"
+  },
+
   "defaultFilters": {
     "rating": "",
     "location": "",
     "businessName": ""
   }
 }
-
-
-
-
-{
-  "chatbotEnabled": true,
-  "chatbotGreeting": "Hi there! How can I assist you?",
-  "chatbotIcon": "https://cdn-icons-png.flaticon.com/128/10817/10817417.png",
-  "chatbotAvatar": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
-  "enableChatbotMinimize": true,
-
-  "chatbotLayout": {
-    "buttonStyle": {
-      "width": "90%",
-      "padding": "15px",
-      "fontSize": "16px",
-      "backgroundColor": "#2f6d60",
-      "textColor": "#FFFFFF",
-      "borderRadius": "5px"
-    }
-  }
-}
-
