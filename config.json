@@ -169,3 +169,85 @@
     "businessName": null
   }
 }
+
+
+
+
+{
+  "chatbot": {
+    "enabled": true,
+    "icon": {
+      "url": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
+      "size": "60px",
+      "borderRadius": "50%",
+      "backgroundColor": "#4CAF50",
+      "position": {
+        "bottom": "20px",
+        "right": "20px"
+      }
+    },
+    "speechBubble": {
+      "text": "Hi there, how can I help you?",
+      "backgroundColor": "#4CAF50",
+      "textColor": "#ffffff",
+      "fontSize": "14px",
+      "padding": "10px",
+      "borderRadius": "10px",
+      "position": {
+        "bottom": "90px",
+        "right": "20px"
+      }
+    },
+    "container": {
+      "width": "300px",
+      "height": "auto",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid #ccc",
+      "borderRadius": "10px",
+      "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.2)",
+      "overflow": "hidden",
+      "position": {
+        "bottom": "100px",
+        "right": "20px"
+      }
+    },
+    "header": {
+      "backgroundColor": "#00796b",
+      "textColor": "white",
+      "fontSize": "16px",
+      "padding": "10px",
+      "textAlign": "center"
+    },
+    "body": {
+      "maxHeight": "400px",
+      "overflowY": "auto",
+      "padding": "10px"
+    },
+    "buttons": {
+      "backgroundColor": "#00796b",
+      "textColor": "white",
+      "padding": "10px",
+      "borderRadius": "5px",
+      "margin": "5px",
+      "fontSize": "14px",
+      "hoverBackgroundColor": "#004d40"
+    },
+    "backButton": {
+      "backgroundColor": "#e0e0e0",
+      "textColor": "black",
+      "hoverBackgroundColor": "#d5d5d5"
+    },
+    "confirmationPopup": {
+      "position": {
+        "top": "20px",
+        "right": "20px"
+      },
+      "padding": "15px",
+      "backgroundColor": "#00796b",
+      "textColor": "white",
+      "borderRadius": "5px",
+      "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.2)",
+      "fontSize": "1rem"
+    }
+  }
+}
