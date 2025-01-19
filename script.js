@@ -1,3 +1,48 @@
+fetch("config.json")
+    .then(response => response.json())
+    .then(config => {
+        // Apply chatbot greeting
+        document.getElementById("speechBubble").textContent = config.chatbotGreeting;
+        document.getElementById("speechBubble").style.backgroundColor = config.chatbotUI.bubble.backgroundColor;
+        document.getElementById("speechBubble").style.color = config.chatbotUI.bubble.textColor;
+        document.getElementById("speechBubble").style.fontSize = config.chatbotUI.bubble.fontSize;
+        document.getElementById("speechBubble").style.borderRadius = config.chatbotUI.bubble.borderRadius;
+        document.getElementById("speechBubble").style.padding = config.chatbotUI.bubble.padding;
+
+        // Apply chatbot avatar
+        document.getElementById("chatbot-avatar").src = config.chatbotAvatar;
+        document.getElementById("chatbot-avatar").style.width = config.chatbotUI.avatar.size;
+        document.getElementById("chatbot-avatar").style.height = config.chatbotUI.avatar.size;
+        document.getElementById("chatbot-avatar").style.borderRadius = config.chatbotUI.avatar.borderRadius;
+        document.getElementById("chatbot-avatar").style.border = `2px solid ${config.chatbotUI.avatar.borderColor}`;
+    })
+    .catch(error => console.warn("Error loading chatbot config."));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Initialize the map and set its view to Bristol's coordinates
 var map = L.map('map').setView([51.4545, -2.5879], 12);
 
