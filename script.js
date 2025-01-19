@@ -1,6 +1,6 @@
-let config = {}; // Store configuration data globally
+let config = {}; // Store configuration settings
 
-// Load config.json before anything else
+// Load config.json first before initializing the map
 fetch("config.json")
   .then(response => {
     if (!response.ok) {
@@ -9,30 +9,25 @@ fetch("config.json")
     return response.json();
   })
   .then(data => {
-    config = data; // Store config settings
+    config = data; // Save config data
 
     // Initialize the map using settings from config.json
     initMap(config.defaultLocation, config.mapZoomLevel, config.mapTileLayer);
 
     // Load GeoJSON Data
     loadGeoJSONData(config.geojsonFile, config.backupGeojsonFile);
-
-    // Ensure chatbot loads correctly
-    if (config.chatbotEnabled) {
-      document.getElementById("chatbot-body").innerHTML = `<p>${config.chatbotGreeting}</p>`;
-    }
   })
   .catch(error => {
     console.error("Error loading config.json:", error);
   });
 
-// Function to initialize the map
+// Function to initialize the map with correct settings
 function initMap(center, zoom, tileLayerURL) {
     var map = L.map('map').setView(center, zoom);
     L.tileLayer(tileLayerURL, { attribution: '© OpenStreetMap contributors' }).addTo(map);
 }
 
-// Load GeoJSON data function
+// Function to load GeoJSON data (main & backup)
 function loadGeoJSONData(mainFile, backupFile) {
     fetch(mainFile)
       .then(response => response.json())
@@ -51,9 +46,6 @@ function loadGeoJSONData(mainFile, backupFile) {
             .catch(err => console.error("Error loading backup GeoJSON:", err));
       });
 }
-
-
-
 
 
 
