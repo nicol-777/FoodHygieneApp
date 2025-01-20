@@ -2,4 +2,4 @@
 
 🔗 **Live Website:** [Click Here to View the Web App]
 
-https://hafsa157.github.io/food-hygiene/ 
+https://hafsa157.github.io/Food-Hygiene/ 
