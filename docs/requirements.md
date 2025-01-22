@@ -38,35 +38,29 @@ i can use it anywhere.
 
 
 #### Use Cases
-
-|  USE-CASE ID  | UC1 (Written by Hafsa Robleh) | 
-| -------------------------------------- | ------------------- |
-| **Description** |Users can search for food hygiene ratings and find restaurants with good ratings or report a food safety issue. |
-| **Actors** |Users (general public, consumers) |
-|**Assumptions** | <ul><li>The user knows the name, location, or rating of the restaurant.</li><li>The user is familiar with using web apps and entering search terms.</li><li>The user has access to an internet-enabled device.</li><li>The food business being searched has a hygiene rating available on the platform. </li><li>The user is able to interact with the HelpBot chatbot to report issues.|
-| **Steps** | <br>1. User opens the web app.  <br>2. System requests geolocation permission: <br>&nbsp;&nbsp;&nbsp;&nbsp;• If geolocation is allowed, the map centres on the user's location, and a "You are here!" marker appears. <br>&nbsp;&nbsp;&nbsp;&nbsp;• If geolocation is denied, the marker disappears, but all food hygiene markers across Bristol are still displayed.<br>3. User navigates to the search section. <br>4. User enters a search term, such as <br>&nbsp;&nbsp;&nbsp;&nbsp;• Business name <br>&nbsp;&nbsp;&nbsp;&nbsp;• Location (street, town, or postcode) <br>&nbsp;&nbsp;&nbsp;&nbsp;• Hygiene rating filter <br>5. The system sends a request to the Bristol Open Data API. <br>6. System displays the search results on the map with markers for each matching business. <br>7. If no exact matches are found, the system provides a fallback option with nearby businesses within a 500-metre radius. <br>8. User clicks on a business marker to view details, including: <br>&nbsp;&nbsp;&nbsp;&nbsp;• Hygiene rating <br>&nbsp;&nbsp;&nbsp;&nbsp;• Business name and address <br>9. User interacts with the HelpBot chatbot if they wish to: <br>&nbsp;&nbsp;&nbsp;&nbsp;• Report an issue with the hygiene rating <br>&nbsp;&nbsp;&nbsp;&nbsp;• Report food safety concerns |
-|**Variations** |<ul><li>If no results are found, the app displays a message saying, “No results found,” and suggests nearby businesses. </li><li> Geolocation-based search: User allows location access to find nearby businesses. The App displays businesses around the user's current location.</li><li>Partial name search: User enters a partial name of the business. The system provides possible matches based on the partial input.</li><li>HelpBot presents reporting options when a user selects "Report a food safety issue" or other concerns through the chatbot.
-| **Non-functional** |<ul><li>The search should return the result within 2 seconds.</li><li>The map should automatically update with nearby suggestions if no exact matches are found. |
-| **Issues** |  The system should handle API outages gracefully by loading backup data from a secondary GeoJSON file and informing users. |
-
+| **USE-CASE ID**  | **UC1 (Written by Hafsa Robleh)** |  
+|------------------|----------------------------------|  
+| **Description** | Users can search for food hygiene ratings and find restaurants with good ratings or report a food safety issue. |  
+| **Actors** | Users (general public, consumers) |  
+| **Assumptions** | <ul><li>The user knows the name, location, or rating of the restaurant.</li><li>The user is familiar with using web apps and entering search terms.</li><li>The user has access to an internet-enabled device.</li><li>The food business being searched has a hygiene rating available on the platform.</li><li>The user is able to interact with the HelpBot chatbot to report issues.</li></ul> |  
+| **Steps** | **<br>1.** User opens the web app. **<br>2.** System requests geolocation permission: <br>&nbsp;&nbsp;&nbsp;&nbsp;• If geolocation is allowed, the map centres on the user's location, and a "You are here!" marker appears. <br>&nbsp;&nbsp;&nbsp;&nbsp;• If geolocation is denied, the marker disappears, but all food hygiene markers across Bristol are still displayed. **<br>3.** User navigates to the search section. **<br>4.** User enters a search term, such as: <br>&nbsp;&nbsp;&nbsp;&nbsp;• Business name <br>&nbsp;&nbsp;&nbsp;&nbsp;• Location (street, town, or postcode) <br>&nbsp;&nbsp;&nbsp;&nbsp;• Hygiene rating filter **<br>5.** The system sends a request to the Bristol Open Data API. **<br>6.** System displays the search results on the map with markers for each matching business. **<br>7.** If no exact matches are found, the system provides a fallback option with nearby businesses within a 500-metre radius. **<br>8.** User clicks on a business marker to view details, including: <br>&nbsp;&nbsp;&nbsp;&nbsp;• Hygiene rating <br>&nbsp;&nbsp;&nbsp;&nbsp;• Business name and address **<br>9.** User interacts with the HelpBot chatbot if they wish to: <br>&nbsp;&nbsp;&nbsp;&nbsp;• Report an issue with the hygiene rating <br>&nbsp;&nbsp;&nbsp;&nbsp;• Report food safety concerns |  
+| **Variations** | <ul><li>If no results are found, the app displays a message saying, **"No results found,"** and suggests nearby businesses.</li><li>Geolocation-based search: User allows location access to find nearby businesses. The app displays businesses around the user's current location.</li><li>Partial name search: User enters a partial name of the business. The system provides possible matches based on the partial input.</li><li>HelpBot presents reporting options when a user selects **"Report a food safety issue"** or other concerns through the chatbot.</li></ul> |  
+| **Non-functional** | <ul><li>The search should return the result within **2 seconds**.</li><li>The map should automatically update with nearby suggestions if no exact matches are found.</li></ul> |  
+| **Issues** | The system should handle API outages gracefully by loading backup data from a secondary **GeoJSON file** and informing users. |  
 
 
 
 
 
-
-
-
-
-|  USE-CASE ID  | UC2 (Written by Hafsa Robleh) | 
-| -------------------------------------- | ------------------- |
-| **Description** |The business owner can verify their food hygiene rating for accuracy and request a correction if necessary through the chatbot.  |
-| **Actors** |Business owner |
-| **Assumptions** | <ul><li>The business owner has access to the food hygiene web app and can navigate the chatbot.</li><li>The business owner's establishment has an existing hygiene rating in the database.</li><li>The chatbot is capable of handling correction requests for incorrect ratings.
-| **Steps** | 1. Business owner opens web app and searches for their food business by name or location.<br>2. System displays their food hygiene rating along with other relevant details.<br>3. If the information is incorrect, the business owner uses the HelpBot chatbot to navigate to the correction request form.<br>4. System presents the correction form, allowing the business owner to provide details and submit a request for updating their rating information. <br>|
-|*Variations** | <ul><li> If the business is not found, HelpBot suggests nearby businesses or provides an option to contact support.</li><li> If the data is missing, HelpBot prompts the business owner to report the issue through the chatbot.|
-| **Non-functional** |The web app should be available 24/7, allowing business owners to check and report issues at any time.|
-| **Issues** |The system must handle scenarios where business data is missing or outdated, directing the business owner to contact support or report the issue through the chatbot.  |
+| **USE-CASE ID**  | **UC2 (Written by Hafsa Robleh)** |  
+|------------------|----------------------------------|  
+| **Description** | The business owner can verify their food hygiene rating for accuracy and request a correction if necessary through the chatbot. |  
+| **Actors** | Business owner |  
+| **Assumptions** | <ul><li>The business owner has access to the food hygiene web app and can navigate the chatbot.</li><li>The business owner's establishment has an existing hygiene rating in the database.</li><li>The chatbot is capable of handling correction requests for incorrect ratings.</li></ul> |  
+| **Steps** | **<br>1.** Business owner opens the web app. **<br>2.** System requests geolocation permission: <br>&nbsp;&nbsp;&nbsp;&nbsp;• If geolocation is allowed, the map centres on the business owner’s location, and a "You are here!" marker appears. <br>&nbsp;&nbsp;&nbsp;&nbsp;• If geolocation is denied, the marker disappears, but all food hygiene markers across Bristol are still displayed. **<br>3.** Business owner navigates to the search section. **<br>4.** Business owner enters a search term, such as: <br>&nbsp;&nbsp;&nbsp;&nbsp;• Business name <br>&nbsp;&nbsp;&nbsp;&nbsp;• Location (street, town, or postcode) <br>&nbsp;&nbsp;&nbsp;&nbsp;• Hygiene rating filter **<br>5.** The system sends a request to the Bristol Open Data API. **<br>6.** System displays the search results on the map with markers for each matching business. **<br>7.** If no exact matches are found, the system provides a fallback option with nearby businesses within a 500-metre radius. **<br>8.** Business owner clicks on a business marker to view details, including: <br>&nbsp;&nbsp;&nbsp;&nbsp;• Hygiene rating <br>&nbsp;&nbsp;&nbsp;&nbsp;• Business name and address **<br>9.** Business owner interacts with the HelpBot chatbot if they wish to: <br>&nbsp;&nbsp;&nbsp;&nbsp;• Request a correction to their hygiene rating <br>&nbsp;&nbsp;&nbsp;&nbsp;• Report food safety concerns |  
+| **Variations** | <ul><li>If the business is not found, HelpBot suggests nearby businesses or provides an option to contact support.</li><li>If the data is missing, HelpBot prompts the business owner to report the issue through the chatbot.</li></ul> |  
+| **Non-functional** | <ul><li>The web app should be available 24/7, allowing business owners to check and report issues at any time.</li></ul> |  
+| **Issues** | <ul><li>The system must handle scenarios where business data is missing or outdated, directing the business owner to contact support or report the issue through the chatbot.</li></ul> |  
 
 
 
@@ -75,21 +69,15 @@ i can use it anywhere.
 
 
 
-
-
-
-|  USE-CASE ID  | UC3 (Written by Hafsa Robleh) | 
-| -------------------------------------- | ------------------- |
-| **Description** | Developers can access the Bristol Open Data API system to implementing food hygiene rating data with fallback and error handling.  |
-| **Actors** |Web app developer |
-| **Assumptions** | <ul><li> The developer has access to the Bristol Open Data API and necessary API credentials.</li><li> The API functions correctly and returns data in the correct format for integration into the web app.</li><li>The developer is able to implement backup methods in case the API fails.
-| **Steps** |1. Developer registers for API access and obtains login credentials.<br>2. Developer integrates the API into the web app, allowing for real-time data display.<br>3. System displays hygiene ratings and location markers on the map upon each user query.<br>4. If the API fails, the system switches to loading backup data from a local GeoJSON file and displays a message alerting users to the fallback data source. |
-| **Variations** |<ul><li> If the API fails, the system displays an alert about using a backup data source and loads the backup GeoJSON file.</li><li> If the API response time exceeds 2 seconds, the system logs a warning to help enhance future performance.  |
-| **Non-functional** | The API should be secure, capable of retrieving data within 2 seconds. Fallback data should be available without noticeable delay to the user if the primary API fails.|
-| **Issues** |If both the API and backup data fail, the app should display and error message, asking the user to try again later. 
-
-
-
+| **USE-CASE ID**  | **UC3 (Written by Hafsa Robleh)** |  
+|------------------|----------------------------------|  
+| **Description** | Developers can access the Bristol Open Data API system to implement food hygiene rating data with fallback and error handling. |  
+| **Actors** | Web app developer |  
+| **Assumptions** | <ul><li>The developer has access to the Bristol Open Data API and necessary API credentials.</li><li>The API functions correctly and returns data in the correct format for integration into the web app.</li><li>The developer is able to implement backup methods in case the API fails.</li></ul> |  
+| **Steps** | **<br>1.** Developer registers for API access and obtains login credentials. **<br>2.** Developer integrates the API into the web app, allowing for real-time data display. **<br>3.** System displays hygiene ratings and location markers on the map upon each user query. **<br>4.** If the API fails, the system switches to loading backup data from a local **GeoJSON file** and displays a message alerting users to the fallback data source. |  
+| **Variations** | <ul><li>If the API fails, the system displays an alert about using a backup data source and loads the backup **GeoJSON file**.</li><li>If the API response time exceeds **2 seconds**, the system logs a warning to help enhance future performance.</li></ul> |  
+| **Non-functional** | <ul><li>The API should be secure and capable of retrieving data within **2 seconds**.</li><li>Fallback data should be available without noticeable delay to the user if the primary API fails.</li></ul> |  
+| **Issues** | <ul><li>If both the API and backup data fail, the app should display an error message, asking the user to try again later.</li></ul> |  
 
 
 
