@@ -48,7 +48,8 @@ provide a table listing the number of jslint warnings/reports for each module.
 
 
 
-<img width="761" alt="Screenshot 2024-12-07 at 17 06 23" src="https://github.com/user-attachments/assets/0d593ee8-db07-478f-94fe-ddc780f9196d">
+<img width="812" alt="Screenshot 2025-01-22 at 03 35 25" src="https://github.com/user-attachments/assets/9b0ddf4a-0a55-4a77-a897-a1debeeb3e43" />
+
 
 
 <img width="658" alt="Screenshot 2024-12-07 at 17 10 22" src="https://github.com/user-attachments/assets/6be54283-22d2-4e19-8705-cf08387ff4cd">
