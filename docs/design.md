@@ -73,6 +73,22 @@ Additionally, an image is displayed in a circular frame, visually representing f
 The interactive map displays food hygiene ratings as clickable markers, allowing users to explore businesses easily. Clicking a marker reveals a pop-up containing key details such as the business name, address, and hygiene rating. The map also includes geolocation support, enabling users to find nearby businesses based on their current location. If no exact match is found, the system provides a prompt suggesting similar businesses to help users refine their search. Additionally, zero-rated businesses are highlighted in red for quick identification, ensuring that users are aware of potential food safety concerns.
 
 
+
+## Geolocation   
+The web app uses **geolocation** to help users find food businesses near them.  
+
+- **If geolocation is allowed:**  
+  - The map centres on the user’s location.  
+  - A **blue marker** labelled **"You are here!"** appears to show their position.  
+  - Nearby businesses within **500 metres** are shown.  
+
+- **If geolocation is denied:**   
+  - The **blue "You are here!" marker disappears**.
+  - The map shows all hygiene rating markers across the Bristol area.
+  - Users can still **see all restaurant hygiene markers** and **click them to 
+    view details**.
+    
+
 ## Chatbot (HelpBot)  
 The HelpBot is positioned in the bottom-right corner of the screen to assist users with navigation and common queries. Designed for accessibility, it supports keyboard navigation and screen reader compatibility, making it user-friendly for a diverse audience. Users can minimise or close the chatbot as needed to avoid distractions.
 The chatbot also offers structured conversation options, allowing users to choose between consumer and business-related queries for a more efficient support experience. To enhance engagement, it features an animated icon with a speech bubble, making it visually appealing and easy to locate on the interface.
