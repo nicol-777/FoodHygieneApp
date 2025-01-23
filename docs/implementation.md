@@ -8,15 +8,15 @@ The web app allows users to view and search for food hygiene ratings for various
 
 The web application uses a GeoJSON dataset:
 
-• Food_Hygiene_Ratings.geojson: Contains information about business addresses, hygiene ratings, and inspection dates. 
+- Food_Hygiene_Ratings.geojson: Contains information about business addresses, hygiene ratings, and inspection dates. 
 
-• Backup_Food_Hygiene_Ratings.geojson: Ensures the application continues to function in case loading the main dataset fails.  
+- Backup_Food_Hygiene_Ratings.geojson: Ensures the application continues to function in case loading the main dataset fails.  
 
 ## Known issues  
 
-• The dataset may not always reflect up-to-date inspection results due to delays  in logging new hygiene ratings. 
+- The dataset may not always reflect up-to-date inspection results due to delays  in logging new hygiene ratings. 
 
-• Some businesses might be missing from the dataset or have incomplete information.  
+- Some businesses might be missing from the dataset or have incomplete information.  
 
 ## Configuration data  
 
@@ -26,17 +26,17 @@ The web application uses geolocation to centre the map on your current location,
 ### Customisation options
 Customisation options are available in the app’s settings menu for users to manage basic settings such as: 
 
-• Geolocation permission: Allow or deny location access to centre the map on the user's current location. 
+- Geolocation permission: Allow or deny location access to centre the map on the user's current location. 
 
-• Default search filters: Users can set preferences like filtering by business name, location, or hygiene rating. 
+- Default search filters: Users can set preferences like filtering by business name, location, or hygiene rating. 
 
 Advanced settings can only be modified by developers to adjust the app's  behaviour. These include: 
 
-• Enable the backup dataset: useBackup: true
+- Enable the backup dataset: useBackup: true
 
-• Setting API endpoints: apiURL: "https://..."
+- Setting API endpoints: apiURL: "https://..."
 
-• Define default map centring behaviour: Specify the initial map location when the app loads. 
+- Define default map centring behaviour: Specify the initial map location when the app loads. 
 
 These settings are designed to ensure flexibility and control for both end-users and developers, allowing the app to function according to user preferences and developer requirements.
 
