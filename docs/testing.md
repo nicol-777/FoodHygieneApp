@@ -179,7 +179,7 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 ---
 
 
-#### **UC1, UC2 | Requesting Geolocation Permission**  
+|**UC1, UC2 | Requesting Geolocation Permission**  
 | **Description** | Verify that the system requests geolocation permission when the user or business owner opens the web app. |
 |-----------------|-----------------------------------------------------------------------------------------------------|
 | **Prerequisites** | User or Business Owner opens the web app for the first time. |
@@ -189,7 +189,7 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 ---
 
-#### **UC1, UC2 | "You Are Here!" Marker When Geolocation is Enabled**  
+| **UC1, UC2 | "You Are Here!" Marker When Geolocation is Enabled**  
 | **Description** | Verify that when geolocation is enabled, the system places a "You are here!" marker at the user or business owner’s location. |
 |-----------------|-----------------------------------------------------------------------------------------------------|
 | **Prerequisites** | User or Business Owner allows geolocation access. |
@@ -199,7 +199,7 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 ---
 
-#### **UC1, UC2 | Map Behaviour When Geolocation is Denied**  
+| **UC1, UC2 | Map Behaviour When Geolocation is Denied**  
 | **Description** | Verify that when geolocation is denied, the map still displays all food hygiene markers across the Bristol area. |
 |-----------------|-----------------------------------------------------------------------------------------------------|
 | **Prerequisites** | User or Business Owner denies geolocation access. |
@@ -209,7 +209,7 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 ---
 
-#### **UC1, UC2 | Clicking Business Markers When Geolocation is Denied**  
+| **UC1, UC2 | Clicking Business Markers When Geolocation is Denied**  
 | **Description** | Verify that users and business owners can still interact with food hygiene markers even if geolocation is denied. |
 |-----------------|-----------------------------------------------------------------------------------------------------|
 | **Prerequisites** | User or Business Owner denies geolocation access. |
@@ -224,7 +224,115 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 
 
+| **UC1**         | **Filter by Hygiene Rating (5, 4, 3, 2, 1, 0 - Urgent)** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | Select different rating filters and verify that the correct businesses appear.                      |
+| **Prerequisites** | Dropdown list with rating options.                                                                   |
+| **Test Data**     | <ul><li>Rating: 5 (Best hygiene)</li><li>Rating: 4</li><li>Rating: 3</li><li>Rating: 2</li><li>Rating: 1</li><li>Rating: 0 (Urgent Improvement Needed)</li></ul> |
+| **Expected Result**| Only businesses matching the selected hygiene rating are displayed.                                |
+| **Written By**    | Hafsa Robleh                                                                                         |
 
+---
+
+| **UC1**         | **Display Business Details on Marker Click** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | Clicking a marker should display business details including hygiene rating and address.              |
+| **Prerequisites** | GeoJSON data contains hygiene ratings and business information.                                      |
+| **Test Data**     | Click on a business marker.                                                                         |
+| **Expected Result**| A pop-up should appear displaying the business name, hygiene rating, and address.                   |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC2**         | **Chatbot Greeting Bubble on Page Load** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | The chatbot greeting bubble should automatically appear when the page loads.                         |
+| **Prerequisites** | The chatbot feature is enabled.                                                                     |
+| **Test Data**     | Open the web app.                                                                                   |
+| **Expected Result**| A small chatbot greeting bubble should appear in the bottom right corner.                          |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC1, UC2**     | **Chatbot Opens and Provides Help Options** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | Clicking the chatbot icon should open the chatbot and display help options for both users and business owners. |
+| **Prerequisites** | The chatbot feature is enabled.                                                                     |
+| **Test Data**     | Click the chatbot icon.                                                                             |
+| **Expected Result**| The chatbot should open and display assistance options.                                            |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC2**         | **Full Page Reset After Confirmation Message** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | After submitting an issue form, the page should reset automatically.                                |
+| **Prerequisites** | The form submission feature is enabled.                                                             |
+| **Test Data**     | Submit an issue form.                                                                               |
+| **Expected Result**| After submission, the page resets to a blank state.                                                |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC2**         | **Confirmation Message Appears for 3 Seconds After Submission** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | After submitting an issue form, a confirmation message should appear for 3 seconds.                 |
+| **Prerequisites** | The form submission feature is enabled.                                                             |
+| **Test Data**     | Submit an issue form.                                                                               |
+| **Expected Result**| A confirmation message appears and disappears after 3 seconds.                                     |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC1, UC2**     | **System Requests Geolocation Permission on Page Load** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | The system should automatically ask for geolocation permission when the user or business owner opens the web app. |
+| **Prerequisites** | The browser's geolocation feature is enabled.                                                       |
+| **Test Data**     | Open the web app.                                                                                   |
+| **Expected Result**| A pop-up should appear asking the user to allow or deny geolocation.                              |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC1, UC2**     | **If Geolocation is Allowed, Map Centres on User’s Location and Shows "You are Here!" Marker** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | If the user allows geolocation, the map should automatically centre on their location and display a "You are here!" marker. |
+| **Prerequisites** | The browser's geolocation feature is enabled.                                                       |
+| **Test Data**     | Allow geolocation when prompted.                                                                    |
+| **Expected Result**| The map centres on the user's location and a blue "You are here!" marker appears.                 |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC3**         | **API Fallback Activates if API Fails** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | If the main API fails, the system should automatically switch to backup data.                       |
+| **Prerequisites** | API temporarily disabled.                                                                           |
+| **Test Data**     | Simulate API failure.                                                                               |
+| **Expected Result**| The system loads data from the backup GeoJSON file.                                                |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC3**         | **System Switches to GeoJSON Backup Data** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | The system should automatically use GeoJSON data when the API is unavailable.                        |
+| **Prerequisites** | API temporarily disabled.                                                                           |
+| **Test Data**     | Simulate API failure.                                                                               |
+| **Expected Result**| The system loads hygiene data from the GeoJSON file instead of the API.                            |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+| **UC3**         | **API Integration Follows Secure Protocols** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   | Ensure that all API data transfers are secure and compliant with GDPR regulations.                   |
+| **Prerequisites** | API is integrated into the web app.                                                                 |
+| **Test Data**     | Inspect network requests.                                                                           |
+| **Expected Result**| All API requests use HTTPS, and no personal data is exposed.                                      |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
 
 
 
