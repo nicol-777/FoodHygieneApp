@@ -14,8 +14,9 @@ The web application uses a GeoJSON dataset:
 
 ## Known issues  
 
-- The dataset may not always reflect up-to-date inspection results due to delays  in logging new hygiene ratings. 
-
+-  The dataset may not always be up-to-date due to delays in logging new hygiene 
+  ratings.
+ 
 - Some businesses might be missing from the dataset or have incomplete information.  
 
 ## Configuration data  
@@ -55,7 +56,7 @@ These settings are designed to ensure flexibility and control for both end-users
 ## Software Architecture
 
 
-Our web application uses a layered architecture style, dividing the application into separate layers, with each layer having a specific role. This design keeps the application organised, reduces the risk of issues, and makes it easier to add new features without disrupting the entire system.  
+Our web application follows a layered architecture style, dividing the application into separate layers, with each layer having a specific role. This design keeps the application organised, reduces the risk of issues, and makes it easier to add new features without disrupting the entire system.  
 
 
 
@@ -116,7 +117,7 @@ The main query retrieves a list of food businesses along with their hygiene rati
 
  
 
-To ensure uninterrupted access to data, the app includes a backup data-loading feature. If the primary API is temporarily unavailable, the app loads data from a local GeoJSON file. This backup option ensures the app remains functional and continues to provide critical information to users.  
+To ensure continuous access to data, the app includes a backup data-loading mechanism. If the primary API is temporarily unavailable, the app loads data from a local GeoJSON file. This backup option ensures the app remains functional and continues to provide critical information to users.  
 
 
 
