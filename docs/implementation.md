@@ -2,8 +2,6 @@
 
 ## Introduction
 
-TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
-
 The web app allows users to view and search for food hygiene ratings for various food businesses based in Bristol. Users can search by business name, location, or filter by rating. Additionally, it includes chatbot support for consumers and businesses.  
 
 ## Dataset 
@@ -43,8 +41,6 @@ Advanced settings can only be modified by developers to adjust the app's  behavi
 These settings are designed to ensure flexibility and control for both end-users and developers, allowing the app to function according to user preferences and developer requirements.
 
 ## Project Structure
-TODO: Provide an outline of the project folder structure and the role of each file within it.
-provide a table listing the number of jslint warnings/reports for each module.
 
 
 
@@ -57,7 +53,7 @@ provide a table listing the number of jslint warnings/reports for each module.
 
 
 ## Software Architecture
-TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
+
 
 Our web application uses a layered architecture style, dividing the application into separate layers, with each layer having a specific role. This design keeps the application organised, reduces the risk of issues, and makes it easier to add new features without disrupting the entire system.  
 
@@ -105,7 +101,7 @@ In this system each layer only interacts with the one directly above or below it
 
 
 ## Bristol Open Data API
-TODO: Document each query to Bristol Open Data
+
 Our web application uses the Bristol Open Data API to retrieve information about food hygiene ratings in Bristol. 
 
 The main query retrieves a list of food businesses along with their hygiene ratings, allowing the application to populate the map with markers representing each business and its current rating. This gives users a complete overview of all the available data. 
