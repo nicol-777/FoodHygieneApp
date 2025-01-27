@@ -7,4 +7,4 @@
 
 
 ## Mockups
- [Mockup Page](https://hafsa157.github.io/FoodHygieneApp/mockups/index.html)
+(https://hafsa157.github.io/FoodHygieneApp/mockups/index.html)
