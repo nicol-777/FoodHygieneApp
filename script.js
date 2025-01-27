@@ -246,55 +246,6 @@ populateDropdown();
 
 
 
-// Ensure chatbot is hidden by default when the page loads
-window.onload = function () {
-    const chatbot = document.getElementById("chatbot");
-    chatbot.style.display = "none";  
-    const speechBubble = document.getElementById("speechBubble");
-    speechBubble.style.display = "block";  
-}
-
-// Function to toggle chatbot visibility
-function toggleChat() {
-    const chatbot = document.getElementById("chatbot");
-    const chatIcon = document.getElementById("chat-icon");
-    const speechBubble = document.getElementById("speechBubble");
-
-    if (chatbot.style.display === "none" || chatbot.style.display === "") {
-        chatbot.style.display = "block";
-        chatIcon.style.display = "none";  
-        speechBubble.style.display = "none";  // Hide bubble immediately
-    } else {
-        chatbot.style.display = "none";
-        chatIcon.style.display = "flex";  
-        speechBubble.style.display = "block";  
-    }
-}
-
-// Minimise function - Ensure bubble returns on close
-function minimiseChat() {
-    const chatbot = document.getElementById("chatbot");
-    const chatIcon = document.getElementById("chat-icon");
-    const speechBubble = document.getElementById("speechBubble");
-
-    chatbot.style.display = "none";
-    chatIcon.style.display = "flex";  
-    speechBubble.style.display = "block";  
-}
-
-// Optional: Backup interval (as a fail-safe)
-setInterval(() => {
-    const chatbot = document.getElementById("chatbot");
-    const speechBubble = document.getElementById("speechBubble");
-
-    // Failsafe: Hide bubble if chat is still open
-    if (chatbot.style.display === "block") {
-        speechBubble.style.display = "none";
-    }
-}, 30);
-
-
-
 
 
 
