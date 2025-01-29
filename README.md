@@ -13,6 +13,10 @@
 [View First Mockup] (https://hafsa157.github.io/FoodHygieneApp/first-mockup/index.html)
 
 
+[View second Mockup] (https://hafsa157.github.io/FoodHygieneApp/second-mockup/index.html)
+
+
+
 [Mockup Version 2] 
 
 [Mockup Version 3]
