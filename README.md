@@ -7,8 +7,10 @@
 
 
 ##  Design Mockups
-[Mockup Version 1] 
 
+## First Mockup Version
+
+[View First Mockup] (https://hafsa157.github.io/FoodHygieneApp/first-mockup/index.html)
 
 
 [Mockup Version 2] 
