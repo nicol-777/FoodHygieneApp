@@ -1,4 +1,4 @@
- <!DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
@@ -398,32 +398,10 @@
                 </div>
                  
 
-                <script>
-                    function minimiseChat() {
-                        const chatbot = document.getElementById("chatbot");
-                        chatbot.style.display = "none"; // Hides chatbot on minimize
-                    }
-                    </script>
+
  
 
     
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
                  
 
@@ -436,11 +414,11 @@
             <!-- Chatbot Options (Hidden by Default) -->
 <div id="consumer-options" style="display: none;">
     <h4>Consumer options:</h4>
-    <button disabled="showForm('food-safety', true)">Report a Food Safety Issue</button>
-    <button disabled="showForm('product-labelling', true)">Report a Product Labelling Issue</button>
-    <button disabled="showForm('unregistered-business', true)">Report an Unregistered Food Business</button>
-    <button disabled="showForm('rating-problem', true)">Report a Problem with a Food Hygiene Rating</button>
-    <button disabled="showForm('whistleblowing', true)">Whistleblowing and Reporting a Food Crime</button>
+    <button onclick="showForm('food-safety', true)">Report a Food Safety Issue</button>
+    <button onclick="showForm('product-labelling', true)">Report a Product Labelling Issue</button>
+    <button onclick="showForm('unregistered-business', true)">Report an Unregistered Food Business</button>
+    <button onclick="showForm('rating-problem', true)">Report a Problem with a Food Hygiene Rating</button>
+    <button onclick="showForm('whistleblowing', true)">Whistleblowing and Reporting a Food Crime</button>
     <div style="margin-top: 10px;">
         <button class="back-btn" onclick="goBackToHelpOptions()">Back</button>
     </div>
@@ -448,9 +426,9 @@
 
 <div id="business-options" style="display: none;">
     <h4>Business options:</h4>
-    <button disabled="showForm('food-safety', false)">Report a Food Safety Incident</button>
-    <button disabled="showForm('whistleblowing', false)">Whistleblowing and Reporting a Food Crime</button>
-    <button disabled="showForm('rating-problem', false)">Report a Problem with a Food Hygiene Rating</button>
+    <button onclick="showForm('food-safety', false)">Report a Food Safety Incident</button>
+    <button onclick="showForm('whistleblowing', false)">Whistleblowing and Reporting a Food Crime</button>
+    <button onclick="showForm('rating-problem', false)">Report a Problem with a Food Hygiene Rating</button>
     <div style="margin-top: 10px;">
         <button class="back-btn" onclick="goBackToHelpOptions()">Back</button>
     </div>
@@ -730,314 +708,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-
-
-
-
-
-
-
-
-
-// Ensure chatbot is hidden by default when the page loads
-window.onload = function () {
-    const chatbot = document.getElementById("chatbot");
-    chatbot.style.display = "none";  
-    const speechBubble = document.getElementById("speechBubble");
-    speechBubble.style.display = "block";  
-}
-
-
-
-
-
-// Minimise function - Ensure bubble returns on close
-function minimiseChat() {
-    const chatbot = document.getElementById("chatbot");
-    const chatIcon = document.getElementById("chat-icon");
-    const speechBubble = document.getElementById("speechBubble");
-
-    chatbot.style.display = "none";
-    chatIcon.style.display = "flex";  
-    speechBubble.style.display = "block";  
-}
-
-
-
-
-
-// Optional: Backup interval (as a fail-safe)
-setInterval(() => {
-    const chatbot = document.getElementById("chatbot");
-    const speechBubble = document.getElementById("speechBubble");
-
-    // Failsafe: Hide bubble if chat is still open
-    if (chatbot.style.display === "block") {
-        speechBubble.style.display = "none";
-    }
-}, 30);
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="chat-icon" onclick="openChat()" style="display: flex;">
     <img src="https://cdn-icons-png.flaticon.com/128/10817/10817417.png" alt="Chatbot Avatar Icon" />
 </div>
@@ -1049,15 +719,12 @@ setInterval(() => {
 <!-- Chatbot --> 
 <div class="chatbot-container"> 
     <!-- Chatbot Icon with Speech Bubble -->
-    <div class="chatbot-icon-container" onclick="toggleChat()">
-        <div class="speech-bubble" id="speechBubble">Hi there, how can I help you?</div>
+    <div class="chatbot-icon-container" distable="toggleChat()">
+       
         <div class="chatbot-icon">
             <!-- Chatbot Icon (already in your HTML) -->
         </div>
     </div>
-
-
-
 
 
 
@@ -1070,35 +737,6 @@ setInterval(() => {
             <h3>HelpBot</h3> 
             <button onclick="minimiseChat()">Minimise</button>
         </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1139,256 +777,6 @@ setInterval(() => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Chatbot Buttons -->
 <div class="chatbot-container">
     <button class="chatbot-option">Report a Food Safety Issue</button>
@@ -1404,97 +792,6 @@ setInterval(() => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="results-container" style="text-align: center; margin-top: 20px;"></div>
 <button onclick="filterByRatingZero()">Filter by Rating 0</button>
 <button onclick="searchGeneral()">Search for Businesses</button>
@@ -1505,72 +802,11 @@ setInterval(() => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="results-container" style="text-align: center; margin-top: 20px;"></div>
 <button onclick="filterByRatingZero()">Filter by Rating 0</button>
 <button onclick="searchGeneral()">Search for Businesses</button>
 
 <div id="searchMessage" style="color: #d9534f; margin-top: 10px;"></div>
-
-
-
-
-
 
 
 
@@ -1589,10 +825,3 @@ setInterval(() => {
 </script>
 </body>
 </html>
-
-
-
-
-
-
-

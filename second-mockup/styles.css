@@ -639,21 +639,6 @@ button {
 }
 
 
-.speech-bubble {
-    background-color: #4CAF50;  /* Keep your color */
-    color: #f7f3f3;
-    padding: 10px;
-    border-radius: 10px;
-    white-space: nowrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
-    z-index: 1000;
-    border: 1px solid #4CAF50;
-    position: fixed;
-    bottom: 95px;  /* Slightly closer to the icon */
-    right: 20px;
-}
-
 
 
 
@@ -670,15 +655,13 @@ button {
     right: 20px;
     width: 350px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: none;  /* Ensure chat panel is hidden by default */
+    display: block;  /* Ensure chat panel is hidden by default */
 }
 
+    
 
 
-/* Show speech bubble when hovering over the icon */
-.chatbot-icon-container:hover .speech-bubble {
-    display: block;
-}
+
 
 
 #chat-icon {
