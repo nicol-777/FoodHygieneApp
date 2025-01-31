@@ -29,7 +29,7 @@
 
 [View sixth Mockup]   (https://hafsa157.github.io/FoodHygieneApp/sixth-mockup/index.html)
 
-[View seventh Mockup]  (https://hafsa157.github.io/FoodHygieneApp/seventh -mockup/index.html)
+[View seventh Mockup]  (https://hafsa157.github.io/FoodHygieneApp/seventh-mockup/index.html)
 
 [View eight Mockup]  (https://hafsa157.github.io/FoodHygieneApp/eight-mockup/index.html)
 
