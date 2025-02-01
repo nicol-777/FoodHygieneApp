@@ -39,5 +39,5 @@
 
 
 
-  (https://hafsa157.github.io/FoodHygieneApp/HTML Prototype/index.html)
+https://hafsa157.github.io/FoodHygieneApp/html-prototype/index.html
 
