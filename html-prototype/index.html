@@ -141,14 +141,18 @@
                 flex-direction: column;
             }
 
-            .form-field {
-                width: 100%;
-            }
+           
 
             .form-field select {
                 width: 100%;
             }
         }
+
+
+        .form-field select {
+                width: 100%;
+            }
+        
 
         label {
             font-weight: 500;
@@ -156,30 +160,46 @@
             margin-bottom: 5px;
         }
 
+
+
+
+
         
         .search-btn, #reset-btn {
-    padding: 15px 20px; /* Adjust the padding for a better appearance */
+    padding: 12px 24px; /* Adjust the padding for a better appearance */
     background-color: #00796b; /* Background color */
     color: white; /* Text color */
     border: none; /* No border */
-    border-radius: 30px; /* Rounded corners */
+    border-radius: 8px; /* Rounded corners */
     font-size: 1rem; /* Font size */
+    font-weight: 600;
     cursor: pointer; /* Pointer cursor on hover */
     margin-top: 20px; /* Margin at the top */
     width: auto; /* Set width to auto for flexible width */
     display: inline-block; /* Allow buttons to sit next to each other */
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 .search-btn:hover, #reset-btn:hover {
-    background-color: #004d40; /* Darker color on hover */
+    background-color: #004d40; /* Darker green */
+    transform: scale(1.05); /* Slight hover scaling effect */
 }
 
 
 
+/* Active (click) effect */
+.search-btn:active, #reset-btn:active {
+    background-color: #00332e;
+    transform: scale(0.98); /* Press-in effect */
+}
 
-
-
-
+/* Flexbox to align buttons properly */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds spacing between buttons */
+    margin-top: 20px;
+}
 
 
 
@@ -292,6 +312,31 @@
             background-color: #004d40;
         }
 
+
+        .Show-list {
+        display: inline-block;
+            margin: 20px;
+            padding: 12px 24px;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        
+
+
+
+
+
+
+
+
         /* Flexbox to align input fields in a row */
         .form-field-container {
             display: flex;
@@ -351,6 +396,8 @@
                     <input type="text" id="location" placeholder="Enter location"> 
                 </div> 
             </div> 
+
+
             <div class="form-group"> 
                 <div class="form-field"> 
                     <label for="rating-filter">Filter by Rating</label> 
@@ -366,11 +413,101 @@
                 </div> 
             </div> 
             <button type="submit" class="search-btn">Search</button> 
+            <button type="button" id="show-list-btn" class="search-btn" onclick="window.location.href='list.html';">Show List</button>
             <button type="button" id="reset-btn" class="search-btn">Reset</button> 
+           
+
         </form> 
     </section> 
 
     <div id="map"></div> 
+
+
+   
+    
+
+<script>
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleInput = document.getElementById('toggle-view');
+    const toggleLabel = document.getElementById('toggle-label');
+    const mapContainer = document.getElementById('map');
+    const listContainer = document.getElementById('list-container');
+
+    // Ensure list container exists
+    if (!listContainer) {
+        console.error("List container not found.");
+        return;
+    }
+
+    // Hide list by default
+    listContainer.style.display = 'none';
+
+    toggleInput.addEventListener('change', function () {
+        if (this.checked) {
+            mapContainer.style.display = 'none';  // Hide the map
+            listContainer.style.display = 'block';  // Show the list
+            toggleLabel.textContent = "Show Map";
+            populateList(); // Populate the list with GeoJSON data
+        } else {
+            mapContainer.style.display = 'block'; // Show the map
+            listContainer.style.display = 'none'; // Hide the list
+            toggleLabel.textContent = "Show List";
+        }
+    });
+
+    function populateList() {
+        const listTableBody = document.getElementById('food-list').querySelector('tbody');
+        listTableBody.innerHTML = ''; // Clear previous entries
+
+        if (!window.originalData || !window.originalData.features) {
+            console.error("GeoJSON data not loaded.");
+            return;
+        }
+
+        // Populate the list with business names, addresses, and ratings
+        window.originalData.features.forEach(feature => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${feature.properties.BUSINESS_NAME || 'N/A'}</td>
+                <td>${feature.properties.ADDRESS || 'N/A'}</td>
+                <td>${feature.properties.RATING !== undefined ? feature.properties.RATING : 'No Rating'}</td>
+            `;
+            listTableBody.appendChild(row);
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleInput = document.getElementById('toggle-view');
+
+    toggleInput.addEventListener('change', function () {
+        if (this.checked) {
+            localStorage.setItem("geojsonData", JSON.stringify(originalData)); // Store GeoJSON data
+            window.location.href = "list.html"; // Redirect to List Page
+        } else {
+            window.location.href = "index.html"; // Redirect back to Map Page
+        }
+    });
+});
+
+</script>
+
+
+
+
+
+
+
+
 
 
 
@@ -1484,7 +1621,25 @@
         speechBubble.style.display = "block";  // Restore speech bubble
     }
     
-    
+
+
+
+
+
     </script>
     
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
