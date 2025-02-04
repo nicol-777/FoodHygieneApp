@@ -1,1 +1,858 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Food Hygiene Ratings</title> 
+    <!-- Leaflet CSS --> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file --> 
 
+  
+    <style>
+        /* Modern style for the dropdown */
+        .form-field {
+            position: relative; /* Needed for custom arrow positioning */
+        }
+
+        #rating-filter {
+            -webkit-appearance: none; /* Removes the default dropdown arrow in WebKit browsers */
+            -moz-appearance: none; /* Removes the default dropdown arrow in Firefox */
+            appearance: none; /* Removes the default dropdown arrow */
+            background-color: #ffffff; /* White background for visibility */
+            color: #333333; /* Dark text color for contrast */
+            padding: 15px;
+            padding-right: 40px; /* Extra padding for the arrow */
+            border: 1px solid #ccc; /* Add a border for better appearance */
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 300px; /* Increased max-width for a longer dropdown */
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 10px;
+        }
+
+        /* Hover effect */
+        #rating-filter:hover {
+            background-color: #e7f0ee; /* Slightly different color on hover */
+            border-color: #00796b; /* Match your theme color */
+        }
+
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            #rating-filter {
+                width: 100%;
+            }
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1, h2 {
+            font-weight: 700;
+        }
+
+        .header-content {
+            background-color: #00796b;
+            padding: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .header-text {
+            padding-left: 40px;
+            max-width: 60%;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .header-content p {
+            font-size: 1.25rem;
+            margin-top: 10px;
+        }
+
+        /* Style for circular image */
+        .header-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .search-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: block;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Adjust the form field alignment */
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Increase the gap between the fields */
+            margin-bottom: 20px; /* Add more margin between rows */
+        }
+
+        .form-field {
+            flex: 1;
+            margin-right: 10px; /* Add more space between individual form fields */
+        }
+
+        input, select {
+            width: 100%; 
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            box-sizing: border-box; /* Ensure the padding and borders are included in width */
+        }
+
+        /* New rule to set a max-width for the select element */
+        .form-field select {
+            max-width: 200px; /* Set a reasonable width */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .form-group {
+                flex-direction: column;
+            }
+
+           
+
+            .form-field select {
+                width: 100%;
+            }
+        }
+
+
+        .form-field select {
+                width: 100%;
+            }
+        
+
+        label {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+
+
+
+
+        
+        .search-btn, #reset-btn {
+    padding: 12px 24px; /* Adjust the padding for a better appearance */
+    background-color: #00796b; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    font-weight: 600;
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Margin at the top */
+    width: auto; /* Set width to auto for flexible width */
+    display: inline-block; /* Allow buttons to sit next to each other */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.search-btn:hover, #reset-btn:hover {
+    background-color: #004d40; /* Darker green */
+    transform: scale(1.05); /* Slight hover scaling effect */
+}
+
+
+
+/* Active (click) effect */
+.search-btn:active, #reset-btn:active {
+    background-color: #00332e;
+    transform: scale(0.98); /* Press-in effect */
+}
+
+/* Flexbox to align buttons properly */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds spacing between buttons */
+    margin-top: 20px;
+}
+
+
+
+
+        #map {
+            height: 500px;
+            width: 70%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: block;
+
+        }
+
+        #request-correction {
+            display: none; /* Hidden initially */
+        }
+
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .chatbot {
+            width: 300px; /* Adjust width */
+            height: auto; /* Allow height to adjust based on content */
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .chatbot-header {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .chatbot-body {
+            padding: 10px;
+            overflow-y: auto;
+            max-height: 400px; /* Set max height for scrolling */
+        }
+
+        button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 14px; /* Adjust button text size */
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+
+        /* General styles for form alignment */
+        #request-correction {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align the form items to the left */
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto; /* Center the form on the page */
+        }
+
+        #correction-form {
+            width: 100%;
+        }
+
+        #correction-form label {
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        #correction-form input,
+        #correction-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #correction-form textarea {
+            height: 150px;
+        }
+
+        .submit-btn {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #004d40;
+        }
+
+
+        .Show-list {
+        display: inline-block;
+            margin: 20px;
+            padding: 12px 24px;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        
+
+
+
+
+
+
+
+
+        /* Flexbox to align input fields in a row */
+        .form-field-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .form-field-container .form-field {
+            flex: 1;
+            margin-right: 20px; /* Adds space between fields */
+        }
+
+        /* Last field (textarea) gets full width */
+        .form-field-container .form-field:last-child {
+            margin-right: 0; /* Remove margin for last child */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .form-field-container {
+                flex-direction: column;
+            }
+
+            .form-field {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+
+    </style>
+</head> 
+
+<body> 
+    <header> 
+        <div class="header-content"> 
+            <div class="header-text"> 
+                <h1>Food hygiene ratings</h1> 
+                <p>Use our online service to find a food business's hygiene rating</p> 
+            </div> 
+            <div class="header-image"> 
+                <img src="https://i2-prod.manchestereveningnews.co.uk/incoming/article14592780.ece/ALTERNATES/s1200c/Hygiene-sticker-960x576.jpg" alt="Food Hygiene Rating Image"> 
+            </div> 
+        </div> 
+    </header> 
+
+    <section class="search-section"> 
+        <h2>Search for a food hygiene rating</h2> 
+        <form id="search-form"> 
+            <div class="form-group"> 
+                <div class="form-field"> 
+                    <label for="business-name">Business name</label> 
+                    <input type="text" id="business-name" placeholder="Enter business name"> 
+                </div> 
+                <div class="form-field"> 
+                    <label for="location">Street, town or postcode</label> 
+                    <input type="text" id="location" placeholder="Enter location"> 
+                </div> 
+            </div> 
+            <div class="form-group"> 
+                <div class="form-field"> 
+                    <label for="rating-filter">Filter by Rating</label> 
+                    <select id="rating-filter"> 
+                        <option value="">All Ratings</option> 
+                        <option value="5">5 (Very Good)</option> 
+                        <option value="4">4 (Good)</option> 
+                        <option value="3">3 (Generally Satisfactory)</option> 
+                        <option value="2">2 (Improvement Necessary)</option> 
+                        <option value="1">1 (Major Improvement Necessary)</option> 
+                        <option value="0">0 (Urgent Improvement Necessary)</option> 
+                    </select> 
+                </div> 
+            </div> 
+            <button type="submit" class="search-btn" disabled>search</button>
+            <button type="button" id="show-list-btn" class="search-btn" disabled="window.location.href='list.html';">Show List</button>
+            <button type="button" id="reset-btn" class="search-btn" disabled>Reset</button> 
+        </form> 
+    </section> 
+
+    <div id="map"></div> 
+
+
+
+
+    </div> 
+
+
+    <!-- Chatbot --> 
+    <div class="chatbot-container"> 
+        <div id="chatbot" class="chatbot"> 
+            <div class="chatbot-header"> 
+                <h3>HelpBot</h3> 
+                <button disabled="minimiseChat()">Minimise</button>
+            </div> 
+            <div id="chatbot-body" class="chatbot-body"> 
+                <div id="initial-question">
+                    <p>Consumer options:</p>
+                        <button disabled="showConsumerOptions()">Report a Food Safety Issue</button>
+                        <button disabled="showconsumerOptions()">Report a Product Labelling Issue</button>
+                        <button disabled="showConsumerOptions()">Report an Unregistered Food Business</button>
+                        <button disabled="showConsumerOptions()">Report a Problem with a Food Hygiene Rating</button>
+                        <button disabled="showConsumerOptions()">Whistleblowing and Reporting a Food Crime</button>
+
+                        <button class="back-btn" disabled="goBackToInitial()">Back</button>
+                    </div>
+                   
+ 
+
+    
+
+
+
+                    <div id="chatbot-forms-container" style="display: none;">
+                        <div id="form-template" style="display: none;">
+                            <h3 id="form-title" style="margin-bottom: 15px;"></h3>
+                            <form id="issue-form" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px; background-color: #f9f9f9;">
+                                <div class="form-field">
+                                    <label for="user-name">Your Name:</label>
+                                    <input type="text" id="user-name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="user-email">Your Email:</label>
+                                    <input type="email" id="user-email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="issue-details">Describe the Issue:</label>
+                                    <textarea id="issue-details" rows="4" placeholder="Provide details" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">Submit</button>
+                                <button type="button" class="back-btn" onclick="goBackToOptions()">Back</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+        <form id="issue-form" onsubmit="handleFormSubmission(event)">
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Leaflet JS --> 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> 
+    <script src="script.js"></script> <!-- External JS file --> 
+
+    <script>
+        // Function to toggle chatbot visibility
+        function toggleChat() {
+            const chatbot = document.getElementById('chatbot');
+            chatbot.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Respond to chatbot help request
+        function respondHelp(needHelp) {
+            const chatbotBody = document.getElementById('chatbot-body');
+            chatbotBody.innerHTML = ''; // Clear existing content
+            
+            if (needHelp) {
+                chatbotBody.innerHTML = `<p>How can I assist you?</p>
+                                         <p><button onclick="navigateToCorrection()">I want to request a correction</button></p>
+                                         <p><button onclick="searchHelp()">I need help with searching</button></p>`;
+            } else {
+                chatbotBody.innerHTML = `<p>Okay, let me know if you need help later.</p>
+                                         <p><button onclick="resetChat()">Ask for help</button></p>`;
+            }
+        }
+
+        // Show the correction form
+        function navigateToCorrection() {
+            toggleChat(); // Close the chatbot
+            document.getElementById('request-correction').style.display = 'block'; // Show the form
+            window.scrollTo({ top: document.querySelector('#request-correction').offsetTop, behavior: 'smooth' });
+    
+    
+        }
+
+         
+        // Provide search help
+        function searchHelp() {
+            const chatbotBody = document.getElementById('chatbot-body');
+            chatbotBody.innerHTML = `<p>To search, enter the business name or location and click "Search".</p>
+                                     <p><button onclick="resetChat()">Back</button></p>`;
+        }
+
+        // Reset chatbot content
+        function resetChat() {
+            const chatbotBody = document.getElementById('chatbot-body');
+            chatbotBody.innerHTML = `<p>Hi! Do you need any help today?</p>
+                                     <p><button onclick="respondHelp(true)">Yes</button>
+                                     <button onclick="respondHelp(false)">No</button></p>`;
+        }
+
+        // Implement navigation for help options
+        function showHelpOptions() {
+            document.getElementById('initial-question').style.display = 'none';
+            document.getElementById('help-options').style.display = 'block';
+            scrollToBottom(); // Scroll to bottom to see new options
+        }
+
+        function showConsumerOptions() {
+            document.getElementById('help-options').style.display = 'none';
+            document.getElementById('consumer-options').style.display = 'block';
+            scrollToBottom(); // Scroll to bottom when showing consumer options
+        }
+
+        function showBusinessOptions() {
+            document.getElementById('help-options').style.display = 'none';
+            document.getElementById('business-options').style.display = 'block';
+            scrollToBottom(); // Scroll to bottom when showing business options
+        }
+
+        function goBackToInitial() {
+            document.getElementById('initial-question').style.display = 'block';
+            document.getElementById('help-options').style.display = 'none';
+            document.getElementById('consumer-options').style.display = 'none';
+            document.getElementById('business-options').style.display = 'none';
+            scrollToBottom(); // Scroll to bottom after going back to initial
+        }
+
+        function goBackToHelpOptions() {
+            document.getElementById('help-options').style.display = 'block';
+            document.getElementById('consumer-options').style.display = 'none';
+            document.getElementById('business-options').style.display = 'none';
+            scrollToBottom(); // Scroll to bottom after going back to help options
+        }
+
+        function goBackToOptions() {
+            document.getElementById('chatbot-forms-container').style.display = 'none'; // Hide form
+            goBackToHelpOptions(); // Show help options again
+        }
+
+        // Function to scroll to the bottom of the chatbot body
+        function scrollToBottom() {
+            const chatbotBody = document.getElementById('chatbot-body');
+            chatbotBody.scrollTop = chatbotBody.scrollHeight; // Scroll to the bottom
+        }
+
+        // Handle form submission for search and filter by rating
+        document.getElementById('search-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const businessName = document.getElementById('business-name').value.toLowerCase();
+            const location = document.getElementById('location').value.toLowerCase();
+            const ratingFilter = document.getElementById('rating-filter').value;  // This is a string
+
+            // Filter the original GeoJSON data based on the search inputs
+            const filteredData = {
+                type: "FeatureCollection",
+                features: originalData.features.filter(feature => {
+                    const nameMatches = feature.properties.BUSINESS_NAME.toLowerCase().includes(businessName);
+                    const locationMatches = feature.properties.ADDRESS.toLowerCase().includes(location);
+
+                    // Ensure feature.properties.RATING exists and is compared as a string
+                    const rating = feature.properties.RATING ? String(feature.properties.RATING) : '';
+                    const ratingMatches = ratingFilter ? rating === ratingFilter : true;  // Compare with selected rating
+
+                    return nameMatches && locationMatches && ratingMatches;
+                })
+            };
+
+            displayMarkers(filteredData);  // Display only the filtered markers
+        });
+
+        // Handle reset functionality
+        document.getElementById('reset-btn').addEventListener('click', function () {
+            // Reset form values
+            document.getElementById('search-form').reset();
+            
+            // Display original data (reset the map to show all businesses again)
+            displayMarkers(originalData);
+        });
+    </script>
+</body> 
+</html>
+
+
+
+<!-- Map Section -->
+<div id="map" style="min-height: 600px; width: 100%; margin: 0; padding: 0;"></div>
+
+
+
+
+<div id="chatbot-forms-container" style="display: block; width: 100%; max-width: 800px; margin: -550px auto; padding: 20px;">
+    <div id="form-template" style="width: 100%;">
+        <h3 id="form-title" style="margin-bottom: 15px; text-align: center; font-size: 1.8em; color: #00796b;">Report a Food Safety Issue</h3>
+        <form id="issue-form" style="border: 1px solid #ccc; padding: 25px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="form-field" style="margin-bottom: 20px;">
+                <label for="user-name" style="display: block; font-weight: 600; color: #333;">Your Name:</label>
+                <input type="text" id="user-name" placeholder="Enter your name" required style="width: 100%; padding: 14px; border-radius: 5px; border: 1px solid #ccc; font-size: 1em; box-sizing: border-box;">
+            </div>
+            <div class="form-field" style="margin-bottom: 20px;">
+                <label for="user-email" style="display: block; font-weight: 600; color: #333;">Your Email:</label>
+                <input type="email" id="user-email" placeholder="Enter your email" required style="width: 100%; padding: 14px; border-radius: 5px; border: 1px solid #ccc; font-size: 1em; box-sizing: border-box;">
+            </div>
+            <div class="form-field" style="margin-bottom: 20px;">
+                <label for="issue-details" style="display: block; font-weight: 600; color: #333;">Describe the Issue:</label>
+                <textarea id="issue-details" rows="5" placeholder="Provide details" required style="width: 100%; padding: 14px; border-radius: 5px; border: 1px solid #ccc; font-size: 1em; box-sizing: border-box;"></textarea>
+            </div>
+            <button type="submit" class="submit-btn" style="width: 100%; background-color: #00796b; color: white; padding: 14px; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; font-weight: bold; text-align: center;">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript to Toggle Form Visibility -->
+<script>
+    document.getElementById("show-form-btn").addEventListener("click", function() {
+        var formContainer = document.getElementById("consumer-form-container");
+        if (formContainer.style.display === "none" || formContainer.style.display === "") {
+            formContainer.style.display = "block";
+        } else {
+            formContainer.style.display = "none";
+        }
+    });
+</script>
+
+<!-- Additional CSS -->
+<style>
+    /* Ensure no background color for the body or parent elements */
+    body, html {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Remove border from the form container */
+    #consumer-form-container {
+        border-top: none;
+    }
+</style>
+
+
+
+<script>
+    // Function to show the form and scroll to it only when activated by the chatbot
+    function showForm(issueType, isConsumer) {
+        // Set the form title based on the selected issue and whether it's for a Consumer or Business
+        const formTitleMap = {
+            'food-safety': isConsumer ? 'Report a Food Safety Issue' : 'Report a Food Safety Incident',
+            'product-labelling': 'Report a Product Labelling Issue',
+            'unregistered-business': 'Report an Unregistered Food Business',
+            'rating-problem': 'Report a Problem with a Food Hygiene Rating',
+            'whistleblowing': 'Whistleblowing and reporting a food crime'
+        };
+        
+        // Update the form title based on the context (Consumer or Business)
+        document.getElementById('consumer-form-title').textContent = formTitleMap[issueType];
+        
+        // Conditionally set the label and placeholder for the name input based on the context
+        const nameLabel = document.querySelector('label[for="consumer-name"]');
+        const nameInput = document.getElementById('consumer-name');
+        
+        if (isConsumer) {
+            nameLabel.textContent = 'Your Name:';
+            nameInput.placeholder = 'Enter your name';
+        } else {
+            nameLabel.textContent = 'Your Business Name:';
+            nameInput.placeholder = 'Enter your business name';
+        }
+        
+        // Show the form container
+        const formContainer = document.getElementById('consumer-form-container');
+        formContainer.style.display = 'block';
+
+        // Check if the function is triggered by a button click, not on page load
+        if (event && event.type === 'click') {
+            // Smoothly scroll to the form only when the function is called through a click event
+            window.scrollTo({
+                top: formContainer.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+<div id="chat-icon" onclick="openChat()" style="display: flex;">
+    <img src="https://cdn-icons-png.flaticon.com/128/10817/10817417.png" alt="Chatbot Avatar Icon" />
+</div>
+
+
+
+
+
+<!-- Chatbot --> 
+<div class="chatbot-container"> 
+    <!-- Chatbot Icon with Speech Bubble -->
+    <div class="chatbot-icon-container" distable="toggleChat()">
+       
+        <div class="chatbot-icon">
+            <!-- Chatbot Icon (already in your HTML) -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Chatbot Panel (Initially Hidden) -->
+    <div id="chatbot" class="chatbot" style="display: none;"> 
+        <div class="chatbot-header"> 
+            <h3>HelpBot</h3> 
+            <button onclick="minimiseChat()">Minimise</button>
+        </div> 
+
+
+
+
+
+
+
+        <form id="issue-form" onsubmit="handleFormSubmission(event)">
+            <div class="form-field">
+                <label for="consumer-name">Your Name:</label>
+                <input type="text" id="consumer-name" required>
+            </div>
+            <div class="form-field">
+                <label for="consumer-email">Your Email:</label>
+                <input type="email" id="consumer-email" required>
+            </div>
+            <div class="form-field">
+                <label for="consumer-issue-details">Describe the Issue:</label>
+                <textarea id="consumer-issue-details" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+        <!-- Confirmation Message (Hidden by Default) -->
+        <div id="confirmation-message" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+        </div>
+        
+
+
+
+
+<!-- Confirmation Message (Hidden by Default) -->
+<div id="confirmation-message" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+</div>
+
+
+
+
+
+
+<!-- Chatbot Buttons -->
+<div class="chatbot-container">
+    <button class="chatbot-option">Report a Food Safety Issue</button>
+    <button class="chatbot-option">Report a Labelling Issue</button>
+    <button class="chatbot-option">Report an Unregistered Business</button>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="results-container" style="text-align: center; margin-top: 20px;"></div>
+<button onclick="filterByRatingZero()">Filter by Rating 0</button>
+<button onclick="searchGeneral()">Search for Businesses</button>
+
+<div id="searchMessage" style="color: #d9534f; margin-top: 10px;"></div>
+
+
+
+
+
+<div id="results-container" style="text-align: center; margin-top: 20px;"></div>
+<button onclick="filterByRatingZero()">Filter by Rating 0</button>
+<button onclick="searchGeneral()">Search for Businesses</button>
+
+<div id="searchMessage" style="color: #d9534f; margin-top: 10px;"></div>
+
+
+
+
+
+
+
+<script>
+    // Initialize the map and set its view to Bristol's coordinates
+    var map = L.map('map').setView([51.4545, -2.5879], 12);
+
+    // Add a tile layer to the map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+</script>
+</body>
+</html>
