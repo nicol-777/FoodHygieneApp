@@ -19,7 +19,7 @@ The Food Hygiene Web App helps users find and review food hygiene ratings for bu
 - [View Fifth Mockup](https://hafsa157.github.io/FoodHygieneApp/fifth-mockup/index.html)  
 - [View Sixth Mockup](https://hafsa157.github.io/FoodHygieneApp/sixth-mockup/index.html)  
 - [View Seventh Mockup](https://hafsa157.github.io/FoodHygieneApp/seventh-mockup/index.html)  
-- [View Eighth Mockup](https://hafsa157.github.io/FoodHygieneApp/eighth-mockup/index.html)  
+- [View Eight Mockup](https://hafsa157.github.io/FoodHygieneApp/eighth-mockup/index.html)  
 - [View Ninth Mockup](https://hafsa157.github.io/FoodHygieneApp/ninth-mockup/index.html)  
 
 ---
