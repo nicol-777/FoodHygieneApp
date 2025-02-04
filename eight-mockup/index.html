@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
     <link rel="stylesheet" href="styles.css"> <!-- External CSS file --> 
 
+   
     <style>
         /* Modern style for the dropdown */
         .form-field {
@@ -141,14 +142,18 @@
                 flex-direction: column;
             }
 
-            .form-field {
-                width: 100%;
-            }
+           
 
             .form-field select {
                 width: 100%;
             }
         }
+
+
+        .form-field select {
+                width: 100%;
+            }
+        
 
         label {
             font-weight: 500;
@@ -156,30 +161,46 @@
             margin-bottom: 5px;
         }
 
+
+
+
+
         
         .search-btn, #reset-btn {
-    padding: 15px 20px; /* Adjust the padding for a better appearance */
+    padding: 12px 24px; /* Adjust the padding for a better appearance */
     background-color: #00796b; /* Background color */
     color: white; /* Text color */
     border: none; /* No border */
-    border-radius: 30px; /* Rounded corners */
+    border-radius: 8px; /* Rounded corners */
     font-size: 1rem; /* Font size */
+    font-weight: 600;
     cursor: pointer; /* Pointer cursor on hover */
     margin-top: 20px; /* Margin at the top */
     width: auto; /* Set width to auto for flexible width */
     display: inline-block; /* Allow buttons to sit next to each other */
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 .search-btn:hover, #reset-btn:hover {
-    background-color: #004d40; /* Darker color on hover */
+    background-color: #004d40; /* Darker green */
+    transform: scale(1.05); /* Slight hover scaling effect */
 }
 
 
 
+/* Active (click) effect */
+.search-btn:active, #reset-btn:active {
+    background-color: #00332e;
+    transform: scale(0.98); /* Press-in effect */
+}
 
-
-
-
+/* Flexbox to align buttons properly */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds spacing between buttons */
+    margin-top: 20px;
+}
 
 
 
@@ -292,6 +313,31 @@
             background-color: #004d40;
         }
 
+
+        .Show-list {
+        display: inline-block;
+            margin: 20px;
+            padding: 12px 24px;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        
+
+
+
+
+
+
+
+
         /* Flexbox to align input fields in a row */
         .form-field-container {
             display: flex;
@@ -324,7 +370,6 @@
 
     </style>
 </head> 
-
 <body> 
     <header> 
         <div class="header-content"> 
@@ -366,6 +411,7 @@
                 </div> 
             </div> 
             <button type="submit" class="search-btn" disabled>search</button>
+            <button type="button" id="show-list-btn" class="search-btn" disabled="window.location.href='list.html';">Show List</button>
             <button type="button" id="reset-btn" class="search-btn" disabled>Reset</button> 
         </form> 
     </section> 
