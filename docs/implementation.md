@@ -135,43 +135,37 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use Case 1: Enabling Location Access - Created by Hafsa Robleh
 
-![Use Case 1 Enabling Location Access (6)](https://github.com/user-attachments/assets/06287ea2-dad7-4c11-ba88-b05534303f0e)
-
+![Use Case 1 Enabling Location Access (7)](https://github.com/user-attachments/assets/6c2dc586-b4bf-46f8-b7d8-350ff5f6c508)
 
 
 # Use Case 2: Searching by Business Name - Created by Hafsa Robleh
 
-![Your paragraph text (47)](https://github.com/user-attachments/assets/fbed0948-bbe0-4281-8b39-361dcad5a819)
-
+![Your paragraph text (62)](https://github.com/user-attachments/assets/933195f7-7e19-47b9-ac22-abf244aef389)
 
 
 
 # Use case 3: Searching by Location - Created by Hafsa Robleh
 
-
-![Your paragraph text (48)](https://github.com/user-attachments/assets/8d887831-4d0e-4330-9513-9ef61d246160)
+![Your paragraph text (63)](https://github.com/user-attachments/assets/ede411a2-66e3-4142-984c-24f49a10e8e1)
 
 
 
 # Use case 4: Filtering by Hygiene Rating 0 (Urgent Improvement Necessary) - Created by Hafsa Robleh
 
 
-![Your paragraph text (55)](https://github.com/user-attachments/assets/b3c45302-ac7b-48e2-b397-63375a2e6495)
+![Your paragraph text (64)](https://github.com/user-attachments/assets/e53a6380-9bb9-44f9-86ee-362c31561459)
 
 
 
 # Use case 5: Rating 1 (Major Improvement Necessary) - Created by Hafsa Robleh
 
-![Your paragraph text (56)](https://github.com/user-attachments/assets/454d4c7e-114b-44dd-bbe5-7b9baea04425)
-
+![Your paragraph text (65)](https://github.com/user-attachments/assets/3ca3e437-eec9-4809-a526-07ddef9563c7)
 
 
 # Use case 6: Rating 2 (Improvement Necessary) - Created by Hafsa Robleh
 
-![Your paragraph text (57)](https://github.com/user-attachments/assets/1556046e-5c7c-4f18-ab5d-bcd14952e9a7)
 
-
-
+![Your paragraph text (66)](https://github.com/user-attachments/assets/27b85f2e-f992-46a8-a298-217010b349c3)
 
 
 
@@ -179,8 +173,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 7: Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
 
 
-![Your paragraph text (58)](https://github.com/user-attachments/assets/55300051-2d8d-447b-9612-544a5be9514e)
-
+![Your paragraph text (67)](https://github.com/user-attachments/assets/1e30e255-9980-40e9-92d5-9505c8188e3a)
 
 
 
@@ -188,89 +181,100 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 8: Rating 4 (Good) - Created by Hafsa Robleh
 
 
-![Your paragraph text (59)](https://github.com/user-attachments/assets/1fa67c04-7b8e-4a22-92e5-d192d7940d22)
 
-
+![Your paragraph text (68)](https://github.com/user-attachments/assets/8f99184d-9fe6-4d8f-90ef-3b97507ec07f)
 
 
 
 
 # Use case 9: Rating 5 (Very Good) - Created by Hafsa Robleh
 
-
-![Your paragraph text (60)](https://github.com/user-attachments/assets/76eacf2f-1cd9-4578-8069-4c631c1c38e8)
-
-
+![Your paragraph text (69)](https://github.com/user-attachments/assets/7b973624-4acf-47ac-a6bd-4b804f127f13)
 
 
 # Use case 10: Opening HelpBot - Created by Hafsa Robleh
 
-![Your paragraph text (25)](https://github.com/user-attachments/assets/bc7b1ac6-98d8-4949-ba1e-747fdf4b7bca)
+
+![Your paragraph text (70)](https://github.com/user-attachments/assets/03e2ec10-c942-4689-a03a-44354d6d0011)
+
+
+
+
 
 
 # Use case 11: Using HelpBot Assistance - Created by Hafsa Robleh
 
 
-
-![Your paragraph text (26)](https://github.com/user-attachments/assets/24f18406-c947-4ffd-afd9-77817feaa205)
-
+![Your paragraph text (71)](https://github.com/user-attachments/assets/ebc4f6db-f189-4b17-b8bd-272156d42592)
 
 
 
 # Use case 12: Consumers or Businesses - Created by Hafsa Robleh
 
-![Your paragraph text (30)](https://github.com/user-attachments/assets/11205c61-4bb3-4c77-903a-13cf446e4c79)
-
+![Your paragraph text (72)](https://github.com/user-attachments/assets/27e825ce-29b7-407b-bce4-21f1152457b9)
 
 
 # Use case 13: Consumer Options in HelpBot - Created by Hafsa Robleh
 
-![Your paragraph text (32)](https://github.com/user-attachments/assets/88e3274f-a1f2-4961-9fa6-7b4059ca5592)
-
+![Your paragraph text (73)](https://github.com/user-attachments/assets/0d517d90-30fe-432d-ab65-cffcaad4580e)
 
 
 # Use case 14: Reporting a Food Safety Issue (Consumers) - Created by Hafsa Robleh
-![Your paragraph text (34)](https://github.com/user-attachments/assets/c73eeb29-c181-422f-9ec2-9a6e938304e7)
+
+
+![Your paragraph text (87)](https://github.com/user-attachments/assets/58ff229c-1717-4d16-89c8-86997915d64b)
 
 
 
 # Use case 15: Successful Submission of a Report - Created by Hafsa Robleh
 
-![Your paragraph text (36)](https://github.com/user-attachments/assets/e2334b0f-5d7e-424d-b41a-469ab11244fa)
-
+![Your paragraph text (75)](https://github.com/user-attachments/assets/95293a23-48b3-4d4b-a6fb-3f4bed24a748)
 
 
 # Use case 16:  Returning to the Main Search Interface - Created by Hafsa Robleh
 
-![Your paragraph text (37)](https://github.com/user-attachments/assets/326ddec8-93e4-4baa-86db-d1983f7f4122)
+![Your paragraph text (76)](https://github.com/user-attachments/assets/73ee510c-ff4f-4a31-8106-737491c87be1)
 
 
 # Use case 17: Business Options in HelpBot - Created by Hafsa Robleh
-![Your paragraph text (38)](https://github.com/user-attachments/assets/a1dc52f3-6ea2-41be-a332-42ab3db98f02)
+
+![Your paragraph text (77)](https://github.com/user-attachments/assets/c7b09f14-c2ff-487c-ba19-8ec829266f5b)
 
 
 # Use case 18: Reporting a Food Safety Incident (Business) - Created by Hafsa Robleh
 
-![Your paragraph text (39)](https://github.com/user-attachments/assets/76b7f59d-9061-42b5-83cb-ffc7467d98ba)
+
+![Your paragraph text (88)](https://github.com/user-attachments/assets/b3d8796c-44b6-4402-a37b-7892a3de5b60)
+
+
 
 # Use case 19: Successful Submission of a Report  - Created by Hafsa Robleh
-![Your paragraph text (36)](https://github.com/user-attachments/assets/e2334b0f-5d7e-424d-b41a-469ab11244fa)
+
+![Your paragraph text (79)](https://github.com/user-attachments/assets/28fd38e5-85a4-4467-80d9-b55fcb89ce2a)
+
+
 
 
 # Use case 20: Returning to the Main Search Interface - Created by Hafsa Robleh
-![Your paragraph text (37)](https://github.com/user-attachments/assets/326ddec8-93e4-4baa-86db-d1983f7f4122)
+
+
+![Your paragraph text (80)](https://github.com/user-attachments/assets/c8c2de5e-f098-417c-b496-ca2c8e27ff9f)
+
+
 
 
 # Use case 21: Searching for a Business When No Match is Found - Created by Hafsa Robleh
 
-![Your paragraph text (43)](https://github.com/user-attachments/assets/57bdc6d4-16c9-4be0-948d-a42869c79893)
+
+![Your paragraph text (81)](https://github.com/user-attachments/assets/5951b24f-e220-4704-bb6b-38ecf1b46a50)
+
 
 
 
 # Use case 22: No Exact Matches Found - Created by Hafsa Robleh
 
 
-![Your paragraph text (44)](https://github.com/user-attachments/assets/ed083b9d-cbe7-4de6-8eff-f1b3836404ee)
+![Your paragraph text (82)](https://github.com/user-attachments/assets/a93926e2-7664-4798-ad10-397c39d3296b)
 
 
 
@@ -278,8 +282,17 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 23: Viewing Nearby Businesses - Created by Hafsa Robleh
 
 
-![Your paragraph text (61)](https://github.com/user-attachments/assets/4762a575-5c8a-4c1c-88d5-3b2887caac1b)
+![Your paragraph text (83)](https://github.com/user-attachments/assets/efe0084c-7b37-45bd-9c97-96b8ddd7d0d7)
+
+# Use case 24:  Map View with Show List Button - Created by Hafsa Robleh
+
+![Your paragraph text (84)](https://github.com/user-attachments/assets/e2c1c89e-89cf-4646-806b-0061c66dfd52)
 
 
+
+# Use case 25: List-Based Search View - Created by Hafsa Robleh
+
+
+![Your paragraph text (85)](https://github.com/user-attachments/assets/6a8d6553-08b0-4156-b6fd-1e122dcb286a)
 
 
