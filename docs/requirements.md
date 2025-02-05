@@ -104,47 +104,59 @@ As a **user**, I want to see the total number of businesses listed, so I know ho
 ## Software Requirements Specification
 ### This section was written by Hafsa Robleh
 #### Functional requirements
-- **FR1:** The system shall allow users to search for food hygiene rating using business names, location or rating filters (From UC1)  
+These requirements now fully reflect Use Case 1 (UC1: Searching for Food Hygiene Ratings).
 
-- **FR2:** The system shall retrieve and display food hygiene ratings from the Bristol Open Data API. (From UC1) 
+- FR1: The system shall allow users to search for food hygiene ratings using business names, locations, and hygiene rating filters (0-5). (From UC1)
 
-- **FR3:** The system shall allow food business owners to search for their food hygiene rating by name or location. (From UC2) 
+- FR2: The system shall retrieve and display food hygiene ratings from the Bristol Open Data API. (From UC1)
 
-- **FR4:** The system shall guide business owners to request correction or report issues to their food hygiene data through a chatbot that directs them to the correction or reporting issue form. (From UC2) 
+- FR3: The system shall provide two views for displaying search results:
+Map View: Displays businesses as markers, which users can click to view details.
+List View: Displays results in a table format, including business name, location, and hygiene rating. (From UC1)
+FR4: The system shall allow users to toggle between Map View and List View without losing their search parameters. (From UC1)
 
-- **FR5:** The system shall guide users to report issues through a chatbot that directs them to the reporting issue form. (From UC1) 
+- FR5: The system shall provide geolocation functionality to show nearby businesses based on the user's current location.
+If geolocation is enabled, the system places a "You are here!" marker at the user’s location and displays nearby businesses within 500 metres.
+If geolocation is denied, all businesses in Bristol are displayed, but without a user location marker. (From UC1)
+FR6: The system shall allow users to filter search results by hygiene rating (0-5) in both Map View and List View. (From UC1)
 
-- **FR6:** The system shall allow web app developers to integrate and test the Bristol Open Data API to ensure the correct data is retrieved and displayed. (From UC3)
+- FR7: The system shall provide a Business Name & Location search tool at the top of the List View page to allow users to refine their results. (From UC1)
 
-- **FR7:** The system shall provide geolocation, allowing users to find nearby businesses based on their current location.  
-  - If geolocation is enabled, the system shall place a blue marker labelled "You are here!" at the user's location and display nearby businesses within 500 metres. 
-  - If geolocation is denied, the blue "You are here!" marker disappears, but the map shall still display all food hygiene rating markers across the Bristol area. Users shall still be able to click on any business marker to view hygiene details.
+- FR8: The system shall dynamically update search results in real-time based on new search inputs without requiring a page refresh. (From UC1)
 
- - **FR8:** The system shall provide a list view as an alternative to the map view, displaying business names, locations, and hygiene ratings.
+- FR9: If no results are found, the system shall:
+Map View: Suggest nearby businesses within 500 metres.
+List View: Display "No results found" at the top of the results table. (From UC1)
+FR10: The system shall allow users to navigate multiple pages of results using Next & Previous buttons when the number of results is large. (From UC1)
 
- - **FR9:** The system shall allow users to filter businesses in the list view based on hygiene rating (0-5).
+- FR11: The system shall display the total number of results at the top of the List View (e.g., "Showing 1-10 of 3,882 results"). (From UC1)
 
-- **FR10:** The system shall allow users to navigate pages using Next & Previous buttons when the number of results is large.
+- FR12: The system shall ensure that the List View is not interactive—users cannot click on business names or ratings. (From UC1)
 
-- **FR11** The system shall display the total number of results at the top of the list view.
-
-- **FR11** The system shall allow users to toggle between map and list views.
+- FR13: The system shall provide a chatbot (HelpBot) in the Map View for users to:
+Report an issue with a hygiene rating.
+Report food safety concerns. (From UC1)
 
 #### Non-Functional Requirements
-- **NFR1:** The system shall respond to user searches within 2 seconds. (From UC1, UC3) 
 
-- **NFR2:** The system shall be available 24/7, allowing business owners to access it anytime. (From UC2)  
+- NFR1: The system shall return search results within 2 seconds. (From UC1)
 
-- **NFR3:** The system shall ensure data security through HTTPS, encryption and GDPR compliance. (From UC3)  
+- NFR2: The system shall dynamically update search results and filters without requiring a page refresh. (From UC1)
 
-- **NFR4:** The system shall handle API issues by providing user-friendly messages or suggesting alternatives when the API is down. (From UC1, UC3) 
+- NFR3: Switching between Map View and List View shall be seamless and retain user search inputs. (From UC1)
 
-- **NFR5**	The list view should load within 2 seconds for a smooth user experience.
+- NFR4: The system shall display an error message if the Bristol Open Data API fails and use a backup GeoJSON file for data retrieval. (From UC1)
 
-- **NFR6**	Filtering and pagination should dynamically update without requiring a full page refresh.
+- NFR5: The List View should load within 2 seconds for a smooth user experience. (From UC1)
 
-- **NFR7**	Switching between map and list views should be seamless without page reloads.
+- NFR6: Pagination should be efficient and responsive, allowing users to browse multiple results without performance lag. (From UC1)
 
+- NFR7: The system shall handle large datasets efficiently, ensuring search, filtering, and pagination remain smooth for thousands of results. (From UC1)
 
+- NFR8: The chatbot (HelpBot) shall provide instant responses to user inquiries regarding hygiene ratings and reporting issues. (From UC1)
+
+- NFR9: The system shall be designed for mobile responsiveness, ensuring that both Map View and List View work on smartphones and tablets. (From UC1)
+
+- NFR10: The system shall provide real-time user feedback for searches, filtering, and pagination actions (e.g., loading indicators). (From UC1)
 
 
