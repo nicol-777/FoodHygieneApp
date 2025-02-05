@@ -4,37 +4,42 @@
 ### Requirements Section written by: Hafsa Robleh
 
 #### User stories
-- As a **user**, I want to search for food hygiene ratings by business name, location, or rating, so i can make informed choices about where to eat or shop.  
 
-- As a **developer**, I want to have access to the Bristol Open Data API and implement it into the app to retrieve accurate food hygiene data.  
+As a **user**, I want to search for food hygiene ratings by business name, location, or rating, so I can make informed choices about where to eat or shop.
 
-- As a **business owner**, I want to request corrections to my business’s food hygiene rating via the chatbot, so that I can ensure accurate information is displayed. 
+As a **developer**, I want to have access to the Bristol Open Data API and implement it into the app to retrieve accurate food hygiene data.
 
-- As a **user**, I want the web app to suggest nearby businesses if my search returns no results, so I can find alternatives.  
+As a **business owner**, I want to request corrections to my business’s food hygiene rating via the chatbot, so that I can ensure accurate information is displayed.
 
-- As a **user**, I want to filter search results by rating, so i can identify businesses with a high standard of food hygiene.  
+As a **user**, I want the web app to suggest nearby businesses if my search returns no results, so I can find alternatives.
 
-- As a **user**, I want to report food safety issues through the web app, so i can alert authorities to potential risks.  
+As a **user**, I want to filter search results by rating, so I can identify businesses with a high standard of food hygiene.
 
-- As a **business owner**, I want to appeal my hygiene rating, so i can address any issues.  
+As a **user**, I want to report food safety issues through the web app, so I can alert authorities to potential risks.
 
-- As a **user**, I want the web app to be accessible on mobile devices, so 
-i can use it anywhere.  
+As a **business owner**, I want to appeal my hygiene rating, so I can address any issues.
 
-- As a **user**, I want to receive confirmation after submitting a report, so I know my submission was successful.  
+As a **user**, I want the web app to be accessible on mobile devices, so I can use it anywhere.
 
-- As a **user**, I want the web app to detect my location and show nearby businesses, so I do not need to enter my location manually.  
+As a **user**, I want to receive confirmation after submitting a report, so I know my submission was successful.
 
-- As a **user**, if I deny geolocation access, I still want to see all food hygiene ratings across Bristol so that I can explore businesses while protecting my privacy.
+As a **user**, I want the web app to detect my location and show nearby businesses, so I do not need to enter my location manually.
 
+As a **user**, if I deny geolocation access, I still want to see all food hygiene ratings across Bristol so that I can explore businesses while protecting my privacy.
+
+As a **user**, I want to view hygiene ratings in a list format, so I can quickly scan multiple businesses without using the map.
+
+As a **user**, I want to navigate between pages when there are many results, so I can explore more options efficiently.
+
+As a **user**, I want to see the total number of businesses listed, so I know how many options are available.
 
 #### Actors
 
-- **Users**: individuals who want to view and search for food hygiene ratings for local food businesses in Bristol, to make informed decisions on where to eat, and to report issues or submit appeals.  
+- **Users**: Individuals who want to view and search for food hygiene ratings for local food businesses in Bristol to make informed decisions on where to eat and to report issues or submit appeals.
 
-- **Business owners**: Food business owners in Bristol who want to access information about their food hygiene rating, to maintain accurate and up-to-date information, and report corrections, appeal rating, or report incidents.  
-
-- **Developer**: Responsible for creating and maintaining the database, managing corrections, handling appeals and ensuring that the app is works properly with APIs to retrieve data from Bristol Open Data. 
+- **Business owners**: Food business owners in Bristol who want to access information about their food hygiene rating, maintain accurate and up-to-date information, request corrections, appeal their rating, or report incidents.
+  
+- **Developer**: Responsible for creating and maintaining the database, managing corrections, handling appeals, and ensuring that the app works properly with APIs to retrieve data from Bristol Open Data.
 
 
 #### Use Cases
