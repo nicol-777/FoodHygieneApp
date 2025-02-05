@@ -42,14 +42,16 @@ The problem addressed by this project is that people find it challenging to chec
 
 
 ## Project Scope
-- A map showing food hygiene ratings for Bristol-based businesses. 
-
-- Users can search to find businesses by name and location. 
-
-- Users can hover and click to view detailed hygiene information about each business. 
-
-- Users can view real-time from the Bristol Open Data API. 
-
+The project is a food hygiene ratings web application that enables users to:
+- Search for food businesses by name and location.
+- View hygiene ratings on an interactive map and in a list format.
+- Filter businesses by hygiene rating (0-5).
+- Sort businesses from lowest to highest ratings.
+- Navigate results using pagination (Next & Previous buttons).
+- Toggle between map and list views for a better user experience.
+- Access real-time data from the Bristol Open Data API, with a backup data source to ensure reliability.
+- Interact with the map to explore hygiene ratings across Bristol-based businesses, with the ability to hover and click for detailed 
+ information.
  
 
 
