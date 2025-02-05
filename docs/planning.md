@@ -28,18 +28,15 @@ The problem addressed by this project is that people find it challenging to chec
  
   
 ### Expected Risks
-- Ensuring that the data is updated regularly to reflect real-time hygiene ratings. 
-
-- Convincing users to switch to this platform from other established services. 
-
-- Handling technical difficulties when connecting various data sources or managing API failures, which could disrupt the availability of 
-  hygiene data. 
-
-- Ensuring that the platform is easy to navigate, use, and understand.  
-
-- Since the platform deals with public data, it must have strong security to protect it from unauthorised access or data tampering.
-
-
+- Make sure the list updates instantly when users filter or move through pages.
+- Handling large datasets efficiently to maintain fast loading times.
+- Ensuring data consistency when switching between the map and list views.
+- Ensure users can switch between the map and list views quickly and easily without confusion or delays.
+- Regularly updating data to reflect real-time hygiene ratings.
+- Convincing users to switch from established services.
+- Handling technical difficulties when connecting various data sources or managing API failures.
+- Ensuring the platform is easy to navigate, use, and understand.
+- Maintaining strong security to protect public data from unauthorised access or tampering.
 
 ## Project Scope
 The project is a food hygiene ratings web application that enables users to:
