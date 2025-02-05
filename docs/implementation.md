@@ -293,6 +293,5 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 25: List-Based Search View - Created by Hafsa Robleh
 
 
-![Your paragraph text (85)](https://github.com/user-attachments/assets/6a8d6553-08b0-4156-b6fd-1e122dcb286a)
-
+![Your paragraph text (89)](https://github.com/user-attachments/assets/bee1ddac-38a1-4028-ba66-0e2d53d02734)
 
