@@ -31,7 +31,7 @@ The problem addressed by this project is that people find it challenging to chec
 - Make sure the list updates instantly when users filter or move through pages.
 - Handling large datasets efficiently to maintain fast loading times.
 - Ensuring data consistency when switching between the map and list views.
-- Ensure users can switch between the map and list views quickly and easily without confusion or delays.
+- Ensure users can switch between the map and list views seamlessly, without confusion or delays.
 - Regularly updating data to reflect real-time hygiene ratings.
 - Convincing users to switch from established services.
 - Handling technical difficulties when connecting various data sources or managing API failures.
