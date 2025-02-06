@@ -235,7 +235,7 @@
     align-items: center;
     gap: 5px;
     position: relative;
-    left: -61px; /* Adjust if needed */
+    left: -65px; /* Adjust if needed */
     white-space: nowrap; /* Prevent text from breaking into two lines */
 }
 
@@ -351,7 +351,7 @@ body {
     <button type="button" id="reset-btn" class="search-btn">Reset</button>
   </form>
   
-  <!-- Results Info and Filtering -->
+  <!-- Results Info and Sorting -->
   <div class="results-header">
     <div class="result-count">
       <span>Showing</span>
@@ -361,7 +361,7 @@ body {
       <span>results</span>
     </div>
     <div class="sort-container">
-      <label for="sort-select">Filter by Rating</label>
+      <label for="sort-select">Sort by</label>
       <select id="sort-select">
         <option value="">All Ratings</option> 
         <option value="5">5 (Very Good)</option> 
@@ -393,11 +393,18 @@ body {
   <script>
    
   
-let itemsPerPage = 10;
+   let itemsPerPage = 10;
 let currentPage = 1;
 let filteredData = null;
-
+let userLocation = null;
 let geojsonData = null; // Store the original GeoJSON data
+
+// ✅ Request geolocation immediately on page load
+window.onload = function () {
+    console.log("📍 Page loaded, requesting geolocation...");
+        initializePage();
+}
+
 
 
 
