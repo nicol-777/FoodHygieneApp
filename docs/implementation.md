@@ -103,6 +103,7 @@ Our web application sources food hygiene data from the Bristol Open Data API. Th
 
 The main query retrieves a list of food businesses along with their hygiene ratings, allowing the application to populate the map with markers representing each business and its current rating. This gives users a complete overview of all the available data. 
 
+
 ### Key features include:  
 
 - Search by business name: Users can search for food businesses by entering their name. This query returns results that match the provided business name, allowing users to find the hygiene rating of a particular location.  
@@ -114,6 +115,10 @@ The main query retrieves a list of food businesses along with their hygiene rati
  
 
 To ensure continuous access to data, the app includes a backup data-loading mechanism. If the primary API is temporarily unavailable, the app loads data from a local GeoJSON file. This backup option ensures the app remains functional and continues to provide critical information to users.  
+
+
+<img width="728" alt="Screenshot 2025-02-06 at 02 49 36" src="https://github.com/user-attachments/assets/2f48f8fc-f7ca-491d-95e9-b92dd9dfb0a0" />
+
 
 
 
