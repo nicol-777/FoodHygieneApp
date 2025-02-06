@@ -1,8 +1,7 @@
 # Implementation
 
 ## Introduction
-
-The web app allows users to view and search for food hygiene ratings for various food businesses based in Bristol. Users can search by business name, location, or filter by rating. Additionally, it includes chatbot support for consumers and businesses.  
+The web app enables users to view and search food hygiene ratings for businesses in Bristol. It allows searches by business name, location, or hygiene rating, with filtering options from 0 to 5. Users can view results on an interactive map or in a list format for easier navigation. Additionally, the app features a chatbot for reporting food safety issues. It also supports geolocation, allowing users to see nearby businesses; if geolocation is denied, users can still explore hygiene ratings across Bristol.
 
 ## Dataset 
 
@@ -19,16 +18,22 @@ The web application uses a GeoJSON dataset:
  
 - Some businesses might be missing from the dataset or have incomplete information.  
 
-## Configuration data  
+
+## **Configuration Data**  
 The web application includes several configurable settings to enhance user experience:
 
-**Geolocation Permission**: The app requests permission to access the user’s location to centre the map accordingly.
-
-**Default Search Filters**: Users can filter businesses by name, location, or hygiene rating.
-
-**Backup Dataset Handling**: If the main dataset is unavailable, the app automatically loads Backup_Food_Hygiene_Ratings.geojson.
-
-**Sorting by Distance**: The app calculates distances from the user’s location and sorts results in order of proximity.
+- **Geolocation Permission**:  
+  - Requests permission to access the user’s location.
+  - If granted, the map centres on the user’s current location.  
+- **Default Search Filters**:  
+  - Users can filter businesses by:  
+    - Name  
+    - Location  
+    - Hygiene rating  
+- **Backup Dataset Handling**:  
+  - If the main dataset fails, the app automatically loads `Backup_Food_Hygiene_Ratings.geojson`.  
+- **Sorting by Distance**:  
+  - The app calculates distances from the user’s location and sorts results by proximity.  
 
 
 
