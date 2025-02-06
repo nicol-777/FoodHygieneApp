@@ -20,26 +20,17 @@ The web application uses a GeoJSON dataset:
 - Some businesses might be missing from the dataset or have incomplete information.  
 
 ## Configuration data  
+The web application includes several configurable settings to enhance user experience:
 
-The web application uses geolocation to centre the map on your current location, helping them easily find businesses nearby. It also allows users to search and filter results by business name, location, or hygiene rating.  
+**Geolocation Permission**: The app requests permission to access the user’s location to centre the map accordingly.
+
+**Default Search Filters**: Users can filter businesses by name, location, or hygiene rating.
+
+**Backup Dataset Handling**: If the main dataset is unavailable, the app automatically loads Backup_Food_Hygiene_Ratings.geojson.
+
+**Sorting by Distance**: The app calculates distances from the user’s location and sorts results in order of proximity.
 
 
-### Customisation options
-Customisation options are available in the app’s settings menu for users to manage basic settings such as: 
-
-- Geolocation permission: Allow or deny location access to centre the map on the user's current location. 
-
-- Default search filters: Users can set preferences like filtering by business name, location, or hygiene rating. 
-
-Advanced settings can only be modified by developers to adjust the app's  behaviour. These include: 
-
-- Enable the backup dataset: useBackup: true
-
-- Setting API endpoints: apiURL: "https://..."
-
-- Define default map centring behaviour: Specify the initial map location when the app loads. 
-
-These settings are designed to ensure flexibility and control for both end-users and developers, allowing the app to function according to user preferences and developer requirements.
 
 ## Project Structure
 
@@ -103,17 +94,17 @@ In this system each layer only interacts with the one directly above or below it
 
 ## Bristol Open Data API
 
-Our web application uses the Bristol Open Data API to retrieve information about food hygiene ratings in Bristol. 
+Our web application sources food hygiene data from the Bristol Open Data API. The dataset was downloaded as a GeoJSON file and is used as the primary data source. Currently, the app does not fetch live API data but relies on the static dataset.
 
 The main query retrieves a list of food businesses along with their hygiene ratings, allowing the application to populate the map with markers representing each business and its current rating. This gives users a complete overview of all the available data. 
 
 ### Key features include:  
 
-● Search by business name: Users can search for food businesses by entering their name. This query returns results that match the provided business name, allowing users to find the hygiene rating of a particular location.  
+- Search by business name: Users can search for food businesses by entering their name. This query returns results that match the provided business name, allowing users to find the hygiene rating of a particular location.  
 
-● Filter by hygiene rating: Users can filter results by hygiene rating. This feature allows users to see only businesses with a specific rating, from 0 to 5, making it easier to focus on businesses that meet their preferred standards. 
+- Filter by hygiene rating: Users can filter results by hygiene rating. This feature allows users to see only businesses with a specific rating, from 0 to 5, making it easier to focus on businesses that meet their preferred standards. 
 
-● Postcode search: By entering a postcode, users can view businesses with hygiene ratings in a specific area. This feature simplifies finding relevant information about locations of interest.   
+- Postcode search: By entering a postcode, users can view businesses with hygiene ratings in a specific area. This feature simplifies finding relevant information about locations of interest.   
 
  
 
