@@ -408,31 +408,7 @@ let userLocation = null;
 // ✅ Request geolocation immediately on page load
 window.onload = function () {
     console.log("📍 Page loaded, requesting geolocation...");
-    requestGeolocation(() => {
         initializePage();
-    });
-};
-
-function requestGeolocation(callback) {
-    if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                userLocation = {
-                    lat: position.coords.latitude,
-                    lon: position.coords.longitude,
-                };
-                console.log("✅ User location retrieved:", userLocation);
-                if (callback) callback();
-            },
-            (error) => {
-                console.warn("⚠️ Geolocation denied or unavailable:", error.message);
-                alert("Please enable location access for sorting by distance.");
-                if (callback) callback();
-            }
-        );
-    } else {
-        alert("⚠️ Geolocation is not supported in this browser.");
-        if (callback) callback();
     }
 
 
@@ -480,18 +456,6 @@ function requestGeolocation(callback) {
 
 
 
-// ✅ Fully working function to calculate distance
-function calculateDistance(user, business) {
-    const R = 3958.8; // Radius of Earth in miles
-    const dLat = (business.LATITUDE - user.lat) * (Math.PI / 180);
-    const dLon = (business.LONGITUDE - user.lon) * (Math.PI / 180);
-    const lat1 = user.lat * (Math.PI / 180);
-    const lat2 = business.LATITUDE * (Math.PI / 180);
-
-    const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    return (R * c).toFixed(1); // Returns distance in miles
-}
 
 function populateList(data) {
     const listTableBody = document.getElementById("food-list").querySelector("tbody");
