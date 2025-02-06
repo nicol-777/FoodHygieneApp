@@ -104,7 +104,7 @@ As a **user**, I want to see the total number of businesses listed, so I know ho
 ## Software Requirements Specification
 ### This section was written by Hafsa Robleh
 #### Functional requirements
-These requirements now fully reflect Use Case 1 (UC1: Searching for Food Hygiene Ratings).
+
 
 - **FR1**: The system shall allow users to search for food hygiene ratings using business names, locations, and hygiene rating filters (0-5). (From UC1)
 
