@@ -127,7 +127,8 @@ FR6: The system shall allow users to filter search results by hygiene rating (0-
 - **FR9**: If no results are found, the system shall:
 Map View: Suggest nearby businesses within 500 metres.
 List View: Display "No results found" at the top of the results table. (From UC1)
-FR10: The system shall allow users to navigate multiple pages of results using Next & Previous buttons when the number of results is large. (From UC1)
+
+- **FR10**: The system shall allow users to navigate multiple pages of results using Next & Previous buttons when the number of results is large. (From UC1)
 
 - **FR11**: The system shall display the total number of results at the top of the List View (e.g., "Showing 1-10 of 3,882 results"). (From UC1)
 
