@@ -38,8 +38,10 @@ TODO: Add rows for each test, current status is eg. pass/fail
  **UC1** | **FR9** |  Searching for a nonexistent business in List View shows 'No Results Found'. | **Pass** | 
  **UC1** | **FR10,NFR9** |  Paginate through results using Next/Previous buttons. | **Pass** |
  **UC1** | **NFR12** | Verify List View scales properly on mobile. | **Pass** |
- 
- 
+ **UC1** | **NFR11** | HelpBot provides instant response after button press and directs users to relevant forms. | **Pass** |
+ **UC1** | **FR7** | Search by business name in List View returns correct results. | **Pass** |
+ **UC1** | **FR6,FR7** | Filter by hygiene rating in List View returns correct results. | **Pass** |
+ **UC1** | **FR8** | List View updates results instantly without page refresh. | **Pass** | 
  |  **Written By**    | Hafsa Robleh                                                                       |     
 
      
