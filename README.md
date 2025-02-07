@@ -6,7 +6,7 @@
 The Food Hygiene Web App helps users find and review food hygiene ratings for businesses in Bristol, UK.  It allows consumers to search by business name, location, or hygiene rating and view results on an interactive map.  The app includes a chatbot assistant, geolocation support, filtering options, and forms for consumers to report food safety issues and business owners to request rating corrections. By improving access to hygiene ratings, this platform promotes food safety awareness and helps businesses maintain higher hygiene standards. 
 
 ## Live Web App  
-[Visit the Web App](https://hafsa157.github.io/FoodHygieneApp/src/index.html)
+[Visit the Web App](https://hafsa157.github.io/FoodHygieneApp/src/)
 
 ## Design Mockups
 
