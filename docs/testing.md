@@ -42,6 +42,11 @@ TODO: Add rows for each test, current status is eg. pass/fail
  **UC1** | **FR7** | Search by business name in List View returns correct results. | **Pass** |
  **UC1** | **FR6,FR7** | Filter by hygiene rating in List View returns correct results. | **Pass** |
  **UC1** | **FR8** | List View updates results instantly without page refresh. | **Pass** | 
+| **UC1** | **FR13** | List View displays business name, address, and hygiene rating. | **Pass** |
+| **UC1** | **FR14** | List View pagination displays correct number of results per page. | **Pass** |
+| **UC1** | **FR15** | List View sorting by hygiene rating works correctly. | **Pass** |
+| **UC1** | **FR16** | List View reset button clears all filters and search inputs. | **Pass** |
+| **UC1** | **NFR13** | List View is accessible and keyboard-navigable. | **Pass** | 
  |  **Written By**    | Hafsa Robleh                                                                       |     
 
      
@@ -343,18 +348,66 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 ---
 
+| **UC1**         | **List View Display** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   |Verify that the List View displays business name, address, and hygiene rating for each result.                   |
+| **Prerequisites** | Data loaded from GeoJSON file.                                                                 |
+| **Test Data**     | Search for a business or filter by rating.                                                                           |
+| **Expected Result**| List View displays business name, address, and hygiene rating for each result.                                     |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
+
+
+
+| **UC1**         | **List View Pagination** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   |Verify that the List View paginates results correctly using Next/Previous buttons.                   |
+| **Prerequisites** | Data loaded from GeoJSON file.                                                                 |
+| **Test Data**     | Search for multiple businesses or filter by rating.                                                                           |
+| **Expected Result**| Results are paginated correctly, and the Next/Previous buttons work as expected.                                 |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
 
 
 
 
+| **UC1**         | **List View Sorting** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   |Verify that the List View can sort results by hygiene rating.                   |
+| **Prerequisites** | Data loaded from GeoJSON file.                                                                 |
+| **Test Data**     | Sort results by hygiene rating (5, 4, 3, 2, 1, 0).                                                                           |
+| **Expected Result**| Results are sorted correctly by hygiene rating.                           |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
 
 
 
 
+| **UC1**         | **List View Reset** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   |Verify that the List View reset button clears all filters and search inputs.     |
+| **Prerequisites** | Data loaded from GeoJSON file.                                                                 |
+| **Test Data**     |Apply filters or search, then click the reset button.                                                                         |
+| **Expected Result**| All filters and search inputs are cleared, and the full dataset is displayed.                          |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
 
 
 
 
+| **UC1**         | **List View Accessibility** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   |	Verify that the List View is accessible and keyboard-navigable.     |
+| **Prerequisites** | Data loaded from GeoJSON file.                                                                 |
+| **Test Data**     |Navigate the List View using only the keyboard.                                                                        |
+| **Expected Result**| All List View elements are accessible and navigable using the keyboard.                        |
+| **Written By**    | Hafsa Robleh                                                                                        |
+
+---
 
 
 
@@ -388,6 +441,11 @@ Create a requirements traceability matrix to validate the completeness of the pr
 | NFR2               | System available 24/7.                              | UC2             |
 | NFR3               | Data security (HTTPS and GDPR).                     | UC3             |
 | NFR4               | API fallback during outage.                         | UC3             |
+|FR13 | List View displays business name, address, and hygiene rating. | UC1 |
+| FR14 | List View pagination displays correct number of results per page. | UC1 |
+| FR15 | List View sorting by hygiene rating works correctly. | UC1 |
+| FR16 | List View reset button clears all filters and search inputs. | UC1 |
+| NFR13 | List View is accessible and keyboard-navigable. | UC1 |
 |  **Written By**    | Hafsa Robleh                                                                       |     
   
      
