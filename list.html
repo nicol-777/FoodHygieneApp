@@ -398,13 +398,14 @@ let currentPage = 1;
 let filteredData = null;
 let geojsonData = null; // Store the original GeoJSON data
 
+
 // ✅ Request geolocation immediately on page load
 window.onload = function () {
     console.log("📍 Page loaded, requesting geolocation...");
+    requestGeolocation(() => {
         initializePage();
-}
-
-
+    });
+};
 
 
 function initializePage() {
