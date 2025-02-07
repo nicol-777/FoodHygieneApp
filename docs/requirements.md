@@ -155,6 +155,14 @@ As a **user**, I want to see the total number of businesses listed, so I know ho
 
 **FR17**: The system shall allow web app developers to integrate and test the Bristol Open Data API to ensure the correct data is retrieved and displayed. (From UC3)
 
+**FR13**: List View displays business name, address, and hygiene rating.
+
+**FR14**: List View pagination displays correct number of results per page.
+  
+**FR15**: List View sorting by hygiene rating works correctly.
+  
+**FR16**: List View reset button clears all filters and search inputs.
+
 
 #### Non-Functional Requirements
 
@@ -183,6 +191,8 @@ As a **user**, I want to see the total number of businesses listed, so I know ho
 **NFR12**: The system shall be designed for mobile responsiveness, ensuring that both Map View and List View work on smartphones and tablets. (From UC1)
 
 **NFR13**: The system shall provide real-time user feedback for searches, filtering, and pagination actions (e.g., status messages). (From UC1)
+
+**NFR13**: List View is accessible and keyboard-navigable. (From UC1) 
 
 
 
