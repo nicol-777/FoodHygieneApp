@@ -37,12 +37,26 @@ The web application includes several configurable settings to enhance user exper
 
 
 
-## Project Structure
+## Food Hygiene App - Project Structure
 
 
 
-<img width="812" alt="Screenshot 2025-01-22 at 03 35 25" src="https://github.com/user-attachments/assets/9b0ddf4a-0a55-4a77-a897-a1debeeb3e43" />
+<img width="911" alt="Screenshot 2025-02-07 at 17 31 57" src="https://github.com/user-attachments/assets/8a1e056c-c29b-49d2-b999-d41e964952d6" />
 
+
+<img width="915" alt="Screenshot 2025-02-07 at 17 33 38" src="https://github.com/user-attachments/assets/ad3647f7-d5f8-4d99-a252-2c8169a39cf3" />
+
+
+<img width="913" alt="Screenshot 2025-02-07 at 17 34 17" src="https://github.com/user-attachments/assets/a6e90f22-589f-49b5-a01d-df02f6b9d64d" />
+
+
+<img width="914" alt="Screenshot 2025-02-07 at 17 34 50" src="https://github.com/user-attachments/assets/09a8d1df-72da-4738-afe0-a97e6861f363" />
+
+
+<img width="915" alt="Screenshot 2025-02-07 at 17 35 20" src="https://github.com/user-attachments/assets/915382cc-f19e-40a0-a5f5-c38d3899a86c" />
+
+
+<img width="915" alt="Screenshot 2025-02-07 at 17 36 07" src="https://github.com/user-attachments/assets/7c8bbfa1-63c3-478c-accd-811db84fe2db" />
 
 
 <img width="658" alt="Screenshot 2024-12-07 at 17 10 22" src="https://github.com/user-attachments/assets/6be54283-22d2-4e19-8705-cf08387ff4cd">
