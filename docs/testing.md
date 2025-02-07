@@ -34,7 +34,11 @@ TODO: Add rows for each test, current status is eg. pass/fail
  **UC1, UC2** | **FR7** | If geolocation is denied, "You are here!" marker disappears but all food hygiene markers remain visible.|**Pass** |
  **UC1, UC2**      | **FR7**        | Clicking hygiene markers still works when geolocation is denied.| **Pass** | 
  **UC1** | **FR3, FR4** | Toggle between Map View and List View retains search parameters.| **Pass** |
- **UC1** | **FR12** | 
+ **UC1** | **FR12** | Clicking a business in list view does nothing.| **Pass** |
+ **UC1** | **FR9** |  Searching for a nonexistent business in List View shows 'No Results Found'. | **Pass** | 
+ **UC1** | **FR10,NFR9** |  Paginate through results using Next/Previous buttons. | **Pass** |
+ **UC1** | **NFR12** | Verify List View scales properly on mobile. | **Pass** |
+ 
  
  |  **Written By**    | Hafsa Robleh                                                                       |     
 
