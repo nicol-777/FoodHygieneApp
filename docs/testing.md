@@ -193,43 +193,54 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 ---
 
 
-|**UC1, UC2 | Requesting Geolocation Permission**  
-| **Description** | Verify that the system requests geolocation permission when the user or business owner opens the web app. |
-|-----------------|-----------------------------------------------------------------------------------------------------|
-| **Prerequisites** | User or Business Owner opens the web app for the first time. |
-| **Test Data** | <ul><li>1. Open the web app.</li><li>2. Observe if a geolocation permission request appears.</li></ul> |
-| **Expected Result** | A geolocation permission prompt should appear asking the user or business owner to allow or deny location access. |
-| **Written By** | Hafsa Robleh |
+| **UC1, UC2**           | **Requesting Geolocation Permission**                                            |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**     | Verify that the system requests geolocation permission when the user or business owner opens the web app.                                                |
+| **Prerequisites**   | User or Business Owner opens the web app for the first time.                                                                         |
+| **Test Data**       | <ul><li>1. Open the web app.</li><li>2. Observe if a geolocation permission request appears.</li></ul>                                                                                        |
+| **Expected Result** |A geolocation permission prompt should appear asking the user or business owner to allow or deny location access.                                                                |
+| **Written By**    | Hafsa Robleh                                                                         |
+
 
 ---
 
-| **UC1, UC2 | "You Are Here!" Marker When Geolocation is Enabled**  
-| **Description** | Verify that when geolocation is enabled, the system places a "You are here!" marker at the user or business owner’s location. |
-|-----------------|-----------------------------------------------------------------------------------------------------|
-| **Prerequisites** | User or Business Owner allows geolocation access. |
-| **Test Data** | <ul><li>1. Open the web app.</li><li>2. Allow geolocation access.</li><li>3. Observe the map.</li></ul> |
-| **Expected Result** | The map should center on the user's or business owner’s location, and a "You are here!" marker should appear. |
-| **Written By** | Hafsa Robleh |
+
+| **UC1, UC2**           | **"You Are Here!" Marker When Geolocation is Enabled**                                            |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**     | Verify that when geolocation is enabled, the system places a "You are here!" marker at the user or business owner’s location.                                               |
+| **Prerequisites**   |User or Business Owner allows geolocation access.          |
+| **Test Data**       | <ul><li>1. Open the web app.</li><li>2. Allow geolocation access.</li><li>3. Observe the map.</li></ul>                                                                                       |
+| **Expected Result** | The map should center on the user's or business owner’s location, and a "You are here!" marker should appear.                                                         |
+| **Written By**    | Hafsa Robleh                                                                         |
+
 
 ---
 
-| **UC1, UC2 | Map Behaviour When Geolocation is Denied**  
-| **Description** | Verify that when geolocation is denied, the map still displays all food hygiene markers across the Bristol area. |
-|-----------------|-----------------------------------------------------------------------------------------------------|
-| **Prerequisites** | User or Business Owner denies geolocation access. |
-| **Test Data** | <ul><li>1. Open the web app.</li><li>2. Deny geolocation access.</li><li>3. Observe the map.</li></ul> |
-| **Expected Result** | <ul><li>The **"You are here!" marker disappears.**</li><li>The map remains zoomed out to **show all food hygiene markers scattered across the Bristol area**.</li><li>**Users can still click on hygiene markers to view details.**</li></ul> |
-| **Written By** | Hafsa Robleh |
+
+| **UC1, UC2**           | **Map Behaviour When Geolocation is Denied**                                            |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**     | Verify that when geolocation is denied, the map still displays all food hygiene markers across the Bristol area.                                             |
+| **Prerequisites**   |User or Business Owner denies geolocation access.          |
+| **Test Data**       | <ul><li>1. Open the web app.</li><li>2. Deny geolocation access.</li><li>3. Observe the map.</li></ul>                                                                                     |
+| **Expected Result** | <ul><li>The "You are here!" marker disappears.</li><li>The map remains zoomed out to show all food hygiene markers scattered across the Bristol area.</li><li>Users can still click on hygiene markers to view details.</li></ul>                                                 |
+| **Written By**    | Hafsa Robleh                                                                         |
+
 
 ---
 
-| **UC1, UC2 | Clicking Business Markers When Geolocation is Denied**  
-| **Description** | Verify that users and business owners can still interact with food hygiene markers even if geolocation is denied. |
-|-----------------|-----------------------------------------------------------------------------------------------------|
-| **Prerequisites** | User or Business Owner denies geolocation access. |
-| **Test Data** | <ul><li>1. Open the web app.</li><li>2. Deny geolocation access.</li><li>3. Click on different hygiene rating markers.</li></ul> |
-| **Expected Result** | Clicking a hygiene rating marker should display business details (hygiene rating, name, and address). |
-| **Written By** | Hafsa Robleh |
+
+| **UC1, UC2**           | **Clicking Business Markers When Geolocation is Denied**                                            |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**     | Verify that users and business owners can still interact with food hygiene markers even if geolocation is denied.                                             |
+| **Prerequisites**   |User or Business Owner denies geolocation access.         |
+| **Test Data**       | <ul><li>1. Open the web app.</li><li>2. Deny geolocation access.</li><li>3. Click on different hygiene rating markers.</li></ul>                                                                                   |
+| **Expected Result** | Clicking a hygiene rating marker should display business details (hygiene rating, name, and address).                                  |
+| **Written By**    | Hafsa Robleh                                                                         |
+
+
+---
+
+                       
 
 
 
