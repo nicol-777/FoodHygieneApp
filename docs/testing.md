@@ -148,15 +148,20 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 
 
-| **UC1**           | **Reset Form**                                                         |
+| **UC1**           | **Map View Rest**                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------|
-| **Description**     | Click reset button to clear inputs.                                                                  |
-| **Prerequisites**   | Search form displayed.                                                                               |
-| **Test Data**       | Fill form and click reset.                                                                           |
-| **Expected Result** | All input fields are cleared.                                                                        |
+| **Description**     | Verify that the Map View reset button clears all filters and search inputs.                                                                  |
+| **Prerequisites**   | Data loaded from GeoJSON file.                                                                              |
+| **Test Data**       | Apply filters or search, then click the reset button.                                                                           |
+| **Expected Result** | All filters and search inputs are cleared, and the full dataset is displayed.                                                                        |
 | **Written By**    | Hafsa Robleh                                                                                         |
 
 ---
+
+
+
+
+
 
 
 | **UC1**           | **Mobile Dropdown**                                                   |
