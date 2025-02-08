@@ -141,20 +141,28 @@
                 flex-direction: column;
             }
 
-            .form-field {
-                width: 100%;
-            }
+           
 
             .form-field select {
                 width: 100%;
             }
         }
 
+
+        .form-field select {
+                width: 100%;
+            }
+        
+
         label {
             font-weight: 500;
             display: block;
             margin-bottom: 5px;
         }
+
+
+
+
 
         
         .search-btn, #reset-btn {
@@ -305,7 +313,20 @@
         }
 
 
-
+        .Show-list {
+        display: inline-block;
+            margin: 20px;
+            padding: 12px 24px;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
 
         
 
@@ -375,6 +396,8 @@
                     <input type="text" id="location" placeholder="Enter location"> 
                 </div> 
             </div> 
+
+
             <div class="form-group"> 
                 <div class="form-field"> 
                     <label for="rating-filter">Filter by Rating</label> 
@@ -392,7 +415,7 @@
             <button type="submit" class="search-btn">Search</button> 
             <button type="button" id="show-list-btn" class="search-btn" onclick="window.location.href='list.html';">Show List</button>
             <button type="button" id="reset-btn" class="search-btn">Reset</button> 
-            
+           
 
         </form> 
     </section> 
@@ -1598,7 +1621,11 @@ document.addEventListener("DOMContentLoaded", function () {
         speechBubble.style.display = "block";  // Restore speech bubble
     }
     
-    
+
+
+
+
+
     </script>
     
     
