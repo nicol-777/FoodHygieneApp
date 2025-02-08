@@ -361,7 +361,7 @@ body {
       <span>results</span>
     </div>
     <div class="sort-container">
-      <label for="sort-select">Filter by Rating</label>
+      <label for="sort-select">Filter by rating</label>
       <select id="sort-select">
         <option value="">All Ratings</option> 
         <option value="5">5 (Very Good)</option> 
@@ -398,6 +398,11 @@ let currentPage = 1;
 let filteredData = null;
 let geojsonData = null; // Store the original GeoJSON data
 
+// ✅ Request geolocation immediately on page load
+window.onload = function () {
+    console.log("📍 Page loaded, requesting geolocation...");
+        initializePage();
+}
 
 
 
@@ -452,7 +457,6 @@ function initializePage() {
 
   
 }
-
 
 
 
