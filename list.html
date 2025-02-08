@@ -396,7 +396,6 @@ body {
    let itemsPerPage = 10;
 let currentPage = 1;
 let filteredData = null;
-let userLocation = null;
 let geojsonData = null; // Store the original GeoJSON data
 
 
@@ -459,18 +458,7 @@ function initializePage() {
 
 
 
-// ✅ Fully working function to calculate distance
-function calculateDistance(user, business) {
-    const R = 3958.8; // Radius of Earth in miles
-    const dLat = (business.LATITUDE - user.lat) * (Math.PI / 180);
-    const dLon = (business.LONGITUDE - user.lon) * (Math.PI / 180);
-    const lat1 = user.lat * (Math.PI / 180);
-    const lat2 = business.LATITUDE * (Math.PI / 180);
 
-    const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    return (R * c).toFixed(1); // Returns distance in miles
-}
 
 function populateList(data) {
     const listTableBody = document.getElementById("food-list").querySelector("tbody");
