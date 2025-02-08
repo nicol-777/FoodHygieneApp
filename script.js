@@ -70,11 +70,9 @@ function addZeroRatedMarkers(data) {
     }).addTo(zeroRatedLayer);
 }
 
-
-
 // Load the initial data to populate the map
 function loadGeoJSONData() {
-    fetch('data/Food_Hygiene_Ratings.geojson')  // Ensure the correct path to the GeoJSON file
+    fetch('Food_Hygiene_Ratings.geojson')  // Ensure the correct path to the GeoJSON file
         .then(response => response.json())
         .then(data => {
             originalData = data;  // Save original data
@@ -88,12 +86,6 @@ function loadGeoJSONData() {
 
 // Load data on initial load
 loadGeoJSONData();
-
-
-
-
-
-
 
 // Automatically use geolocation when the page loads
 if (navigator.geolocation) {
@@ -163,6 +155,20 @@ document.getElementById('reset-btn').addEventListener('click', function () {
     addZeroRatedMarkers(originalData);  // Reset zero-rated markers
 });
 
+// Populate the dropdown with ratings
+function populateDropdown() {
+    const ratingFilter = document.getElementById('rating-filter');
+    ratingFilter.innerHTML = `
+        <option value="">All Ratings</option>
+        <option value="5">5 (Very Good)</option>
+        <option value="4">4 (Good)</option>
+        <option value="3">3 (Generally Satisfactory)</option>
+        <option value="2">2 (Improvement Necessary)</option>
+        <option value="1">1 (Major Improvement Necessary)</option>
+        <option value="0"> 0 (Urgent Improvement Necessary)  </option>
+    `;
+}
+populateDropdown();
 
 
 
@@ -1618,6 +1624,10 @@ function displayNearbyBusinesses() {
             "No nearby businesses found.";
     }
 }
+
+
+
+
 
 
 
