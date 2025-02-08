@@ -235,7 +235,7 @@
     align-items: center;
     gap: 5px;
     position: relative;
-    left: -65px; /* Adjust if needed */
+    left: -80px; /* Adjust if needed */
     white-space: nowrap; /* Prevent text from breaking into two lines */
 }
 
@@ -393,11 +393,10 @@ body {
   <script>
    
   
-let itemsPerPage = 10;
+   let itemsPerPage = 10;
 let currentPage = 1;
 let filteredData = null;
 let geojsonData = null; // Store the original GeoJSON data
-
 
 // ✅ Request geolocation immediately on page load
 window.onload = function () {
@@ -406,6 +405,7 @@ window.onload = function () {
         initializePage();
     });
 };
+
 
 
 function initializePage() {
@@ -458,6 +458,7 @@ function initializePage() {
 
   
 }
+
 
 
 
@@ -709,30 +710,3 @@ document.getElementById("search-form").addEventListener("submit", function(event
     <button id="next-btn" class="pagination-button">Next</button>
   </div>
 
-
-
-
-  <script src="script.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        console.log("✅ list.html Loaded");
-
-        // Check if data exists in localStorage
-        const storedData = localStorage.getItem("geojsonData");
-        if (storedData) {
-            const geojsonData = JSON.parse(storedData);
-            console.log("✅ Loaded GeoJSON from localStorage", geojsonData);
-            populateList(geojsonData);
-        } else {
-            console.log("⚠️ No GeoJSON data in localStorage. Fetching...");
-            fetch("Food_Hygiene_Ratings.geojson")
-                .then(response => response.json())
-                .then(data => {
-                    console.log("✅ GeoJSON Fetched");
-                    localStorage.setItem("geojsonData", JSON.stringify(data));
-                    populateList(data);
-                })
-                .catch(error => console.error("❌ Error fetching GeoJSON:", error));
-        }
-    });
-</script>
