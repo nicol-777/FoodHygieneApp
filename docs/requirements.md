@@ -94,7 +94,8 @@ As a **user**, I want to see the total number of businesses listed, so I know ho
 
 
 
-<img width="750" alt="Robust diagram 1 " src="https://github.com/user-attachments/assets/27cac3e5-1f1d-430b-9db2-a3f7e28d83e0" />
+
+![image](https://github.com/user-attachments/assets/85c88c0d-1c5e-4e8c-89e9-1cfe7853c0e2)
 
 
 
