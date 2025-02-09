@@ -94,7 +94,8 @@ As a **user**, I want to see the total number of businesses listed, so I know ho
 
 
 
-![image](https://github.com/user-attachments/assets/d5e8e3ac-7669-4a63-aac5-0b82f334c805)
+![image](https://github.com/user-attachments/assets/bcb7f4de-b3b1-4f55-ab60-dc8fc327468a)
+
 
 
 
