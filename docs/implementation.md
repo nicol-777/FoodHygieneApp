@@ -168,19 +168,22 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 4: Filtering by Hygiene Rating 0 (Urgent Improvement Necessary) - Created by Hafsa Robleh
 
 
-![Your paragraph text (64)](https://github.com/user-attachments/assets/e53a6380-9bb9-44f9-86ee-362c31561459)
+![Your paragraph text (95)](https://github.com/user-attachments/assets/8af3f163-c25b-46db-bd0b-e1d460851e37)
 
 
 
 # Use case 5: Rating 1 (Major Improvement Necessary) - Created by Hafsa Robleh
 
-![Your paragraph text (65)](https://github.com/user-attachments/assets/3ca3e437-eec9-4809-a526-07ddef9563c7)
+
+![Your paragraph text (96)](https://github.com/user-attachments/assets/8900f648-60f3-40b7-8a86-68b0611d1be1)
+
+
 
 
 # Use case 6: Rating 2 (Improvement Necessary) - Created by Hafsa Robleh
 
 
-![Your paragraph text (66)](https://github.com/user-attachments/assets/27b85f2e-f992-46a8-a298-217010b349c3)
+![Your paragraph text (97)](https://github.com/user-attachments/assets/7d659548-52be-442b-bf57-cd18b06487ab)
 
 
 
@@ -188,7 +191,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 7: Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
 
 
-![Your paragraph text (67)](https://github.com/user-attachments/assets/1e30e255-9980-40e9-92d5-9505c8188e3a)
+![Your paragraph text (98)](https://github.com/user-attachments/assets/52328ced-2a90-4e56-a3cd-27a347dba940)
+
 
 
 
@@ -197,14 +201,18 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-![Your paragraph text (68)](https://github.com/user-attachments/assets/8f99184d-9fe6-4d8f-90ef-3b97507ec07f)
+![Your paragraph text (99)](https://github.com/user-attachments/assets/a8fe6f3b-4433-413f-94ee-273c54df6296)
+
 
 
 
 
 # Use case 9: Rating 5 (Very Good) - Created by Hafsa Robleh
 
-![Your paragraph text (69)](https://github.com/user-attachments/assets/7b973624-4acf-47ac-a6bd-4b804f127f13)
+
+![Your paragraph text (100)](https://github.com/user-attachments/assets/343242de-0fbc-48d9-8808-c761d8e44012)
+
+
 
 
 # Use case 10: Opening HelpBot - Created by Hafsa Robleh
@@ -301,7 +309,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use case 24:  Map View with Show List Button - Created by Hafsa Robleh
 
-![Your paragraph text (84)](https://github.com/user-attachments/assets/e2c1c89e-89cf-4646-806b-0061c66dfd52)
+
+![Your paragraph text (91)](https://github.com/user-attachments/assets/ef5e2652-a6c5-494f-9996-d8930421d1dd)
 
 
 
@@ -309,4 +318,77 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 ![Your paragraph text (89)](https://github.com/user-attachments/assets/bee1ddac-38a1-4028-ba66-0e2d53d02734)
+
+
+# Use Case 26: Searching for a Food Hygiene Rating on list view  
+A user wants to search for the food hygiene rating of a specific restaurant.
+
+
+
+![Your paragraph text - 2025-02-10T011653 893](https://github.com/user-attachments/assets/74d96fa4-9869-414a-8547-6fe8e01d5aa2)
+
+
+
+
+
+
+# Use Case 27 : Filtering by Hygiene Rating 0 (Urgent Improvement Necessary) on list view   - Created by Hafsa Robleh
+A user wants to see only restaurants with a specific hygiene rating.
+
+
+
+![Your paragraph text - 2025-02-10T012802 850](https://github.com/user-attachments/assets/a5522007-6168-4d97-b447-87a623cd4d70)
+
+
+
+
+
+# Use Case 28 : Rating 1 (Major Improvement Necessary) - Created by Hafsa Robleh
+
+
+![Your paragraph text - 2025-02-10T012652 892](https://github.com/user-attachments/assets/60d338ea-58a9-4256-8d1c-a172ad43c7ff)
+
+
+
+
+# Use Case 29 : Rating 2 (Improvement Necessary) - Created by Hafsa Robleh
+
+![Your paragraph text - 2025-02-10T012848 790](https://github.com/user-attachments/assets/e7a994a3-eb0b-4b1f-9d89-2954e4e23e3c)
+
+
+
+
+# Use Case 30 : Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
+
+
+![Your paragraph text - 2025-02-10T013741 909](https://github.com/user-attachments/assets/b27f76f7-e4d4-4ff7-9f06-410b97be7ad1)
+
+
+
+
+
+# Use Case 31: Rating 4 (Good) - Created by Hafsa Robleh
+
+
+![Your paragraph text - 2025-02-10T013800 304](https://github.com/user-attachments/assets/f0b4a942-7f9a-47aa-a17a-621a5e9b822d)
+
+
+
+
+
+
+# Use Case 32: Rating 5 ( Very Good) - Created by Hafsa Robleh
+
+![Your paragraph text - 2025-02-10T013305 813](https://github.com/user-attachments/assets/35211730-8477-4832-8402-e70cc1031cff)
+
+
+
+
+# Use case 33 : Handling "No Results Found" in Food Hygiene Rating Search  - Created by Hafsa Robleh
+The user searches for a food hygiene rating by entering a business name (e.g., "RandomXYZ") and optionally a location (town, street, or postcode). However, the system returns "No results found." indicating that no matching records exist.
+
+
+![Your paragraph text - 2025-02-10T013438 939](https://github.com/user-attachments/assets/158aa59c-7562-4f69-948b-5e3b1e57d2a3)
+
+
 
