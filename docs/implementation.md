@@ -167,15 +167,16 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 # Use case 4: Filtering by Hygiene Rating 0 (Urgent Improvement Necessary) - Created by Hafsa Robleh
 
+![Your paragraph text - 2025-02-10T142540 101](https://github.com/user-attachments/assets/f0aea0b0-0ee4-4dc4-bf1b-e2cf443a6756)
 
-![Your paragraph text (95)](https://github.com/user-attachments/assets/8af3f163-c25b-46db-bd0b-e1d460851e37)
 
 
 
 # Use case 5: Rating 1 (Major Improvement Necessary) - Created by Hafsa Robleh
 
 
-![Your paragraph text (96)](https://github.com/user-attachments/assets/8900f648-60f3-40b7-8a86-68b0611d1be1)
+
+![Your paragraph text - 2025-02-10T142753 245](https://github.com/user-attachments/assets/eef69fce-51f0-48b0-a91a-1457138524ec)
 
 
 
@@ -183,7 +184,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 6: Rating 2 (Improvement Necessary) - Created by Hafsa Robleh
 
 
-![Your paragraph text (97)](https://github.com/user-attachments/assets/7d659548-52be-442b-bf57-cd18b06487ab)
+![Your paragraph text - 2025-02-10T142831 730](https://github.com/user-attachments/assets/56afe2a1-c43f-4e2a-a646-8b59f4f0d7f5)
+
 
 
 
@@ -191,7 +193,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 7: Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
 
 
-![Your paragraph text (98)](https://github.com/user-attachments/assets/52328ced-2a90-4e56-a3cd-27a347dba940)
+![Your paragraph text - 2025-02-10T142900 049](https://github.com/user-attachments/assets/565047cf-617c-4aaf-b6b2-1521f6df4ef2)
+
 
 
 
@@ -201,7 +204,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-![Your paragraph text (99)](https://github.com/user-attachments/assets/a8fe6f3b-4433-413f-94ee-273c54df6296)
+![Your paragraph text - 2025-02-10T142942 978](https://github.com/user-attachments/assets/2e491eff-a50a-4297-a471-8f0053f8d9ed)
+
 
 
 
@@ -210,8 +214,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 # Use case 9: Rating 5 (Very Good) - Created by Hafsa Robleh
 
 
-![Your paragraph text (100)](https://github.com/user-attachments/assets/343242de-0fbc-48d9-8808-c761d8e44012)
 
+![Your paragraph text - 2025-02-10T143221 119](https://github.com/user-attachments/assets/39be7f79-d8fa-41a4-a965-8f33a10fc79f)
 
 
 
