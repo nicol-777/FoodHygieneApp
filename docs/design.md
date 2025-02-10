@@ -63,9 +63,36 @@ Additionally, an image is displayed in a circular frame, visually representing f
 - Dropdown Style: The filter dropdown has a modern UI with custom style, including a 
   shadow effect and a hover transition.
 
+
+
 ## Search Results & Map section 
 
 The interactive map displays food hygiene ratings as clickable markers, allowing users to explore businesses easily. Clicking a marker reveals a pop-up containing key details such as the business name, address, and hygiene rating. The map also includes geolocation support, enabling users to find nearby businesses based on their current location. If no exact match is found, the system provides a prompt suggesting similar businesses to help users refine their search. Additionally, zero-rated businesses are highlighted in red for quick identification, ensuring that users are aware of potential food safety concerns.
+
+
+
+
+# Show list feature 
+
+- Users can toggle between **Map** View and **List View** using the "Show List" button.
+
+- **Map View (default)**:
+
+   - Displays hygiene ratings as interactive markers.
+
+    - Clicking a marker reveals business details in a pop-up.
+
+- **List View (via "Show List" Button):**
+
+    - Displays businesses in a structured table format.
+
+    - Includes columns for **Business Name, Address, and Hygiene Rating.**
+
+    - Users can scroll through pages for more results.
+
+The **Show List / Show Map** button automatically updates based on the user's selection.
+
+
 
 
 
