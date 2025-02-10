@@ -89,6 +89,8 @@ The interactive map displays food hygiene ratings as clickable markers, allowing
     - Includes columns for **Business Name, Address, and Hygiene Rating.**
 
     - Users can scroll through pages for more results.
+      
+    - Filter by Rating: Allows users to refine search results.
 
 The **Show List / Show Map** button automatically updates based on the user's selection.
 
