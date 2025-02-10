@@ -398,9 +398,9 @@ let currentPage = 1;
 let filteredData = null;
 let geojsonData = null; // Store the original GeoJSON data
 
-// ✅ Request geolocation immediately on page load
+//  Request geolocation immediately on page load
 window.onload = function () {
-    console.log("📍 Page loaded, requesting geolocation...");
+    console.log(" Page loaded, requesting geolocation...");
         initializePage();
 }
 
@@ -411,29 +411,29 @@ function initializePage() {
     const storedData = localStorage.getItem("geojsonData");
 
     if (!storedData) {
-        console.error("❌ No GeoJSON data found in localStorage.");
+        console.error(" No GeoJSON data found in localStorage.");
         return;
     }
 
     geojsonData = JSON.parse(storedData);
     filteredData = JSON.parse(JSON.stringify(geojsonData)); // Deep copy to prevent corruption
-    console.log("✅ Data loaded:", filteredData);
+    console.log(" Data loaded:", filteredData);
 
     populateList(filteredData);
 
-    // ✅ Fixed sorting dropdown listener
+    //  Fixed sorting dropdown listener
     document.getElementById("sort-select").addEventListener("change", function () {
-        console.log("🔄 Sorting changed to:", this.value);
+        console.log(" Sorting changed to:", this.value);
         sortResults(this.value);
     });
 
     document.querySelector(".search-btn").addEventListener("click", function () {
-        console.log("🔍 Searching...");
+        console.log(" Searching...");
         filterResults();
     });
 
     document.getElementById("reset-btn").addEventListener("click", function () {
-    console.log("🔄 Reset clicked, restoring original data...");
+    console.log(" Reset clicked, restoring original data...");
 
     // Clear search inputs
     document.getElementById("search-business").value = "";
@@ -469,7 +469,7 @@ function populateList(data) {
     listTableBody.innerHTML = "";
 
     if (!data || !data.features || data.features.length === 0) {
-        console.error("❌ No data to display.");
+        console.error(" No data to display.");
         listTableBody.innerHTML = `<tr><td colspan="3" style="text-align: center; font-size: 1.5rem; color: red;">No results found.</td></tr>`;
         document.getElementById("total-results").textContent = "0";
         document.getElementById("results-start").textContent = "0";
@@ -478,7 +478,7 @@ function populateList(data) {
         return;
     }
 
-    console.log("📋 Displaying", data.features.length, "items...");
+    console.log(" Displaying", data.features.length, "items...");
 
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = Math.min(startIndex + itemsPerPage, data.features.length);
@@ -601,10 +601,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function sortResults(sortValue) {
-    console.log("🔄 Filtering results for rating:", sortValue);
+    console.log(" Filtering results for rating:", sortValue);
 
     if (!geojsonData || !geojsonData.features) {
-        console.error("❌ No data available.");
+        console.error(" No data available.");
         return;
     }
 
@@ -668,7 +668,7 @@ function filterResults() {
     let searchLocation = document.getElementById("search-location").value.toLowerCase().trim();
 
     if (!geojsonData || !geojsonData.features) {
-        console.error("❌ No data available for filtering.");
+        console.error(" No data available for filtering.");
         return;
     }
 
