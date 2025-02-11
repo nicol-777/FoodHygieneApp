@@ -89,8 +89,10 @@ As a **user**, I want to see the total number of businesses listed, so I know ho
 
 
 
+![Case diagram official drawio (33)](https://github.com/user-attachments/assets/1ff7d213-f515-468e-a8ff-e8f938687f69)
 
-![Case diagram official drawio (14)](https://github.com/user-attachments/assets/4aa1a7b5-6db7-4d90-bbf3-1dc5fc35c4ce)
+
+
 
 
 
