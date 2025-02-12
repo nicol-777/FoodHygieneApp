@@ -351,52 +351,135 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 11: Opening HelpBot - Created by Hafsa Robleh
+**Steps:**
+
+1. Click the green **HelpBot** icon in the bottom-right corner of the screen.
+2. The HelpBot widget opens, displaying a greeting message.
+3. The widget presents two options: **"Yes"** (if you need help) or **"No"** (to exit assistance).
+4. Click **"Yes"** to proceed with assistance, or **"No"** to close the chatbot.
+   
+**Expected Outcome:** The HelpBot widget expands, providing options for user assistance.
 
 
 ![Your paragraph text (71)](https://github.com/user-attachments/assets/ebc4f6db-f189-4b17-b8bd-272156d42592)
 
 
 
-# Use case 12: Consumers or Businesses - Created by Hafsa Robleh
+# Use case 12: Selecting Consumers or Businesses in HelpBot - Created by Hafsa Robleh
+**Steps:**
+
+1. Open the **HelpBot** widget by clicking on the green chat icon.
+2. If prompted, click **"Yes"** to continue.
+3. The HelpBot will display two main options: **Consumers** and **Businesses.**
+4. Click **Consumers** if you are an individual seeking assistance.
+5. Click **Businesses** if you are a business owner needing support.
+
+**Expected Outcome:** The user is directed to the appropriate menu based on their selection.
 
 ![Your paragraph text (72)](https://github.com/user-attachments/assets/27e825ce-29b7-407b-bce4-21f1152457b9)
 
 
-# Use case 13: Consumer Options in HelpBot - Created by Hafsa Robleh
+# Use case 13:Exploring Consumer Options in HelpBot - Created by Hafsa Robleh
+**Steps:**
+
+1. Click Consumers in the HelpBot menu.
+2. A list of consumer-related actions appears, including:
+- **Report a Food Safety Issue**
+- **Report a Product Labelling Issue**
+- **Report an Unregistered Food Business**
+- **Report a Problem with a Food Hygiene Rating**
+- **Whistleblowing and Reporting a Food Crime**
+3. Click on the relevant option to proceed.
+  
+**Expected Outcome:** The user is presented with various consumer options to take action.
+
 
 ![Your paragraph text (73)](https://github.com/user-attachments/assets/0d517d90-30fe-432d-ab65-cffcaad4580e)
 
 
 # Use case 14: Reporting a Food Safety Issue (Consumers) - Created by Hafsa Robleh
+**Steps:**
+
+1. Select an option from the list (e.g., **'Report a Food Safety Issue'**) in the 
+   HelpBot consumer menu.
+2. A form appears below the map.
+3. Enter your **Full Name** in the provided field.
+4. Provide your **Email Address** for contact purposes.
+5. In the **Describe the Issue** section, explain the problem (e.g., "Foreign object found in food").
+6. Click the **Submit** button to send the report.
+
+ **Expected Outcome:** The food safety issue report is submitted for review.
+
 
 
 ![Your paragraph text (87)](https://github.com/user-attachments/assets/58ff229c-1717-4d16-89c8-86997915d64b)
 
 
 
-# Use case 15: Successful Submission of a Report - Created by Hafsa Robleh
+# Use case 15: Confirmation of a Successful Report Submission - Created by Hafsa Robleh
+**Steps:**
+
+1. After submitting a report, a Submission Successful message appears below the map.
+2. The message confirms that the report has been received and will be reviewed.
+3. The user can continue using the website or submit another report if necessary.
+   
+**Expected Outcome:** The system confirms that the report has been successfully submitted.
 
 ![Your paragraph text (75)](https://github.com/user-attachments/assets/95293a23-48b3-4d4b-a6fb-3f4bed24a748)
 
 
-# Use case 16:  Returning to the Main Search Interface - Created by Hafsa Robleh
+# Use case 16: Returning to the Main Search Interface After a Report Submission - Created by Hafsa Robleh
+**Steps:**
+
+1. Once the submission is confirmed, the user can still interact with the platform.
+2. The **Search for a Food Hygiene Rating** section remains available for use.
+3. The map stays interactive, allowing users to continue searching for businesses.
+4. If additional assistance is needed, the **HelpBot** can be reopened.
+
+**Expected Outcome:** The user can continue navigating the site even after submitting a report.
 
 ![Your paragraph text (76)](https://github.com/user-attachments/assets/73ee510c-ff4f-4a31-8106-737491c87be1)
 
 
-# Use case 17: Business Options in HelpBot - Created by Hafsa Robleh
+# Use case 17: Exploring Business Options in HelpBot - Created by Hafsa Robleh
+**Steps:**
+1. Click **Businesses** in the HelpBot menu.
+2. A list of business-related actions appears, including:
+- **Report a Food Safety Incident**
+- **Whistleblowing and Reporting a Food Crime**
+- **Report a Problem with a Food Hygiene Rating**
+3. Click on the relevant option to proceed.
+   
+**Expected Outcome:** The user is presented with various business options for reporting issues.
 
 ![Your paragraph text (77)](https://github.com/user-attachments/assets/c7b09f14-c2ff-487c-ba19-8ec829266f5b)
 
 
 # Use case 18: Reporting a Food Safety Incident (Business) - Created by Hafsa Robleh
+**Steps:**
 
+1. Select an option from the list (e.g.,**'Report a Food Safety Incident'**) in the HelpBot business menu.
+2. A form appears below the map.
+3. Enter your **Business Name** in the provided field.
+4. Provide your **Email Address** for contact purposes.
+5. In the **Describe the Issue** section, explain the problem (e.g., "Food 
+   contamination reported by staff").
+6. Click the **Submit** button to send the report.
+
+**Expected Outcome:** The business safety incident report is submitted for review.
 
 ![Your paragraph text (88)](https://github.com/user-attachments/assets/b3d8796c-44b6-4402-a37b-7892a3de5b60)
 
 
 
-# Use case 19: Successful Submission of a Report  - Created by Hafsa Robleh
+# Use case 19: Confirmation of a Successful Business Report Submission  - Created by Hafsa Robleh
+**Steps:**
+
+1. After submitting a business report, a Submission Successful message appears below the map.
+2. The message confirms that the report has been received and will be reviewed.
+3. The user can continue using the platform for further searches or reports.
+
+**Expected Outcome:** The system confirms that the business report has been successfully submitted.
 
 ![Your paragraph text (79)](https://github.com/user-attachments/assets/28fd38e5-85a4-4467-80d9-b55fcb89ce2a)
 
