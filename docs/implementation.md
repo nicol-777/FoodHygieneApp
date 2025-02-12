@@ -149,23 +149,80 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use Case 1: Enabling Location Access - Created by Hafsa Robleh
+**Steps:**
+
+1. Open the application in your web browser.
+
+2. A pop-up will appear asking for location access.
+
+3. Click "Allow while visiting the site" to enable location access.
+
+4. The system will now display businesses near your location on the map.
+
+5. If you accidentally block location access, go to your browser settings and enable it manually.
+
+**Expected Outcome:** The map updates to show food businesses around your current location.
 
 ![Use Case 1 Enabling Location Access (7)](https://github.com/user-attachments/assets/6c2dc586-b4bf-46f8-b7d8-350ff5f6c508)
 
 
+
 # Use Case 2: Searching by Business Name - Created by Hafsa Robleh
+**Steps:**
+
+1. Click the Business Name field at the top of the search page.
+
+2. Enter the name of the business (e.g., "Cafe").
+
+3. Click the green Search button to retrieve results.
+
+4. The map will highlight the locations matching your search.
+
+5. Click on a pin to view the business details (e.g., name, address, hygiene rating).
+
+6. If needed, click Reset to clear the search and start again.
+
+**Expected Outcome:** The map displays relevant businesses that match the entered name.
 
 ![Your paragraph text (62)](https://github.com/user-attachments/assets/933195f7-7e19-47b9-ac22-abf244aef389)
 
 
 
 # Use case 3: Searching by Location - Created by Hafsa Robleh
+**Steps:**
+
+1. Click the Street, town or postcode field.
+
+2. Enter a location (e.g., "BS1 5TR").
+
+3. Click the green Search button to display results.
+
+4. The map will zoom into the location and show businesses with their hygiene ratings.
+
+5. Click on a pin to see business details.
+
+6. Click Reset to clear the search and start again if needed.
+
+**Expected Outcome:** The map displays businesses within the specified location.
 
 ![Your paragraph text (63)](https://github.com/user-attachments/assets/ede411a2-66e3-4142-984c-24f49a10e8e1)
 
 
 
 # Use case 4: Filtering by Hygiene Rating 0 (Urgent Improvement Necessary) - Created by Hafsa Robleh
+**Steps:**
+
+1. Click the Filter by Rating dropdown menu.
+
+2. Select "0 (Urgent Improvement Necessary)" from the list.
+
+3. Click the green Search button to filter results.
+
+4. The map will display only businesses with a hygiene rating of 0, marked with red pins.
+
+5. Click on a pin to view details of any business with this rating.
+
+**Expected Outcome:** The map highlights only businesses requiring urgent improvement in hygiene.
 
 ![Your paragraph text - 2025-02-10T142540 101](https://github.com/user-attachments/assets/f0aea0b0-0ee4-4dc4-bf1b-e2cf443a6756)
 
@@ -173,8 +230,19 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 5: Rating 1 (Major Improvement Necessary) - Created by Hafsa Robleh
+**Steps:**
 
+1. Click the Filter by Rating dropdown menu.
 
+2. Select "1 (Major Improvement Necessary)" from the list.
+
+3. Click Search to apply the filter.
+
+4. The map will now show only businesses with a hygiene rating of 1, marked appropriately.
+
+5. Click on a pin to see business details.
+
+**Expected Outcome:** Businesses with a rating of 1 appear on the map.
 
 ![Your paragraph text - 2025-02-10T142753 245](https://github.com/user-attachments/assets/eef69fce-51f0-48b0-a91a-1457138524ec)
 
@@ -182,7 +250,19 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 6: Rating 2 (Improvement Necessary) - Created by Hafsa Robleh
+**Steps:**
 
+1. Open the Filter by Rating dropdown menu.
+
+2. Choose "2 (Improvement Necessary)".
+
+3. Click Search to display results.
+
+4. The map updates, showing businesses with a hygiene rating of 2.
+
+5. Click on a pin to view the name, address, and hygiene details.
+
+**Expected Outcome:** The map displays only businesses with a rating of 2.
 
 ![Your paragraph text - 2025-02-10T142831 730](https://github.com/user-attachments/assets/56afe2a1-c43f-4e2a-a646-8b59f4f0d7f5)
 
@@ -191,7 +271,19 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 7: Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
+**Steps:**
 
+1. Click the Filter by Rating dropdown.
+
+2. Select "3 (Generally Satisfactory)".
+
+3. Click Search to filter results.
+
+3. The map will now only display businesses with a hygiene rating of 3.
+
+4. Click on a pin to check business details.
+
+**Expected Outcome:** The map updates, displaying only businesses rated as 3.
 
 ![Your paragraph text - 2025-02-10T142900 049](https://github.com/user-attachments/assets/565047cf-617c-4aaf-b6b2-1521f6df4ef2)
 
@@ -201,7 +293,19 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 8: Rating 4 (Good) - Created by Hafsa Robleh
+**Steps:**
 
+1. Open the Filter by Rating dropdown.
+
+2. Select "4 (Good)".
+
+3. Click Search to see results.
+
+4. The map will show only businesses with a hygiene rating of 4.
+
+5. Click a pin to reveal more information about a business.
+
+**Expected Outcome:** Businesses with a rating of 4 appear on the map.
 
 
 ![Your paragraph text - 2025-02-10T142942 978](https://github.com/user-attachments/assets/2e491eff-a50a-4297-a471-8f0053f8d9ed)
@@ -212,15 +316,33 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 9: Rating 5 (Very Good) - Created by Hafsa Robleh
+**Steps:**
 
+1. Open the Filter by Rating dropdown.
+
+2. Select "5 (Very Good)".
+
+3. Click Search to apply the filter.
+
+4. The map updates to show only businesses rated 5.
+
+5. Click on a pin to see business details.
+
+**Expected Outcome:** The map displays businesses with a hygiene rating of 5.
 
 
 ![Your paragraph text - 2025-02-10T143221 119](https://github.com/user-attachments/assets/39be7f79-d8fa-41a4-a965-8f33a10fc79f)
 
 
 
-# Use case 10: Opening HelpBot - Created by Hafsa Robleh
+# Use case 10: Viewing the HelpBot Bubble - Created by Hafsa Robleh
+**Steps:**
 
+1. Look at the bottom-right corner of the screen where the green HelpBot chat icon is visible.
+2. A speech bubble next to the icon displays the message: **"Hi there, how can I help you?"**
+3. This indicates that HelpBot is available for assistance, and the user can interact with it if needed.
+
+**Expected Outcome:** The user sees the HelpBot bubble, confirming that the chatbot is active and ready to assist.
 
 ![Your paragraph text (70)](https://github.com/user-attachments/assets/03e2ec10-c942-4689-a03a-44354d6d0011)
 
@@ -228,8 +350,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-
-# Use case 11: Using HelpBot Assistance - Created by Hafsa Robleh
+# Use case 11: Opening HelpBot - Created by Hafsa Robleh
 
 
 ![Your paragraph text (71)](https://github.com/user-attachments/assets/ebc4f6db-f189-4b17-b8bd-272156d42592)
