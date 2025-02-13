@@ -669,6 +669,21 @@ Users can **filter, sort, and navigate pages** of search results.
 # Use Case 30 : Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
 **Steps:**
 
+1. The user clicks on the **Filter by Rating** dropdown menu.
+2. They select **3 (Generally Satisfactory)** from the list.
+3. The system updates the list to display businesses with a hygiene rating of **3.**
+4. The user can scroll through the results or navigate pages using the 
+ **Previous** and **Next** buttons.
+
+**Expected Outcome:**
+- The results table displays only businesses with a **hygiene rating of 3.**
+- Other businesses with different ratings are **excluded from the list.**
+- The user can browse through **172 results,** as indicated in the image.
+
+
+
+
+
 ![Your paragraph text - 2025-02-10T013741 909](https://github.com/user-attachments/assets/b27f76f7-e4d4-4ff7-9f06-410b97be7ad1)
 
 
@@ -677,6 +692,17 @@ Users can **filter, sort, and navigate pages** of search results.
 
 # Use Case 31: Rating 4 (Good) - Created by Hafsa Robleh
 **Steps:**
+
+1. The user opens the **Filter by Rating** dropdown.
+2. They select **4 (Good)** from the available options.
+3. The system refreshes the list to show businesses rated **4.**
+4. The user can scroll through or navigate the list using the **Previous** and 
+ **Next** buttons.
+
+**Expected Outcome:**
+- The results table now only contains businesses with a **hygiene rating of 4.**
+- Businesses rated below or above **4** are not displayed.
+- The **number of results is 553,** as seen in the image.
 
 ![Your paragraph text - 2025-02-10T013800 304](https://github.com/user-attachments/assets/f0b4a942-7f9a-47aa-a17a-621a5e9b822d)
 
@@ -688,6 +714,16 @@ Users can **filter, sort, and navigate pages** of search results.
 # Use Case 32: Rating 5 ( Very Good) - Created by Hafsa Robleh
 **Steps:**
 
+1. The user clicks on the **Filter by Rating** dropdown.
+2. They select **5 (Very Good).**
+3. The system updates the list, displaying only businesses with a **rating of 5.**
+4. The user can browse through the businesses or switch pages using the 
+ **Previous** and **Next** buttons.
+
+**Expected Outcome:**
+- The list exclusively contains businesses rated **5 (Very Good).**
+- Other businesses do not appear in the search results.
+- There are **2,400** results matching the selected rating.
 
 ![Your paragraph text - 2025-02-10T013305 813](https://github.com/user-attachments/assets/35211730-8477-4832-8402-e70cc1031cff)
 
@@ -696,6 +732,18 @@ Users can **filter, sort, and navigate pages** of search results.
 
 # Use case 33 : Handling "No Results Found" in Food Hygiene Rating Search  - Created by Hafsa Robleh
 **Steps:**
+
+1. The user enters a **business name that does not exist** in the system (e.g., "RandomXYZ").
+2. They click the **Search** button to proceed.
+3. The system searches but finds **no matches.**
+4. A **"No results found"** message is displayed.
+5. The user is given the option to **Reset** the search fields and try again.
+
+**Expected Outcome:**
+- The system displays an empty results table with **"No results found"** in red 
+  text.
+- The user can **reset** the search fields and perform a new search.
+
 
 ![Your paragraph text - 2025-02-10T013438 939](https://github.com/user-attachments/assets/158aa59c-7562-4f69-948b-5e3b1e57d2a3)
 
