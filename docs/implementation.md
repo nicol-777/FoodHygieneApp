@@ -486,15 +486,38 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 20: Returning to the Main Search Interface - Created by Hafsa Robleh
+# Use case 20: Interacting with the Map and HelpBot After Submission - Created by Hafsa Robleh
+**Steps:**
 
-
+1. Once the submission is successful, users can still interact with the search fields or the map.
+2. The map remains interactive, displaying:
+- **Red dots (0 hygiene rating):** Businesses that require urgent improvement.
+- **Blue dots (1-5 hygiene ratings):** Businesses with acceptable hygiene ratings.
+3. Users can search for food hygiene ratings by entering a **business name, location,** or **filtering by rating.**
+4. If further assistance is needed, users can **click the HelpBot widget** in the bottom-right corner.
+  
+**Expected Outcome:**
+- The user remains on the page after submission and can still interact with the 
+  search interface and map.
+- Clicking on a business dot on the map provides additional details.
+- Clicking the **HelpBot widget** opens the HelpBot for further assistance.
+  
 ![Your paragraph text (80)](https://github.com/user-attachments/assets/c8c2de5e-f098-417c-b496-ca2c8e27ff9f)
 
 
 
 
 # Use case 21: Searching for a Business When No Match is Found - Created by Hafsa Robleh
+**Steps:**
+1. Enter a business name that is unlikely to exist (e.g., "RandomXYZ") into the Business Name input field.
+2. Click the Search button to initiate the search.
+3. The system processes the query and looks for an exact match.
+4. If an exact match is found, the map highlights the business's location with blue or red dots.
+5. If no exact match exists, the system proceeds to Use **Case 22** by displaying a pop-up.
+
+**Expected Outcome:**
+If an exact match exists, the map highlights the business location.
+If no match is found, the system moves to the next step by notifying the user.
 
 
 ![Your paragraph text (81)](https://github.com/user-attachments/assets/5951b24f-e220-4704-bb6b-38ecf1b46a50)
@@ -502,7 +525,18 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 
-# Use case 22: No Exact Matches Found - Created by Hafsa Robleh
+# Use case 22:Handling No Exact Match by Suggesting Nearby Businesses - Created by Hafsa Robleh
+**Steps:**
+
+1. After performing the search for a business that does not exist, a pop-up message appears stating: **"No exact matches found. Suggesting nearby businesses."**
+2. Click the **OK** button to acknowledge the message and proceed.
+3. The system updates the map, displaying **nearby businesses** instead.
+
+**Expected Outcome:**
+- The user is informed that no exact match is available.
+- The system automatically suggests and displays nearby businesses.
+- Clicking **OK** allows the user to explore nearby alternatives.
+
 
 
 ![Your paragraph text (82)](https://github.com/user-attachments/assets/a93926e2-7664-4798-ad10-397c39d3296b)
@@ -511,11 +545,35 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 23: Viewing Nearby Businesses - Created by Hafsa Robleh
+**Steps:**
+
+1. Once the pop-up is dismissed, the system updates the **map interface.**
+2. The map now displays **multiple blue dots,** each representing a nearby 
+   business.
+3. The user can use the **zoom controls (+/-)** or **click and drag** to explore the suggested businesses.
+4. Clicking on any **blue dot** provides **additional business details.**
+5. If the user wants to restart the search, they can click the **Reset** button.
+   
+**Expected Outcome:**
+- The map dynamically updates to show available businesses.
+- The user can interact with the suggested results by zooming in or clicking on 
+  business markers.
+- The **Reset** button clears the search fields and allows for a new query.
+
 
 
 ![Your paragraph text (83)](https://github.com/user-attachments/assets/efe0084c-7b37-45bd-9c97-96b8ddd7d0d7)
 
 # Use case 24:  Map View with Show List Button - Created by Hafsa Robleh
+**Steps:**
+
+1. Click the Show List button to switch from the map view to a structured list 
+   view of results.
+2. The system displays a table containing business names, addresses, and hygiene 
+   ratings.
+
+**Expected Outcome:**
+The user transitions from **map-based search** to a **list-based** view of search results.
 
 
 ![Your paragraph text (91)](https://github.com/user-attachments/assets/ef5e2652-a6c5-494f-9996-d8930421d1dd)
@@ -523,14 +581,32 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 
 # Use case 25: List-Based Search View - Created by Hafsa Robleh
+**Steps:**
 
+1. The **list view** displays all businesses matching the search criteria.
+2. Users can:
+- See the **total number of results** (e.g., 3,882 results).
+- **Filter and sort** results using the **Filter by Rating** dropdown.
+- Click **Back to Map** to return to the map-based search.
+- Navigate through multiple pages using **Previous** and **Next** buttons.
+
+**Expected Outcome:**
+The list provides a structured overview of businesses.
+Users can **filter, sort, and navigate pages** of search results.
 
 ![Your paragraph text (89)](https://github.com/user-attachments/assets/bee1ddac-38a1-4028-ba66-0e2d53d02734)
 
 
 # Use Case 26: Searching for a Food Hygiene Rating on list view  
-A user wants to search for the food hygiene rating of a specific restaurant.
+**Steps:**
 
+1. Enter a **business name** (e.g., "McDonald's") in the **Business Name** field.
+2. Enter a **specific location** (e.g., "BS14 0HR") in the **Street, town, or postcode** field.
+3. Click the **Search** button.
+4. The list displays only businesses that match both **name** and **location.**
+
+**Expected Outcome:**
+- The list updates to show businesses matching both name and location.
 
 
 ![Your paragraph text - 2025-02-10T011653 893](https://github.com/user-attachments/assets/74d96fa4-9869-414a-8547-6fe8e01d5aa2)
@@ -541,7 +617,15 @@ A user wants to search for the food hygiene rating of a specific restaurant.
 
 
 # Use Case 27 : Filtering by Hygiene Rating 0 (Urgent Improvement Necessary) on list view   - Created by Hafsa Robleh
-A user wants to see only restaurants with a specific hygiene rating.
+**Steps:**
+
+1. Click on the **Filter by Rating** dropdown.
+2. Select **0 (Urgent Improvement Necessary)** from the list.
+3. The list updates to display only businesses with a hygiene rating of **0.**
+
+**Expected Outcome:**
+- The system filters results to show businesses that **require urgent 
+  improvement.**
 
 
 
@@ -552,7 +636,14 @@ A user wants to see only restaurants with a specific hygiene rating.
 
 
 # Use Case 28 : Rating 1 (Major Improvement Necessary) - Created by Hafsa Robleh
+**Steps:**
 
+1. Click on the **Filter by Rating** dropdown.
+2. Select **1 (Major Improvement Necessary)** from the list.
+3. The list updates to display only businesses with a hygiene rating of **1.**
+
+**Expected Outcome:**
+- The system filters results to show businesses that **require major improvement.**
 
 ![Your paragraph text - 2025-02-10T012652 892](https://github.com/user-attachments/assets/60d338ea-58a9-4256-8d1c-a172ad43c7ff)
 
@@ -560,6 +651,15 @@ A user wants to see only restaurants with a specific hygiene rating.
 
 
 # Use Case 29 : Rating 2 (Improvement Necessary) - Created by Hafsa Robleh
+**Steps:**
+
+1. Click on the **Filter by Rating** dropdown.
+2. Select **2 (Improvement Necessary)** from the list.
+3. The list updates to display only businesses with a hygiene rating of **2.**
+
+**Expected Outcome:**
+- The system filters results to show businesses that **require improvement.**
+
 
 ![Your paragraph text - 2025-02-10T012848 790](https://github.com/user-attachments/assets/e7a994a3-eb0b-4b1f-9d89-2954e4e23e3c)
 
@@ -567,7 +667,7 @@ A user wants to see only restaurants with a specific hygiene rating.
 
 
 # Use Case 30 : Rating 3 (Generally Satisfactory) - Created by Hafsa Robleh
-
+**Steps:**
 
 ![Your paragraph text - 2025-02-10T013741 909](https://github.com/user-attachments/assets/b27f76f7-e4d4-4ff7-9f06-410b97be7ad1)
 
@@ -576,7 +676,7 @@ A user wants to see only restaurants with a specific hygiene rating.
 
 
 # Use Case 31: Rating 4 (Good) - Created by Hafsa Robleh
-
+**Steps:**
 
 ![Your paragraph text - 2025-02-10T013800 304](https://github.com/user-attachments/assets/f0b4a942-7f9a-47aa-a17a-621a5e9b822d)
 
@@ -586,6 +686,8 @@ A user wants to see only restaurants with a specific hygiene rating.
 
 
 # Use Case 32: Rating 5 ( Very Good) - Created by Hafsa Robleh
+**Steps:**
+
 
 ![Your paragraph text - 2025-02-10T013305 813](https://github.com/user-attachments/assets/35211730-8477-4832-8402-e70cc1031cff)
 
@@ -593,8 +695,7 @@ A user wants to see only restaurants with a specific hygiene rating.
 
 
 # Use case 33 : Handling "No Results Found" in Food Hygiene Rating Search  - Created by Hafsa Robleh
-The user searches for a food hygiene rating by entering a business name (e.g., "RandomXYZ") and optionally a location (town, street, or postcode). However, the system returns "No results found." indicating that no matching records exist.
-
+**Steps:**
 
 ![Your paragraph text - 2025-02-10T013438 939](https://github.com/user-attachments/assets/158aa59c-7562-4f69-948b-5e3b1e57d2a3)
 
