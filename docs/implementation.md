@@ -107,9 +107,7 @@ Our web applications uses a layered architecture style. It is divided into separ
 In this system each layer only interacts with the one directly above or below it, creating a clear separation between functions. The UI layer connects with the business logic layer to manage user interactions, keeping the front end separate from core processing. The Business logic layer handles inputs from the UI layer and requests data from the data access layer whenever needed. The data access layer is responsible for retrieving data from external sources and providing it to the business logic layer. This separation of concerns ensures that updates or new features can be added without disrupting the entire web application.  
 
 
-![component drawio (5)](https://github.com/user-attachments/assets/cecb0095-6c5f-4e43-a591-4c0901411eac)
-
-
+![component drawio (17)](https://github.com/user-attachments/assets/684350a0-7716-496e-a08e-19f7aaf5d96f)
 
 
 ## Bristol Open Data API
