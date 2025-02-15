@@ -142,9 +142,6 @@ To ensure continuous access to data, the app includes a backup data-loading mech
 
 
 
-# User guide
-TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
-
 
 
 # Use Case 1: Enabling Location Access - Created by Hafsa Robleh
