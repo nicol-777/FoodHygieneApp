@@ -136,7 +136,7 @@ To ensure continuous access to data, the app includes a backup data-loading mech
 
 
 
-![class diagram drawio (2)](https://github.com/user-attachments/assets/d05b2944-fca3-4139-91aa-1a0bbf29398e)
+![class diagram drawio (3)](https://github.com/user-attachments/assets/22111fed-11f4-499f-b03a-18ae49843e14)
 
 
 
