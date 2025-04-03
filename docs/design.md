@@ -1,7 +1,7 @@
 # Design
 
 ## User Interface design
-### Design Section written by: Hafsa Robleh
+### Design Section written by: Hafsa Robleh and Nicol Joseph*
 TODO: Specify and develop a user interface mockup using a wireframe.
 
 
@@ -18,6 +18,20 @@ TODO: Specify and develop a user interface mockup using a wireframe.
 
 ![show list ](https://github.com/user-attachments/assets/fc4ed92d-ba64-4978-a84d-8ad07d97831b)
 
+
+# Wireframe Diagram*
+
+- Search Process:
+Users start by entering a business name and location. Clicking the Search button initiates the query. If an exact match is found, the business is highlighted on the map. If no match is found, the system suggests nearby businesses. A message is displayed informing users that no exact match was found, prompting them to explore similar businesses.
+
+- Interacting with Results:
+Users can refine their search using filters, including location, hygiene rating, and business type. Selecting a business marker on the map displays additional details about the establishment. If the user wishes to view more businesses, they can scroll through the listed results or zoom in and out of the map to adjust the display.
+
+- Submitting Corrections:
+If a business rating is missing or incorrect, users and businesses can submit a correction by filling out a structured form. The form collects details such as business name, address, and the updated hygiene rating. Upon submission, users receive a confirmation message that their request has been recorded. Form is then received by developer and changes will be made.
+
+- User Actions and Navigation:
+The interface includes essential functionalities like resetting searches, zooming in and out on the map, and navigating between search results. If users want to perform a new search, they can click the Reset button. Users are able to view their search results in List form.
 
 
 # User Interface design 
