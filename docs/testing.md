@@ -48,7 +48,9 @@ TODO: Add rows for each test, current status is eg. pass/fail
 | **UC1** | **FR15** | List View sorting by hygiene rating works correctly. | **Pass** |
 | **UC1** | **FR16** | List View reset button clears all filters and search inputs. | **Pass** |
 | **UC1** | **NFR13** | List View is accessible and keyboard-navigable. | **Pass** | 
- |  **Written By**    | Hafsa Robleh                                                                       |     
+| **UC1, UC2**   |  **FR4, FR5**      | Chatbot redirects to correct issue report. | **Pass**|
+| **UC1**        |  **FR9**      | Searching invalid business name or location returns error. |**Pass**|
+ |  **Written By**    | Hafsa Robleh and Nicol Joseph                                                                    |     
 
      
 
@@ -63,8 +65,8 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 | **Description**   | Enter business name and verify matching results are displayed on the map.                            |
 | **Prerequisites** | Data loaded from GeoJSON file.                                                                       |
 | **Test Data**     | Search by business name e.g., "Waterstones Cafe W".                                                   |
-| **Expected Result**| Matching business appears on map.                                                                    |
-| **Written By**    | Hafsa Robleh                                                                            |
+| **Expected Result**| Matching business appears on map or error if name is invalid.                                                                    |
+| **Written By**    | Hafsa Robleh and Nicol Joseph                                                                            |
 
 ---
 
@@ -74,8 +76,8 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 | **Description**   | Enter street, town, or postcode and verify matching results.                                          |
 | **Prerequisites** | Data loaded and filtered by address.                                                                 |
 | **Test Data**     | Search by location e.g., BS1, BS3 or BS4.                                                            |
-| **Expected Result**| Businesses in the specified area appear.                                                             |
-| **Written By**    | Hafsa Robleh                                                                                         |
+| **Expected Result**| Businesses in the specified area appear or error if location is invalid                                                          |
+| **Written By**    | Hafsa Robleh and Nicol Joseph                                                                                        |
 
 ---
 
@@ -295,6 +297,22 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 ---
 
+
+
+
+| **UC2**         | **Bussiness Issue Report** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   |	Verify businesses ability to report any errors or changes to ratings.     |
+| **Prerequisites** | Messages exported to correct mailing list.                                                                 |
+| **Test Data**     | Ensure chatbot re-routes user to enquiry are and submission box functions.                                                                        |
+| **Expected Result**| Chatbot re-routes user to equiry area and message is received successfully by Developer.                        |
+| **Written By**    | Nicol Joseph                                                                                        |
+
+
+---
+
+
+
 | **UC2**         | **Full Page Reset After Confirmation Message** |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**   | After submitting an issue form, the page should reset automatically.                                |
@@ -365,6 +383,19 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 ---
 
+
+| **UC1**         | **List View Navigation** |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Description**   |	Verify user can return to Home Page/ Map View from List View.     |
+| **Prerequisites** | "Back to map" button is functioning.                                                                 |
+| **Test Data**     | Use "Back to map" prompt in List View page.                                                                        |
+| **Expected Result**| User is redirected to Home Page/ Map view.                        |
+| **Written By**    | Nicol Joseph                                                                                        |
+
+
+---
+
+
 | **UC1**         | **List View Display** |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | **Description**   |Verify that the List View displays business name, address, and hygiene rating for each result.                   |
@@ -425,6 +456,9 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 | **Written By**    | Hafsa Robleh                                                                                        |
 
 ---
+
+                                                                                
+
 
 
 
