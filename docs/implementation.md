@@ -1,5 +1,5 @@
 # Implementation
-### Implementation Section written by: Hafsa Robleh
+### Implementation Section written by: Hafsa Robleh and Nicol Joseph
 
 ## Introduction
 The web app enables users to view and search food hygiene ratings for businesses in Bristol. It allows searches by business name, location, or hygiene rating, with filtering options from 0 to 5. Users can view results on an interactive map or in a list format for easier navigation. Additionally, the app features a chatbot for reporting food safety issues. It also supports geolocation, allowing users to see nearby businesses; if geolocation is denied, users can still explore hygiene ratings across Bristol.
@@ -107,8 +107,7 @@ Our web applications uses a layered architecture style. It is divided into separ
 In this system each layer only interacts with the one directly above or below it, creating a clear separation between functions. The UI layer connects with the business logic layer to manage user interactions, keeping the front end separate from core processing. The Business logic layer handles inputs from the UI layer and requests data from the data access layer whenever needed. The data access layer is responsible for retrieving data from external sources and providing it to the business logic layer. This separation of concerns ensures that updates or new features can be added without disrupting the entire web application.  
 
 
-![component drawio (17)](https://github.com/user-attachments/assets/684350a0-7716-496e-a08e-19f7aaf5d96f)
-
+![component drawio (17)](https://github.com/nicol-777/FoodHygieneApp/blob/d7e83ce0cfb5cdc7231223242da9199811bf6451/images/Component%20Diagram.png)
 
 ## Bristol Open Data API
 
